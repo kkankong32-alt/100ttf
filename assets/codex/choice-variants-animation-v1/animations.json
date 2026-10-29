@@ -1,0 +1,150 @@
+{
+ "player_idle_sheet_v1": {
+  "file": "player_idle_sheet_v1.png",
+  "frameWidth": 128,
+  "frameHeight": 192,
+  "columns": 12,
+  "rows": 4,
+  "origin": [
+   0.5,
+   0.9375
+  ],
+  "clips": {
+   "player_idle_down": {
+    "start": 0,
+    "end": 11,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "player_idle_left": {
+    "start": 12,
+    "end": 23,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "player_idle_right": {
+    "start": 24,
+    "end": 35,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "player_idle_up": {
+    "start": 36,
+    "end": 47,
+    "frameRate": 8,
+    "repeat": -1
+   }
+  }
+ },
+ "player_walk_sheet_v1": {
+  "file": "player_walk_sheet_v1.png",
+  "frameWidth": 128,
+  "frameHeight": 192,
+  "columns": 12,
+  "rows": 4,
+  "origin": [
+   0.5,
+   0.9375
+  ],
+  "clips": {
+   "player_walk_down": {
+    "start": 0,
+    "end": 11,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "player_walk_left": {
+    "start": 12,
+    "end": 23,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "player_walk_right": {
+    "start": 24,
+    "end": 35,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "player_walk_up": {
+    "start": 36,
+    "end": 47,
+    "frameRate": 15,
+    "repeat": -1
+   }
+  }
+ },
+ "romi_idle_sheet_v1": {
+  "file": "romi_idle_sheet_v1.png",
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "columns": 12,
+  "rows": 4,
+  "origin": [
+   0.5,
+   0.92
+  ],
+  "clips": {
+   "romi_idle_down": {
+    "start": 0,
+    "end": 11,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "romi_idle_left": {
+    "start": 12,
+    "end": 23,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "romi_idle_right": {
+    "start": 24,
+    "end": 35,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "romi_idle_up": {
+    "start": 36,
+    "end": 47,
+    "frameRate": 8,
+    "repeat": -1
+   }
+  }
+ },
+ "romi_move_sheet_v1": {
+  "file": "romi_move_sheet_v1.png",
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "columns": 12,
+  "rows": 4,
+  "origin": [
+   0.5,
+   0.92
+  ],
+  "clips": {
+   "romi_move_down": {
+    "start": 0,
+    "end": 11,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "romi_move_left": {
+    "start": 12,
+    "end": 23,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "romi_move_right": {
+    "start": 24,
+    "end": 35,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "romi_move_up": {
+    "start": 36,
+    "end": 47,
+    "frameRate": 15,
+    "repeat": -1
+   }
+  }
+ }
+}

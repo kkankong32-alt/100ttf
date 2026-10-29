@@ -1,0 +1,140 @@
+{
+ "version": 1,
+ "status": "technical_checks_passed_visual_candidates",
+ "generation_tool": "Codex built-in image_gen",
+ "runtime_index_modified": false,
+ "runtime_integration_tested": false,
+ "palette": [
+  "art_spec/palette_kenney_urban.hex",
+  "art_spec/palette_ext.hex"
+ ],
+ "items": [
+  {
+   "asset_id": "T01",
+   "file": "game/assets/codex/T01_ground_autotile_v1.png",
+   "manifest_target": "game/assets/codex/tile_dirt_lot.png",
+   "size_px": [
+    48,
+    64
+   ],
+   "loader": "spritesheet",
+   "frameWidth": 16,
+   "frameHeight": 16,
+   "frames": 12,
+   "margin": 0,
+   "spacing": 0,
+   "layout": [
+    [
+     "TL",
+     "T",
+     "TR"
+    ],
+    [
+     "L",
+     "C",
+     "R"
+    ],
+    [
+     "BL",
+     "B",
+     "BR"
+    ],
+    [
+     "variant1",
+     "variant2",
+     "variant3"
+    ]
+   ],
+   "transparent_bg": true,
+   "integration_required": "Add T01 tile texture mapping; use frames 0..8 for nine-slice, 9..11 for optional center variation.",
+   "visual_status": "candidate: no grid seams in test patch; repetition remains visible over large areas"
+  },
+  {
+   "asset_id": "V04",
+   "file": "game/assets/codex/V04_zelkova_mature_v1.png",
+   "manifest_target": "game/assets/codex/tree_zelkova_mature.png",
+   "key": "tree_mature",
+   "size_px": [
+    64,
+    48
+   ],
+   "loader": "spritesheet",
+   "frameWidth": 32,
+   "frameHeight": 48,
+   "frames": 2,
+   "margin": 0,
+   "spacing": 0,
+   "origin": [
+    0.5,
+    1
+   ],
+   "layout": [
+    "normal",
+    "wind_sway"
+   ],
+   "transparent_bg": true,
+   "integration_required": "Current load.image must become a frame-aware loader before using this full sheet. Keep runtime canopy shadow.",
+   "recommended_initial_frame": 0,
+   "visual_status": "static candidate suitable; animation requires trunk/branch stability refinement"
+  },
+  {
+   "asset_id": "C02",
+   "file": "game/assets/codex/C02_romi_future_v1.png",
+   "manifest_target": "game/assets/codex/romi_robot.png",
+   "key": "romi",
+   "size_px": [
+    64,
+    64
+   ],
+   "loader": "spritesheet",
+   "frameWidth": 16,
+   "frameHeight": 16,
+   "frames": 16,
+   "margin": 0,
+   "spacing": 0,
+   "columns": [
+    "left",
+    "down",
+    "up",
+    "left-alt"
+   ],
+   "rows": [
+    "idle",
+    "float1",
+    "float2",
+    "blink"
+   ],
+   "direction_frames": {
+    "left": [
+     0,
+     4,
+     8,
+     12
+    ],
+    "down": [
+     1,
+     5,
+     9,
+     13
+    ],
+    "up": [
+     2,
+     6,
+     10,
+     14
+    ],
+    "right": [
+     0,
+     4,
+     8,
+     12
+    ]
+   },
+   "right_flipX": true,
+   "transparent_bg": true,
+   "integration_required": "Load as 16x16 spritesheet, select initial down frame 1, bind directional frames only during integration.",
+   "recommended_initial_frame": 1,
+   "visual_status": "direction readability candidate suitable; hover shape consistency needs refinement"
+  }
+ ]
+}

@@ -1,0 +1,671 @@
+{
+ "_note": "구역 B·C·D 게임 규칙 좌표(아트 픽셀, 미터 아님). 그림 배치·조건·충돌은 Codex fullgame_art_manifest_v1.json을 그대로 읽고, 여기엔 이동 연결·추가 충돌·게임 규칙 사각형만 둔다. 과학 값은 이 좌표로 계산하지 않고 기존 시나리오 키에서 읽는다(layout_contract.json).",
+ "names": {
+  "A": "학교 앞",
+  "B": "시장길",
+  "C": "뒷산 숲길",
+  "D": "마을정원"
+ },
+ "portals": {
+  "A": [
+   {
+    "to": "B",
+    "at": [
+     1500,
+     744
+    ],
+    "r": 40,
+    "arrive": [
+     96,
+     520
+    ],
+    "label": "시장길 ▶"
+   },
+   {
+    "to": "C",
+    "at": [
+     835,
+     40
+    ],
+    "r": 40,
+    "arrive": [
+     768,
+     930
+    ],
+    "label": "▲ 뒷산 숲길"
+   },
+   {
+    "to": "D",
+    "at": [
+     40,
+     744
+    ],
+    "r": 40,
+    "arrive": [
+     768,
+     930
+    ],
+    "label": "◀ 마을정원"
+   }
+  ],
+  "B": [
+   {
+    "to": "A",
+    "at": [
+     24,
+     520
+    ],
+    "r": 40,
+    "arrive": [
+     1440,
+     744
+    ],
+    "label": "◀ 학교 앞"
+   }
+  ],
+  "C": [
+   {
+    "to": "A",
+    "at": [
+     768,
+     1004
+    ],
+    "r": 44,
+    "arrive": [
+     835,
+     110
+    ],
+    "label": "▼ 학교 앞"
+   }
+  ],
+  "D": [
+   {
+    "to": "A",
+    "at": [
+     768,
+     1004
+    ],
+    "r": 44,
+    "arrive": [
+     110,
+     744
+    ],
+    "label": "▼ 학교 앞"
+   }
+  ]
+ },
+ "extraBlocked": {
+  "B": [
+   [
+    598,
+    0,
+    612,
+    456
+   ],
+   [
+    926,
+    0,
+    940,
+    456
+   ],
+   [
+    0,
+    0,
+    1536,
+    24
+   ]
+  ],
+  "C": [
+   [
+    0,
+    0,
+    1536,
+    20
+   ]
+  ],
+  "D": [
+   [
+    0,
+    0,
+    1536,
+    20
+   ]
+  ]
+ },
+ "future": {
+  "_note": "2126년 공통 세월 변화 소품(선택·과학 결과와 무관, Topview GPT Image 2 원화 docs/art_sources/props2126_sheet_gptimage2.png). hides = 2126년에 대신 그리지 않는 옛 원화 · when = 기존 그림 조건(forestLeftKept 등)과 같은 규칙, ground = 바닥 그림",
+  "A": [
+   {
+    "key": "fut2126_solar_lamp",
+    "at": [
+     748,
+     300
+    ],
+    "h": 150,
+    "block": [
+     14,
+     8
+    ],
+    "shadowW": 0.6
+   },
+   {
+    "key": "fut2126_solar_lamp",
+    "at": [
+     748,
+     520
+    ],
+    "h": 150,
+    "block": [
+     14,
+     8
+    ],
+    "shadowW": 0.6
+   },
+   {
+    "key": "fut2126_solar_lamp",
+    "at": [
+     250,
+     764
+    ],
+    "h": 150,
+    "block": [
+     14,
+     8
+    ],
+    "shadowW": 0.6
+   },
+   {
+    "key": "fut2126_solar_lamp",
+    "at": [
+     1150,
+     764
+    ],
+    "h": 150,
+    "block": [
+     14,
+     8
+    ],
+    "shadowW": 0.6
+   },
+   {
+    "key": "fut2126_bike_dock",
+    "at": [
+     1468,
+     472
+    ],
+    "h": 70,
+    "block": [
+     104,
+     20
+    ]
+   },
+   {
+    "key": "fut2126_shuttle_stop",
+    "at": [
+     1250,
+     958
+    ],
+    "h": 150,
+    "block": [
+     220,
+     28
+    ]
+   },
+   {
+    "key": "fut2126_planter_bench",
+    "at": [
+     520,
+     958
+    ],
+    "h": 62,
+    "block": [
+     180,
+     16
+    ]
+   }
+  ],
+  "B": [
+   {
+    "key": "fut2126_market_stall",
+    "at": [
+     760,
+     404
+    ],
+    "h": 232,
+    "block": [
+     200,
+     40
+    ],
+    "hides": [
+     "market_stall_v1_mg",
+     "market_stall_v1_fg",
+     "B_market_stall_v1_projection_v1"
+    ]
+   },
+   {
+    "key": "fut2126_solar_lamp",
+    "at": [
+     450,
+     598
+    ],
+    "h": 150,
+    "block": [
+     14,
+     8
+    ],
+    "shadowW": 0.6
+   },
+   {
+    "key": "fut2126_solar_lamp",
+    "at": [
+     1060,
+     598
+    ],
+    "h": 150,
+    "block": [
+     14,
+     8
+    ],
+    "shadowW": 0.6
+   },
+   {
+    "key": "fut2126_solar_lamp",
+    "at": [
+     1360,
+     598
+    ],
+    "h": 150,
+    "block": [
+     14,
+     8
+    ],
+    "shadowW": 0.6
+   },
+   {
+    "key": "fut2126_bike_dock",
+    "at": [
+     820,
+     800
+    ],
+    "h": 70,
+    "block": [
+     104,
+     20
+    ]
+   },
+   {
+    "key": "fut2126_ev_charger",
+    "at": [
+     600,
+     794
+    ],
+    "h": 85,
+    "block": [
+     40,
+     14
+    ],
+    "shadowW": 0.7
+   },
+   {
+    "key": "fut2126_planter_bench",
+    "at": [
+     1030,
+     796
+    ],
+    "h": 62,
+    "block": [
+     180,
+     16
+    ]
+   },
+   {
+    "key": "fut2126_shuttle_stop",
+    "at": [
+     1300,
+     862
+    ],
+    "h": 150,
+    "block": [
+     220,
+     28
+    ]
+   }
+  ],
+  "C": [
+   {
+    "key": "fut2126_forest_shelter",
+    "at": [
+     400,
+     640
+    ],
+    "h": 120,
+    "block": [
+     130,
+     26
+    ],
+    "when": "forestLeftKept"
+   },
+   {
+    "key": "fut2126_trail_sign",
+    "at": [
+     880,
+     560
+    ],
+    "h": 96,
+    "block": [
+     20,
+     10
+    ],
+    "shadowW": 0.5
+   },
+   {
+    "key": "fut2126_birdhouse",
+    "at": [
+     1180,
+     620
+    ],
+    "h": 96,
+    "block": [
+     16,
+     10
+    ],
+    "shadowW": 0.4,
+    "when": "forestRightKept"
+   },
+   {
+    "key": "fut2126_birdhouse",
+    "at": [
+     250,
+     470
+    ],
+    "h": 96,
+    "block": [
+     16,
+     10
+    ],
+    "shadowW": 0.4,
+    "when": "forestLeftKept"
+   },
+   {
+    "key": "fut2126_ev_car",
+    "at": [
+     170,
+     430
+    ],
+    "h": 64,
+    "block": [
+     78,
+     22
+    ],
+    "when": "forestLeftDeveloped"
+   },
+   {
+    "key": "fut2126_ev_car",
+    "at": [
+     380,
+     600
+    ],
+    "h": 64,
+    "block": [
+     78,
+     22
+    ],
+    "when": "forestLeftDeveloped"
+   },
+   {
+    "key": "fut2126_ev_car",
+    "at": [
+     1080,
+     430
+    ],
+    "h": 64,
+    "block": [
+     78,
+     22
+    ],
+    "when": "forestRightDeveloped"
+   },
+   {
+    "key": "fut2126_ev_car",
+    "at": [
+     1330,
+     600
+    ],
+    "h": 64,
+    "block": [
+     78,
+     22
+    ],
+    "when": "forestRightDeveloped"
+   }
+  ],
+  "D": [
+   {
+    "key": "fut2126_weed_patch",
+    "at": [
+     192,
+     678
+    ],
+    "h": 96,
+    "w": 250,
+    "ground": true,
+    "when": "nurseryNeglect"
+   },
+   {
+    "key": "fut2126_weed_patch",
+    "at": [
+     513,
+     678
+    ],
+    "h": 96,
+    "w": 250,
+    "ground": true,
+    "when": "nurseryNeglect"
+   },
+   {
+    "key": "fut2126_weed_patch",
+    "at": [
+     1026,
+     678
+    ],
+    "h": 96,
+    "w": 250,
+    "ground": true,
+    "when": "nurseryNeglect"
+   },
+   {
+    "key": "fut2126_weed_patch",
+    "at": [
+     1345,
+     678
+    ],
+    "h": 96,
+    "w": 250,
+    "ground": true,
+    "when": "nurseryNeglect"
+   },
+   {
+    "key": "fut2126_weed_patch",
+    "at": [
+     192,
+     832
+    ],
+    "h": 96,
+    "w": 250,
+    "ground": true,
+    "when": "nurseryNeglect"
+   },
+   {
+    "key": "fut2126_weed_patch",
+    "at": [
+     513,
+     832
+    ],
+    "h": 96,
+    "w": 250,
+    "ground": true,
+    "when": "nurseryNeglect"
+   },
+   {
+    "key": "fut2126_rain_barrel",
+    "at": [
+     1090,
+     440
+    ],
+    "h": 64,
+    "block": [
+     46,
+     16
+    ],
+    "when": "nursery2126"
+   },
+   {
+    "key": "fut2126_birdhouse",
+    "at": [
+     230,
+     440
+    ],
+    "h": 96,
+    "block": [
+     16,
+     10
+    ],
+    "shadowW": 0.4
+   }
+  ]
+ },
+ "props": {
+  "B": [
+   {
+    "key": "board",
+    "at": [
+     250,
+     470
+    ],
+    "origin": [
+     0.497,
+     0.969
+    ],
+    "w": 96,
+    "h": 112,
+    "when": "era2026"
+   }
+  ],
+  "D": [
+   {
+    "key": "board",
+    "at": [
+     900,
+     470
+    ],
+    "origin": [
+     0.497,
+     0.969
+    ],
+    "w": 96,
+    "h": 112,
+    "when": "era2026"
+   }
+  ]
+ },
+ "B": {
+  "_note": "물웅덩이·통행 제한은 게임 규칙(배수관 부담 D = 하류 관 최대유량/만관용량 ≥ rules.rain.shallowD → 얕게, ≥ deepD → 깊게). SWMM은 침수 깊이를 계산하지 않는다.",
+  "puddleShallow": [
+   [
+    930,
+    462,
+    1225,
+    592
+   ]
+  ],
+  "puddleDeep": [
+   [
+    918,
+    448,
+    1230,
+    598
+   ],
+   [
+    880,
+    598,
+    1290,
+    745
+   ]
+  ],
+  "delivery": {
+   "start": [
+    330,
+    492
+   ],
+   "goal": [
+    1255,
+    440
+   ],
+   "goalRadius": 44,
+   "timeLimitSec": 10,
+   "_rule": "게임 규칙: 시장길로 곧장 ≈7 s, 얕은 물웅덩이로 느려지면 ≈8.5 s, 깊으면 남쪽 저지대로 돌아가야 해 ≈11 s(제한 10 s = 기존 rules.rain.timeLimitSec)."
+  },
+  "slots": {
+   "permeable": [
+    720,
+    520
+   ],
+   "rainGarden": [
+    1180,
+    520
+   ],
+   "basin": [
+    340,
+    860
+   ]
+  },
+  "obs": {
+   "pave": [
+    600,
+    520
+   ],
+   "drain": [
+    895,
+    540
+   ],
+   "low": [
+    700,
+    870
+   ]
+  },
+  "basinBlock": [
+   70,
+   780,
+   610,
+   996
+  ]
+ },
+ "C": {
+  "deckView": [
+   768,
+   330
+  ],
+  "board2026": [
+   1080,
+   860
+  ],
+  "post2126": [
+   590,
+   470
+  ]
+ },
+ "D": {
+  "relay": [
+   768,
+   440
+  ],
+  "records": [
+   380,
+   490
+  ],
+  "bench": [
+   1270,
+   470
+  ]
+ }
+}

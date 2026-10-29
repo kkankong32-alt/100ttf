@@ -1,0 +1,1012 @@
+{
+ "schema_version": 1,
+ "id": "choice-variants-animation-v1",
+ "created": "2026-10-21",
+ "status": "candidate_not_active",
+ "art_direction": "approved schoolfront-pack-v1 premium illustrated 2.5D",
+ "asset_base": "assets/codex/",
+ "png_count": 24,
+ "body_animation_frames": 192,
+ "animation_clips": 16,
+ "files": [
+  {
+   "id": "tree_dead_v1",
+   "file": "tree_dead_v1.png",
+   "role": "tree",
+   "width": 384,
+   "height": 448,
+   "origin": [
+    0.5,
+    1
+   ],
+   "source": "neglected_objects",
+   "source_rect": [
+    0,
+    0,
+    550,
+    575
+   ],
+   "size": [
+    384,
+    448
+   ],
+   "alpha_zero": 129090,
+   "alpha_opaque": 28400,
+   "sha256": "169fc6321e672d3ab3c9c1664a404f02236bd06f3248974fe49bf8817d273aec",
+   "path": "choice-variants-animation-v1/tree_dead_v1.png",
+   "transparent_background": true,
+   "condition": "c1.streetTrees===1 && c3.treeCare===0",
+   "quality_status": "candidate_verified"
+  },
+  {
+   "id": "tree_dead_mg_v1",
+   "file": "tree_dead_mg_v1.png",
+   "role": "trunk",
+   "width": 384,
+   "height": 448,
+   "origin": [
+    0.5,
+    1
+   ],
+   "source": "tree_dead_v1",
+   "size": [
+    384,
+    448
+   ],
+   "alpha_zero": 156967,
+   "alpha_opaque": 12294,
+   "sha256": "287def397e8b452f3d30132ee38abe748379ce0838ed0aa3e35419b871eb54e8",
+   "path": "choice-variants-animation-v1/tree_dead_mg_v1.png",
+   "transparent_background": true,
+   "condition": "c1.streetTrees===1 && c3.treeCare===0",
+   "quality_status": "candidate_verified"
+  },
+  {
+   "id": "tree_dead_fg_v1",
+   "file": "tree_dead_fg_v1.png",
+   "role": "branches_occluder",
+   "width": 384,
+   "height": 448,
+   "origin": [
+    0.5,
+    1
+   ],
+   "source": "tree_dead_v1",
+   "size": [
+    384,
+    448
+   ],
+   "alpha_zero": 144155,
+   "alpha_opaque": 16106,
+   "sha256": "bfa3ce48b881304a1987a9443144d46b02986aeef3f338f54426a3d9c754070b",
+   "path": "choice-variants-animation-v1/tree_dead_fg_v1.png",
+   "transparent_background": true,
+   "condition": "c1.streetTrees===1 && c3.treeCare===0",
+   "quality_status": "candidate_verified"
+  },
+  {
+   "id": "tree_dead_shadow_v1",
+   "file": "tree_dead_shadow_v1.png",
+   "role": "visual_shadow",
+   "width": 384,
+   "height": 128,
+   "origin": [
+    0.5,
+    1
+   ],
+   "source": "tree_dead_v1",
+   "size": [
+    384,
+    128
+   ],
+   "alpha_zero": 35844,
+   "alpha_opaque": 0,
+   "sha256": "57ac1c3779b4d0b30454e66dd54b2c0ddc3549f5d16916999f42ffe40b1f58ae",
+   "path": "choice-variants-animation-v1/tree_dead_shadow_v1.png",
+   "transparent_background": true,
+   "condition": "c1.streetTrees===1 && c3.treeCare===0",
+   "quality_status": "candidate_verified"
+  },
+  {
+   "id": "tree_stump_v1",
+   "file": "tree_stump_v1.png",
+   "role": "tree_remnant",
+   "width": 160,
+   "height": 128,
+   "origin": [
+    0.5,
+    1
+   ],
+   "source": "neglected_objects",
+   "source_rect": [
+    560,
+    280,
+    1010,
+    580
+   ],
+   "size": [
+    160,
+    128
+   ],
+   "alpha_zero": 13458,
+   "alpha_opaque": 5444,
+   "sha256": "f39d6c03f07dd15f0eb68374e40135d382512a657406c11cbf282e7121b96e4a",
+   "path": "choice-variants-animation-v1/tree_stump_v1.png",
+   "transparent_background": true,
+   "condition": "c1.streetTrees===1 && c3.treeCare===0",
+   "quality_status": "candidate_verified"
+  },
+  {
+   "id": "tree_stump_shadow_v1",
+   "file": "tree_stump_shadow_v1.png",
+   "role": "visual_shadow",
+   "width": 160,
+   "height": 32,
+   "origin": [
+    0.5,
+    1
+   ],
+   "source": "tree_stump_v1",
+   "size": [
+    160,
+    32
+   ],
+   "alpha_zero": 3153,
+   "alpha_opaque": 0,
+   "sha256": "e943b08f7f4dbfadd7b62abc193a911ad68670ebf6a22128577a51df9ad0b32e",
+   "path": "choice-variants-animation-v1/tree_stump_shadow_v1.png",
+   "transparent_background": true,
+   "condition": "c1.streetTrees===1 && c3.treeCare===0",
+   "quality_status": "candidate_verified"
+  },
+  {
+   "id": "planting_empty_v1",
+   "file": "planting_empty_v1.png",
+   "role": "ground_decal",
+   "width": 192,
+   "height": 96,
+   "origin": [
+    0.5,
+    1
+   ],
+   "source": "neglected_objects",
+   "source_rect": [
+    1020,
+    280,
+    1536,
+    580
+   ],
+   "size": [
+    192,
+    96
+   ],
+   "alpha_zero": 7367,
+   "alpha_opaque": 9055,
+   "sha256": "f92649c475b30ca4dfa52fa65fca69c1a232ec0c0643a731ba54c3c562f0d4bb",
+   "path": "choice-variants-animation-v1/planting_empty_v1.png",
+   "transparent_background": true,
+   "condition": "c1.streetTrees===1 && c3.treeCare===0",
+   "quality_status": "candidate_verified"
+  },
+  {
+   "id": "watering_bag_v1",
+   "file": "watering_bag_v1.png",
+   "role": "maintenance_prop",
+   "width": 96,
+   "height": 192,
+   "origin": [
+    0.5,
+    1
+   ],
+   "source": "neglected_objects",
+   "source_rect": [
+    80,
+    580,
+    340,
+    1024
+   ],
+   "size": [
+    96,
+    192
+   ],
+   "alpha_zero": 12011,
+   "alpha_opaque": 5081,
+   "sha256": "d359496e51c5835745d49524fd121fd8d7484c965f570cdb086dbd8694fce162",
+   "path": "choice-variants-animation-v1/watering_bag_v1.png",
+   "transparent_background": true,
+   "condition": "c1.streetTrees===1 && effectiveTreeCare===1",
+   "quality_status": "candidate_verified"
+  },
+  {
+   "id": "watering_bag_shadow_v1",
+   "file": "watering_bag_shadow_v1.png",
+   "role": "visual_shadow",
+   "width": 96,
+   "height": 32,
+   "origin": [
+    0.5,
+    1
+   ],
+   "source": "watering_bag_v1",
+   "size": [
+    96,
+    32
+   ],
+   "alpha_zero": 1944,
+   "alpha_opaque": 0,
+   "sha256": "380dc4960081ad3eb624da9082900da3db988a855492e1ad41ff5b0a465a5cd5",
+   "path": "choice-variants-animation-v1/watering_bag_shadow_v1.png",
+   "transparent_background": true,
+   "condition": "c1.streetTrees===1 && effectiveTreeCare===1",
+   "quality_status": "candidate_verified"
+  },
+  {
+   "id": "rain_garden_neglected_v1",
+   "file": "rain_garden_neglected_v1.png",
+   "role": "facility",
+   "width": 384,
+   "height": 160,
+   "origin": [
+    0.5,
+    1
+   ],
+   "source": "neglected_objects",
+   "source_rect": [
+    380,
+    650,
+    1010,
+    1000
+   ],
+   "size": [
+    384,
+    160
+   ],
+   "alpha_zero": 17787,
+   "alpha_opaque": 40684,
+   "sha256": "cd457961b406aec3e26388ada3bb1e95bd5053ea8bd303861457bbff43a58489",
+   "path": "choice-variants-animation-v1/rain_garden_neglected_v1.png",
+   "transparent_background": true,
+   "condition": "c2.rainGarden===1 && c3.facilityCare===0",
+   "quality_status": "candidate_verified"
+  },
+  {
+   "id": "drain_clogged_v1",
+   "file": "drain_clogged_v1.png",
+   "role": "facility",
+   "width": 128,
+   "height": 80,
+   "origin": [
+    0.5,
+    1
+   ],
+   "source": "neglected_objects",
+   "source_rect": [
+    1020,
+    650,
+    1536,
+    1000
+   ],
+   "size": [
+    128,
+    80
+   ],
+   "alpha_zero": 3749,
+   "alpha_opaque": 5738,
+   "sha256": "be287f9a6c90f8119d017bd4362906a2a32f1d2ae37a1413aa9b2425557e7ae7",
+   "path": "choice-variants-animation-v1/drain_clogged_v1.png",
+   "transparent_background": true,
+   "condition": "c3.facilityCare===0",
+   "quality_status": "candidate_verified"
+  },
+  {
+   "id": "permeable_clogged_v1",
+   "file": "permeable_clogged_v1.png",
+   "role": "terrain",
+   "width": 128,
+   "height": 128,
+   "origin": [
+    0,
+    0
+   ],
+   "source": "permeable_clogged",
+   "size": [
+    128,
+    128
+   ],
+   "alpha_zero": 0,
+   "alpha_opaque": 16384,
+   "sha256": "a50888d294c66c7c10ffe8f220ebdab7cdc9ce52a2676b3afb98aab1a85e06ad",
+   "path": "choice-variants-animation-v1/permeable_clogged_v1.png",
+   "transparent_background": false,
+   "condition": "c2.permeable===1 && c3.facilityCare===0",
+   "quality_status": "candidate_verified"
+  },
+  {
+   "id": "permeable_clogged_repeat_v1",
+   "file": "permeable_clogged_repeat_v1.png",
+   "role": "repeat_material",
+   "width": 256,
+   "height": 256,
+   "origin": [
+    0,
+    0
+   ],
+   "source": "permeable_clogged_v1",
+   "size": [
+    256,
+    256
+   ],
+   "alpha_zero": 0,
+   "alpha_opaque": 65536,
+   "sha256": "9d541d222e36bac03f3eab00f0eae8936ec312c4f4bfe94d407dad7fc9102f59",
+   "repeat_edges_equal": true,
+   "path": "choice-variants-animation-v1/permeable_clogged_repeat_v1.png",
+   "transparent_background": false,
+   "condition": "c2.permeable===1 && c3.facilityCare===0",
+   "quality_status": "candidate_verified"
+  },
+  {
+   "id": "player_idle_sheet_v1",
+   "file": "player_idle_sheet_v1.png",
+   "role": "animation_sheet",
+   "width": 1536,
+   "height": 768,
+   "origin": [
+    0.5,
+    0.9375
+   ],
+   "source": "deterministic_rig",
+   "frameWidth": 128,
+   "frameHeight": 192,
+   "columns": 12,
+   "rows": 4,
+   "clips": {
+    "player_idle_down": {
+     "start": 0,
+     "end": 11,
+     "frameRate": 8,
+     "repeat": -1
+    },
+    "player_idle_left": {
+     "start": 12,
+     "end": 23,
+     "frameRate": 8,
+     "repeat": -1
+    },
+    "player_idle_right": {
+     "start": 24,
+     "end": 35,
+     "frameRate": 8,
+     "repeat": -1
+    },
+    "player_idle_up": {
+     "start": 36,
+     "end": 47,
+     "frameRate": 8,
+     "repeat": -1
+    }
+   },
+   "size": [
+    1536,
+    768
+   ],
+   "alpha_zero": 791420,
+   "alpha_opaque": 296776,
+   "sha256": "23d5911381f951393a6d78ad074e544f87da0dae1174ed7474bd14f08d354128",
+   "path": "choice-variants-animation-v1/player_idle_sheet_v1.png",
+   "transparent_background": true,
+   "condition": "player facing/action",
+   "quality_status": "scene_scale_rigged_candidate",
+   "technique": "fixed directional masters; deterministic cutout rig; not raw generated frame sequence"
+  },
+  {
+   "id": "player_walk_sheet_v1",
+   "file": "player_walk_sheet_v1.png",
+   "role": "animation_sheet",
+   "width": 1536,
+   "height": 768,
+   "origin": [
+    0.5,
+    0.9375
+   ],
+   "source": "deterministic_rig",
+   "frameWidth": 128,
+   "frameHeight": 192,
+   "columns": 12,
+   "rows": 4,
+   "clips": {
+    "player_walk_down": {
+     "start": 0,
+     "end": 11,
+     "frameRate": 15,
+     "repeat": -1
+    },
+    "player_walk_left": {
+     "start": 12,
+     "end": 23,
+     "frameRate": 15,
+     "repeat": -1
+    },
+    "player_walk_right": {
+     "start": 24,
+     "end": 35,
+     "frameRate": 15,
+     "repeat": -1
+    },
+    "player_walk_up": {
+     "start": 36,
+     "end": 47,
+     "frameRate": 15,
+     "repeat": -1
+    }
+   },
+   "size": [
+    1536,
+    768
+   ],
+   "alpha_zero": 789637,
+   "alpha_opaque": 294203,
+   "sha256": "39ddc2f6f4630f05f5dc90d8053f80c5b53ea725dc8b7f9d49d7608296e0c09e",
+   "path": "choice-variants-animation-v1/player_walk_sheet_v1.png",
+   "transparent_background": true,
+   "condition": "player facing/action",
+   "quality_status": "scene_scale_rigged_candidate",
+   "technique": "fixed directional masters; deterministic cutout rig; not raw generated frame sequence"
+  },
+  {
+   "id": "player_ground_shadow_v1",
+   "file": "player_ground_shadow_v1.png",
+   "role": "visual_shadow",
+   "width": 128,
+   "height": 32,
+   "origin": [
+    0.5,
+    0.5
+   ],
+   "source": null,
+   "size": [
+    128,
+    32
+   ],
+   "alpha_zero": 2505,
+   "alpha_opaque": 0,
+   "sha256": "77ad6c64b159fa790c9abcc9694da87c0f10ecd3cdf350cc781bc6e47ab58b39",
+   "path": "choice-variants-animation-v1/player_ground_shadow_v1.png",
+   "transparent_background": true,
+   "condition": "player facing/action",
+   "quality_status": "candidate_verified"
+  },
+  {
+   "id": "romi_idle_sheet_v1",
+   "file": "romi_idle_sheet_v1.png",
+   "role": "animation_sheet",
+   "width": 1536,
+   "height": 512,
+   "origin": [
+    0.5,
+    0.92
+   ],
+   "source": "deterministic_rig",
+   "frameWidth": 128,
+   "frameHeight": 128,
+   "columns": 12,
+   "rows": 4,
+   "clips": {
+    "romi_idle_down": {
+     "start": 0,
+     "end": 11,
+     "frameRate": 8,
+     "repeat": -1
+    },
+    "romi_idle_left": {
+     "start": 12,
+     "end": 23,
+     "frameRate": 8,
+     "repeat": -1
+    },
+    "romi_idle_right": {
+     "start": 24,
+     "end": 35,
+     "frameRate": 8,
+     "repeat": -1
+    },
+    "romi_idle_up": {
+     "start": 36,
+     "end": 47,
+     "frameRate": 8,
+     "repeat": -1
+    }
+   },
+   "size": [
+    1536,
+    512
+   ],
+   "alpha_zero": 498259,
+   "alpha_opaque": 231634,
+   "sha256": "4e6a6c6ca0a2afbc4e02b0269106db037b1d0d17c500a4cdf085906e58b525f5",
+   "path": "choice-variants-animation-v1/romi_idle_sheet_v1.png",
+   "transparent_background": true,
+   "condition": "ROMI facing/action",
+   "quality_status": "scene_scale_rigged_candidate",
+   "technique": "fixed directional masters; deterministic cutout rig; not raw generated frame sequence"
+  },
+  {
+   "id": "romi_move_sheet_v1",
+   "file": "romi_move_sheet_v1.png",
+   "role": "animation_sheet",
+   "width": 1536,
+   "height": 512,
+   "origin": [
+    0.5,
+    0.92
+   ],
+   "source": "deterministic_rig",
+   "frameWidth": 128,
+   "frameHeight": 128,
+   "columns": 12,
+   "rows": 4,
+   "clips": {
+    "romi_move_down": {
+     "start": 0,
+     "end": 11,
+     "frameRate": 15,
+     "repeat": -1
+    },
+    "romi_move_left": {
+     "start": 12,
+     "end": 23,
+     "frameRate": 15,
+     "repeat": -1
+    },
+    "romi_move_right": {
+     "start": 24,
+     "end": 35,
+     "frameRate": 15,
+     "repeat": -1
+    },
+    "romi_move_up": {
+     "start": 36,
+     "end": 47,
+     "frameRate": 15,
+     "repeat": -1
+    }
+   },
+   "size": [
+    1536,
+    512
+   ],
+   "alpha_zero": 498262,
+   "alpha_opaque": 231446,
+   "sha256": "23c9286e079e1c4f9536d762806b2e5300942ddd0dbae428969b29f04f3c1738",
+   "path": "choice-variants-animation-v1/romi_move_sheet_v1.png",
+   "transparent_background": true,
+   "condition": "ROMI facing/action",
+   "quality_status": "scene_scale_rigged_candidate",
+   "technique": "fixed directional masters; deterministic cutout rig; not raw generated frame sequence"
+  },
+  {
+   "id": "romi_ground_shadow_v1",
+   "file": "romi_ground_shadow_v1.png",
+   "role": "visual_shadow",
+   "width": 128,
+   "height": 32,
+   "origin": [
+    0.5,
+    0.5
+   ],
+   "source": null,
+   "size": [
+    128,
+    32
+   ],
+   "alpha_zero": 2505,
+   "alpha_opaque": 0,
+   "sha256": "77ad6c64b159fa790c9abcc9694da87c0f10ecd3cdf350cc781bc6e47ab58b39",
+   "path": "choice-variants-animation-v1/romi_ground_shadow_v1.png",
+   "transparent_background": true,
+   "condition": "ROMI facing/action",
+   "quality_status": "candidate_verified"
+  },
+  {
+   "id": "basin_dry_v1",
+   "file": "basin_dry_v1.png",
+   "role": "detention_facility",
+   "width": 640,
+   "height": 320,
+   "origin": [
+    0.5,
+    1
+   ],
+   "source": "basin_states",
+   "water_depth_prediction": false,
+   "size": [
+    640,
+    320
+   ],
+   "alpha_zero": 36554,
+   "alpha_opaque": 160885,
+   "sha256": "3e1b98b29da3d553f8ef0604ecd64b64873b8a36a23cfdd74628256b4029a79b",
+   "path": "choice-variants-animation-v1/basin_dry_v1.png",
+   "transparent_background": true,
+   "condition": "c2.basin===1 && effectiveFacilityCare===1 && !rainIllustration",
+   "quality_status": "candidate_verified"
+  },
+  {
+   "id": "basin_wet_illustrative_v1",
+   "file": "basin_wet_illustrative_v1.png",
+   "role": "detention_facility",
+   "width": 640,
+   "height": 320,
+   "origin": [
+    0.5,
+    1
+   ],
+   "source": "basin_states",
+   "water_depth_prediction": false,
+   "size": [
+    640,
+    320
+   ],
+   "alpha_zero": 36566,
+   "alpha_opaque": 160883,
+   "sha256": "3be854ae1acb24fe82fde7dc03079af5de76e6a5faad2169bf10e399cd4c498f",
+   "path": "choice-variants-animation-v1/basin_wet_illustrative_v1.png",
+   "transparent_background": true,
+   "condition": "c2.basin===1 && effectiveFacilityCare===1 && rainIllustration",
+   "quality_status": "candidate_verified"
+  },
+  {
+   "id": "basin_sediment_v1",
+   "file": "basin_sediment_v1.png",
+   "role": "detention_facility",
+   "width": 640,
+   "height": 320,
+   "origin": [
+    0.5,
+    1
+   ],
+   "source": "basin_states",
+   "water_depth_prediction": false,
+   "size": [
+    640,
+    320
+   ],
+   "alpha_zero": 36581,
+   "alpha_opaque": 160752,
+   "sha256": "5936b74ed01497a5025ea936a391a5b609d6854b6cd8cbb4602282a1fc18e968",
+   "path": "choice-variants-animation-v1/basin_sediment_v1.png",
+   "transparent_background": true,
+   "condition": "c2.basin===1 && c3.facilityCare===0",
+   "quality_status": "candidate_verified"
+  },
+  {
+   "id": "permeable_clogged_patch_v1",
+   "file": "permeable_clogged_patch_v1.png",
+   "role": "ground_change_overlay",
+   "width": 1536,
+   "height": 1024,
+   "origin": [
+    0,
+    0
+   ],
+   "source": "permeable_clogged_repeat_v1",
+   "size": [
+    1536,
+    1024
+   ],
+   "alpha_zero": 1441792,
+   "alpha_opaque": 131072,
+   "sha256": "b709ef869992dec0f7958f0d343d63fd7be97c957b7b6e1def49ba2a4be0207b",
+   "path": "choice-variants-animation-v1/permeable_clogged_patch_v1.png",
+   "transparent_background": true,
+   "condition": "c2.permeable===1 && c3.facilityCare===0",
+   "quality_status": "candidate_verified"
+  },
+  {
+   "id": "basin_absent_parking_v1",
+   "file": "basin_absent_parking_v1.png",
+   "role": "ground_state",
+   "width": 640,
+   "height": 320,
+   "origin": [
+    0,
+    0
+   ],
+   "source": "reused_ground_road_v1_repeat",
+   "size": [
+    640,
+    320
+   ],
+   "alpha_zero": 0,
+   "alpha_opaque": 195809,
+   "sha256": "1264fbfda9c40cb11231c2ebe9b0abd1cd4b6b8948a9dcd94307f76e3eff3b60",
+   "path": "choice-variants-animation-v1/basin_absent_parking_v1.png",
+   "transparent_background": false,
+   "condition": "c2.basin===0",
+   "quality_status": "candidate_verified"
+  }
+ ],
+ "reuse": [
+  {
+   "path": "schoolfront-pack-v1/century_clock_v1.png",
+   "width": 160,
+   "height": 256,
+   "sha256": "864f99b5e67695b776bc9b802a72ace63a9f502c3a61a2887e3c7d7df629575a",
+   "action": "reuse_unchanged"
+  },
+  {
+   "path": "schoolfront-pack-v1/ground_road_v1_repeat.png",
+   "width": 256,
+   "height": 256,
+   "sha256": "f315ff45b9fc8b9eccdd5d240fd670327089c5cadaccbbe7f9e4f0270f6f858d",
+   "action": "reuse_unchanged"
+  },
+  {
+   "path": "schoolfront-pack-v1/house_2126_v1_fg.png",
+   "width": 320,
+   "height": 448,
+   "sha256": "4fbeb3ab7d06997d38aece6976add7ae6571567b6d80c2ce7298c48947a21efd",
+   "action": "reuse_unchanged"
+  },
+  {
+   "path": "schoolfront-pack-v1/house_2126_v1_mg.png",
+   "width": 320,
+   "height": 448,
+   "sha256": "d1db53697ef7c2219e7b5c592b90aafe2ba8b2140b14a3a6ca0ca6825c9cd50a",
+   "action": "reuse_unchanged"
+  },
+  {
+   "path": "schoolfront-pack-v1/house_2126_v1_shadow.png",
+   "width": 320,
+   "height": 149,
+   "sha256": "a8e7de4d225968170096b98f8207c67afe6b7f24b89d4f3640299edb2db8b48b",
+   "action": "reuse_unchanged"
+  },
+  {
+   "path": "schoolfront-pack-v1/npc_grandmother_candidate_v1.png",
+   "width": 128,
+   "height": 192,
+   "sha256": "9f9e27a06278c6d58166aae58ca2420af4d0fce3f262618b70cef45a63ebf47b",
+   "action": "reuse_unchanged"
+  },
+  {
+   "path": "schoolfront-pack-v1/npc_pharmacist_candidate_v1.png",
+   "width": 128,
+   "height": 192,
+   "sha256": "cfe42c4db63039becba42c5b16ffd74e5e5c5e829ec198284873b07c07239dca",
+   "action": "reuse_unchanged"
+  },
+  {
+   "path": "schoolfront-pack-v1/planning_board_v1.png",
+   "width": 192,
+   "height": 224,
+   "sha256": "61d6931141d57c712df4434954bee3b070a2714e0c0621855c0dbf4d3550a2fa",
+   "action": "reuse_unchanged"
+  },
+  {
+   "path": "schoolfront-pack-v1/rain_garden_module_v1.png",
+   "width": 384,
+   "height": 160,
+   "sha256": "e71a0a8ae895c77af96c353010ee13fbce6d3b17c5fab0e328d5a9efca752db2",
+   "action": "reuse_unchanged"
+  },
+  {
+   "path": "schoolfront-pack-v1/school_facade_2126_v1_fg.png",
+   "width": 768,
+   "height": 448,
+   "sha256": "b66fdc243f195b9cf6f59dd35b5dd5ff3f97adba5441cf4d75cabfc9f1798ab4",
+   "action": "reuse_unchanged"
+  },
+  {
+   "path": "schoolfront-pack-v1/school_facade_2126_v1_mg.png",
+   "width": 768,
+   "height": 448,
+   "sha256": "f884f35c48c8c241140caf6fc60d44c3112b63a76994652755f23c80d4d81ed6",
+   "action": "reuse_unchanged"
+  },
+  {
+   "path": "schoolfront-pack-v1/school_facade_2126_v1_shadow.png",
+   "width": 768,
+   "height": 149,
+   "sha256": "a8c234ff0c602317ae9473b9a9883f9aaa36d5b5f0c47649fe80e95c916b0623",
+   "action": "reuse_unchanged"
+  },
+  {
+   "path": "schoolfront-pack-v1/school_gate_module_v1.png",
+   "width": 512,
+   "height": 288,
+   "sha256": "c6bab218e91727282542c6f23373afd39ebbdd226ea8fedbe97dcbc354ad7f8a",
+   "action": "reuse_unchanged"
+  },
+  {
+   "path": "schoolfront-pack-v1/schoolfront_2126_bg_v1.png",
+   "width": 1536,
+   "height": 1024,
+   "sha256": "35a798a2d140483521b8db8da98db5d12421b22f1f669b3b57e2fac8b8dbecc6",
+   "action": "reuse_unchanged"
+  },
+  {
+   "path": "schoolfront-pack-v1/schoolfront_2126_ground_changes_v1.png",
+   "width": 1536,
+   "height": 1024,
+   "sha256": "71a7eb7ee14a652662aa8697fdb01b40fbe4bcf4112304512f5bff43844a9f34",
+   "action": "reuse_unchanged"
+  },
+  {
+   "path": "schoolfront-pack-v1/shade_pergola_v1_fg.png",
+   "width": 384,
+   "height": 288,
+   "sha256": "3a8ed4f1637e23e4551a7892fbe089441ba03f7cec6c9570e22a4611416695bf",
+   "action": "reuse_unchanged"
+  },
+  {
+   "path": "schoolfront-pack-v1/shade_pergola_v1_mg.png",
+   "width": 384,
+   "height": 288,
+   "sha256": "87d42a68ef86cc540aa22f4d62e199038c51ca39eeb1570e2e7c7a32950df0c9",
+   "action": "reuse_unchanged"
+  },
+  {
+   "path": "schoolfront-pack-v1/shop_2126_v1_fg.png",
+   "width": 320,
+   "height": 448,
+   "sha256": "4a56b74cfbd7fdef4f748542676f623591497a9759c4e2e94711d5d6551a41a9",
+   "action": "reuse_unchanged"
+  },
+  {
+   "path": "schoolfront-pack-v1/shop_2126_v1_mg.png",
+   "width": 320,
+   "height": 448,
+   "sha256": "07f60647907ed80581fe5d309f0260ff8ac8737514a2a8e895d67fcace58eeba",
+   "action": "reuse_unchanged"
+  },
+  {
+   "path": "schoolfront-pack-v1/shop_2126_v1_shadow.png",
+   "width": 320,
+   "height": 149,
+   "sha256": "430c05dc214c0fceb369183a2d28745ecfe51e6ea2fefe62317d97730d2886bf",
+   "action": "reuse_unchanged"
+  },
+  {
+   "path": "schoolfront-pack-v1/storm_drain_v1.png",
+   "width": 128,
+   "height": 80,
+   "sha256": "146fa845f1f09bbdfaba34f867432d582a6fc76251b7f226ba45ed572e4e22df",
+   "action": "reuse_unchanged"
+  },
+  {
+   "path": "schoolfront-pack-v1/tree_replacement_staked_v1_fg.png",
+   "width": 160,
+   "height": 224,
+   "sha256": "0c8a921b708294fe8aa302f15af3252cdc71bcd5e61f2024e65513f8d2b0db0d",
+   "action": "reuse_unchanged"
+  },
+  {
+   "path": "schoolfront-pack-v1/tree_replacement_staked_v1_mg.png",
+   "width": 160,
+   "height": 224,
+   "sha256": "052158e3689e64ef92a15ab6d17d0663ed795f828fb3cb1001578f3ba4f3ff9f",
+   "action": "reuse_unchanged"
+  },
+  {
+   "path": "schoolfront-pack-v1/tree_replacement_staked_v1_shadow.png",
+   "width": 160,
+   "height": 74,
+   "sha256": "cf6c826fe14e64a19ecc1dbf37b7be82a0376374e069dd1cfbafad67d00c5733",
+   "action": "reuse_unchanged"
+  },
+  {
+   "path": "schoolfront-pack-v1/tree_zelkova_mature_v1_fg.png",
+   "width": 384,
+   "height": 448,
+   "sha256": "ede3539cd0db42181496936bc01cf4317f25555914b04e0519b2e78c0678349e",
+   "action": "reuse_unchanged"
+  },
+  {
+   "path": "schoolfront-pack-v1/tree_zelkova_mature_v1_mg.png",
+   "width": 384,
+   "height": 448,
+   "sha256": "f6849ef1e6f70ac42b038b33d99b70691f96a8509e53bec1358faf4cb7049662",
+   "action": "reuse_unchanged"
+  },
+  {
+   "path": "schoolfront-pack-v1/tree_zelkova_mature_v1_shadow.png",
+   "width": 384,
+   "height": 149,
+   "sha256": "f253dca08907bb9a86a86dffaef393e10b4f8ca875bd1e916b56e4681967392f",
+   "action": "reuse_unchanged"
+  },
+  {
+   "path": "schoolfront-pack-v1/tree_zelkova_mid_v1_fg.png",
+   "width": 256,
+   "height": 320,
+   "sha256": "09e250ec56bb0bbf84bd067a8a29067514da4e7edf77dc00a47557fbc6bfd769",
+   "action": "reuse_unchanged"
+  },
+  {
+   "path": "schoolfront-pack-v1/tree_zelkova_mid_v1_mg.png",
+   "width": 256,
+   "height": 320,
+   "sha256": "fb34767f30d3c90e6dfca53b0a0b7c14a0fba0a823e5b090bbead107efaf48ed",
+   "action": "reuse_unchanged"
+  },
+  {
+   "path": "schoolfront-pack-v1/tree_zelkova_mid_v1_shadow.png",
+   "width": 256,
+   "height": 106,
+   "sha256": "5ac3747513a9d9c039764008d92c245ac4f478fc81bbc7638c8d9a35151112be",
+   "action": "reuse_unchanged"
+  }
+ ],
+ "canvas": [
+  1536,
+  1024
+ ],
+ "scene_spec": "choice-variants-animation-v1/scene_variants.json",
+ "adapter": "choice-variants-animation-v1/choice_adapter.mjs",
+ "animations": "choice-variants-animation-v1/animations.json",
+ "default_care_when_c3_absent": 1,
+ "covered_state_keys": [
+  "c1.streetTrees",
+  "c3.treeCare",
+  "c2.permeable",
+  "c2.rainGarden",
+  "c2.basin",
+  "c3.facilityCare"
+ ],
+ "out_of_scope_state_keys": [
+  "c1.forest",
+  "c1.schoolyard",
+  "c1.coolPave",
+  "c3.forestLaw"
+ ],
+ "basin": {
+  "world_rect": [
+   2,
+   34,
+   20,
+   6
+  ],
+  "schoolfront_rect": null,
+  "preview": "separate lowland detail panel",
+  "water": "illustrative only; no predicted flood depth"
+ },
+ "replacements": {
+  "player_sprite_candidate_v1.png": [
+   "player_idle_sheet_v1.png",
+   "player_walk_sheet_v1.png"
+  ],
+  "romi_sprite_candidate_v1.png": [
+   "romi_idle_sheet_v1.png",
+   "romi_move_sheet_v1.png"
+  ],
+  "rain_garden_module_v1.png": "conditional rain_garden_neglected_v1.png",
+  "storm_drain_v1.png": "conditional drain_clogged_v1.png",
+  "schoolfront_2126_ground_changes_v1.png": "conditional permeable_clogged_patch_v1.png"
+ },
+ "preserved": [
+  "existing schoolfront PNGs",
+  "game logic",
+  "science model",
+  "active asset loader",
+  "active index.json"
+ ],
+ "qa": {
+  "technical": true,
+  "browser": true,
+  "state_mapping": true
+ },
+ "rejected_sources": [
+  {
+   "file": "originals/player_walk_generated.png",
+   "reason": "inconsistent foot alternation; not registered as animation"
+  }
+ ],
+ "limitations": [
+  "Rigged walk at approved scene scale; not close-up hand-drawn animation",
+  "No diagonal/run/action clips",
+  "World collision mapping and movement speed conversion are integration work",
+  "Basin is outside the approved schoolfront crop",
+  "Canvas preview tested; no mobile/WebGL performance claim"
+ ]
+}

@@ -1,0 +1,63 @@
+{
+ "version": 1,
+ "id": "style-redesign-v1",
+ "date": "2026-10-21",
+ "status": "art_direction_candidate",
+ "generation_tool": "Codex built-in image_gen",
+ "runtime_registered": false,
+ "runtime_tested": false,
+ "supersedes_for_this_candidate": "Kenney 16x16 art constraints only; existing game and science remain unchanged",
+ "project_art_root": "art_spec/generated/style-redesign-v1",
+ "style": "premium high-resolution illustrated 2D top-down / shallow quarter view",
+ "camera_lock": "same buildings, roads, gate, board, clock and player placement; visual match, not pixel-identical layers",
+ "scenario_intent": "FKT1Y0C0-P1R1B0-TC1FC1FL0",
+ "scene_size": [
+  1672,
+  941
+ ],
+ "transparent_background": false,
+ "flattened": true,
+ "runtime_ready": false,
+ "breakdown": "art_spec/generated/style-redesign-v1/STYLE_BREAKDOWN.md",
+ "prompts": "art_spec/generated/style-redesign-v1/prompts.json",
+ "qa": "art_spec/generated/style-redesign-v1/qa/validation.json",
+ "files": [
+  {
+   "bytes": 3107713,
+   "sha256": "2794E6F968D9684C9FD3615D17751545ECF17BD2B104C0FEB3A90E959F1CEEDB",
+   "file": "art_spec/generated/style-redesign-v1/scene_2026_style_v1.png",
+   "role": "style_reference_scene"
+  },
+  {
+   "bytes": 3154052,
+   "sha256": "500904B5733FF33EC0CF768849D9CD25062FC5D9F94463E557DEDA2BCCECBD26",
+   "file": "art_spec/generated/style-redesign-v1/scene_2126_style_v1.png",
+   "role": "style_reference_scene"
+  },
+  {
+   "bytes": 9614933,
+   "sha256": "826F48504B108BE01AD84396B06F532A8155093BA54C5C029A19EC48C5786F92",
+   "file": "art_spec/generated/style-redesign-v1/scene_compare_v1.png",
+   "role": "qa_comparison"
+  }
+ ],
+ "production_proposal": {
+  "camera_and_renderer_changes_implemented": false,
+  "existing_science_tile_m": 2,
+  "existing_logical_tile_units": 16,
+  "source_tile_px": 128,
+  "alpha_edges": "antialiased",
+  "atlas_initial_px": 2048,
+  "world_grid": [
+   60,
+   40
+  ]
+ },
+ "next_priorities": [
+  "RD-G01 ground set",
+  "RD-B01 school gate and facade",
+  "RD-V01 zelkova stages",
+  "RD-C01 player and ROMI",
+  "RD-W01 rain garden"
+ ]
+}

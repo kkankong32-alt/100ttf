@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>100 투 더 퓨처</title>
+<link rel="icon" href="data:,">
+<!-- Google tag (gtag.js): 쓰로인훈쌤 + 킹수학. 내 컴퓨터에서 열 때·자동 시험에서는 보내지 않음 -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  if (/\.[a-z]{2,}$/i.test(location.hostname) && !navigator.webdriver) {   // 실제 웹 주소(…github.io 등)에서만
+    const s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=G-DC7N6KQBG0'; document.head.appendChild(s);
+    gtag('js', new Date());
+    gtag('config', 'G-DC7N6KQBG0');
+    gtag('config', 'G-5YW0T2C109'); /* 킹수학 애널리틱스 */
+  }
+</script>
+<style>
+  html,body{margin:0;height:100%;background:#10181a;color:#f4f1e6;font:15px/1.4 "Malgun Gothic",system-ui,sans-serif;overflow:hidden}
+  #game{position:fixed;inset:0}
+  #game canvas{image-rendering:auto}
+  .hud{position:fixed;left:12px;top:12px;display:flex;gap:10px;align-items:center;pointer-events:none}
+  #year{font:700 26px/1 "Consolas",monospace;background:#22343a;border:3px solid #f4f1e6;border-radius:6px;padding:6px 10px;box-shadow:0 3px 0 #000}
+  body[data-year="2126"] #year{background:#5a2e6b;color:#ffe9a8;border-color:#ffe9a8}
+  #goal{background:rgba(16,24,26,.78);padding:7px 12px;border-radius:8px;max-width:52vw;font-size:16px;font-weight:700}
+  #goal:empty{display:none}
+  /* 안내: 화면 밖 목표 화살표 · 목표 위 표식 · 가까이 가면 뜨는 버튼 */
+  #nav{position:fixed;width:46px;height:46px;margin:-23px 0 0 -23px;pointer-events:none;z-index:3;filter:drop-shadow(0 2px 2px #000)}
+  #nav[hidden],#marker[hidden],#prompt[hidden],#legend[hidden],#discover[hidden],#btn-info[hidden]{display:none}
+  #nav img{width:46px;height:46px;display:block}
+  #nav span{position:absolute;left:50%;top:48px;transform:translateX(-50%);white-space:nowrap;background:rgba(16,24,26,.85);padding:2px 8px;border-radius:6px;font-size:13px;font-weight:700;color:#ffe9a8}
+  #marker{position:fixed;transform:translate(-50%,-100%);pointer-events:none;z-index:2;text-align:center;animation:bob 1s ease-in-out infinite}
+  #marker b{display:block;background:#ffe9a8;color:#3a2350;font-size:13px;padding:2px 8px;border-radius:10px;border:2px solid #3a2350;white-space:nowrap}
+  #marker img{display:block;width:24px;height:20px;margin:-2px auto 0}
+  @keyframes bob{50%{margin-top:-7px}}
+  #prompt{position:fixed;transform:translate(-50%,-100%);z-index:4;font:700 15px "Malgun Gothic";padding:0 4px;border:12px solid transparent;border-image:url(assets/codex/npc-environment-v3-v1/button_9slice_v1.png) 18 fill / 12px stretch;background:none;color:#fff;text-shadow:0 1px 2px #000;cursor:pointer;white-space:nowrap;display:flex;align-items:center;gap:6px;margin-top:-6px}
+  #prompt .ic{width:22px;height:22px;margin:-4px 0}
+  #prompt kbd{background:#fff;color:#2d6a5a;border-radius:4px;padding:0 6px;margin-right:6px;font:700 14px Consolas,monospace}
+  #legend{position:fixed;left:12px;bottom:12px;background:rgba(16,24,26,.88);padding:8px 12px;border-radius:8px;font-size:14px;line-height:1.6}
+  #legend i{display:inline-block;width:14px;height:14px;border-radius:3px;vertical-align:-2px;margin-right:6px}
+  #legend small{display:block;color:#bbb;font-size:12px}
+  #btn-info{position:fixed;left:12px;top:104px;font:700 13px "Malgun Gothic";padding:5px 10px;border-radius:8px;border:2px solid #cfd8d6;background:#22343a;color:#fff;cursor:pointer}
+  #discover{position:fixed;left:50%;top:64px;transform:translateX(-50%);background:rgba(255,233,168,.96);color:#3a2350;border:3px solid #3a2350;border-radius:12px;padding:10px 16px;text-align:center;z-index:4;box-shadow:0 4px 0 #000;max-width:90vw}
+  #discover p{margin:0 0 6px;font-weight:700;font-size:16px}
+  #discover button{font:700 14px "Malgun Gothic";padding:6px 12px;border-radius:8px;border:2px solid #3a2350;background:#6b3fa0;color:#fff;cursor:pointer;margin:0 4px}
+  #compare{max-width:min(980px,96vw);padding:10px}
+  #compare .stage{position:relative;width:min(940px,92vw);aspect-ratio:16/9;overflow:hidden;border-radius:6px;background:#000;touch-action:none}
+  #compare .stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;user-select:none;-webkit-user-drag:none}
+  #compare .stage .lab{position:absolute;top:8px;background:rgba(0,0,0,.7);color:#fff;padding:3px 10px;border-radius:6px;font-weight:700;font-size:14px}
+  #compare .stage .handle{position:absolute;top:0;bottom:0;width:4px;margin-left:-2px;background:#ffe9a8;box-shadow:0 0 0 2px #3a2350;pointer-events:none}
+  #compare input[type=range]{width:100%}
+  #compare .views button{font:700 13px "Malgun Gothic";margin:4px 4px 0 0;padding:4px 10px;border-radius:6px;border:2px solid #3a2350;background:#fff;cursor:pointer}
+  #compare .views button.on{background:#3a2350;color:#fff}
+  #warp{position:fixed;inset:0;pointer-events:none;z-index:6;opacity:0;display:grid;place-items:center}
+  #warp.on{animation:warp 1s ease-in-out}
+  #warp b{font:700 64px Consolas,monospace;color:#ffe9a8;text-shadow:0 0 18px #b48cff}
+  @keyframes warp{0%{opacity:0;transform:scale(1.2)}35%{opacity:1;transform:scale(1)}70%{opacity:1}100%{opacity:0}}
+  .pulse{animation:pulse 1.1s ease-in-out infinite}
+  @keyframes pulse{50%{transform:scale(1.08);box-shadow:0 0 0 6px rgba(255,233,168,.55),0 4px 0 #2b1640}}
+  body.cine #btn-act,body.cine #btn-time,body.cine #btn-lens,body.cine #btn-weather,body.cine #btn-final,body.cine #btn-info,body.cine #goal,body.cine #nav,body.cine #marker,body.cine #prompt{visibility:hidden}
+  #btn-time{position:fixed;right:14px;bottom:14px;font:700 17px "Malgun Gothic";padding:12px 16px;border-radius:10px;border:3px solid #ffe9a8;background:#6b3fa0;color:#fff;box-shadow:0 4px 0 #2b1640;cursor:pointer}
+  #btn-act{position:fixed;right:14px;bottom:78px;font:700 15px "Malgun Gothic";padding:10px 14px;border-radius:10px;border:3px solid #f4f1e6;background:#2d6a5a;color:#fff;cursor:pointer}
+  #hint{position:fixed;left:50%;bottom:56px;transform:translateX(-50%);background:rgba(0,0,0,.6);padding:4px 10px;border-radius:6px;min-height:1em}
+  #hint:empty{display:none}
+  #sci{position:fixed;left:12px;bottom:12px;background:rgba(16,24,26,.82);padding:6px 10px;border-radius:6px;font-size:13px;max-width:56vw}
+  #sci:empty{display:none}
+  .prov{color:#ffcf6b}
+  #toast{position:fixed;left:50%;top:104px;transform:translateX(-50%);background:#f4f1e6;color:#1d2b2a;padding:8px 14px;border-radius:8px;opacity:0;transition:.3s;max-width:80vw}
+  #toast.show{opacity:1}
+  dialog{background:#f4f1e6;color:#1d2b2a;border:4px solid #1d2b2a;border-radius:10px;box-shadow:0 6px 0 #000;min-width:min(420px,90vw)}
+  dialog h2{margin:0 0 8px;font-size:18px}
+  .opt{display:flex;gap:8px;align-items:center;padding:8px;border-bottom:1px solid #ccc}
+  .opt small{margin-left:auto;color:#666}
+  .tokens b{font-size:20px;color:#6b3fa0}
+  dialog h3{margin:12px 0 4px;font-size:15px} dialog h3 small{font-weight:400;color:#666}
+  #btn-lens{position:fixed;right:14px;bottom:134px;font:700 14px "Malgun Gothic";padding:8px 12px;border-radius:10px;border:3px solid #f4f1e6;background:#9a5a2a;color:#fff;cursor:pointer}
+  #btn-lens.off{background:#555}
+  #gauge{position:fixed;left:50%;top:60px;transform:translateX(-50%);display:flex;gap:8px;align-items:center;background:rgba(16,24,26,.85);padding:6px 12px;border-radius:8px}
+  #gauge[hidden],#timelapse[hidden]{display:none}
+  #btn-weather{position:fixed;right:14px;bottom:182px;font:700 14px "Malgun Gothic";padding:8px 12px;border-radius:10px;border:3px solid #f4f1e6;background:#2e5a7a;color:#fff;cursor:pointer}
+  #timer{position:fixed;left:50%;top:60px;transform:translateX(-50%);background:rgba(16,24,26,.85);padding:6px 14px;border-radius:8px;font-weight:700}
+  #timer[hidden]{display:none}
+  #btn-final{position:fixed;left:12px;top:62px;font:700 14px "Malgun Gothic";padding:6px 10px;border-radius:8px;border:3px solid #ffe9a8;background:#5a2e6b;color:#ffe9a8;cursor:pointer}
+  #final table{border-collapse:collapse;width:100%} #final td,#final th{border-bottom:1px solid #ccc;padding:4px 6px;text-align:left} #final ul{margin:4px 0 8px;padding-left:20px} #final .note{font-size:12.5px;color:#555}
+  #final{max-width:min(640px,94vw)}
+  #talk{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);width:min(720px,92vw);background:#f4f1e6;color:#1d2b2a;border:4px solid #1d2b2a;border-radius:10px;padding:10px 14px;box-shadow:0 5px 0 #000;cursor:pointer;z-index:5}
+  #talk[hidden]{display:none} #talk p{margin:4px 0;font-size:16px} #talk small{color:#777;float:right} #talk b{color:#6b3fa0}
+  #btn-set{position:fixed;right:14px;top:12px;font-size:20px;padding:4px 10px;border-radius:8px;border:3px solid #f4f1e6;background:#22343a;color:#fff;cursor:pointer}
+  #timelapse{position:fixed;left:50%;bottom:12px;transform:translateX(-50%);background:rgba(43,22,64,.86);color:#ffe9a8;padding:6px 14px;border-radius:10px;display:grid;grid-template-columns:auto 1fr auto;column-gap:12px;row-gap:2px;align-items:center;cursor:pointer;width:min(720px,94vw)}
+  #timelapse > b{display:none}
+  #timelapse #tl-year{grid-column:1;grid-row:1/3}
+  #timelapse #tl-cap{grid-column:2;grid-row:1} #timelapse #tl-trees{grid-column:2;grid-row:2}
+  #timelapse .bar{grid-column:1/4;grid-row:3} #timelapse small{grid-column:1/4;grid-row:4;text-align:center}
+  #tl-skip{grid-column:3;grid-row:1/3}
+  #timelapse #tl-year{font:700 34px Consolas,monospace}
+  #timelapse .bar{height:8px;background:#222;border-radius:4px;overflow:hidden} #tl-bar{display:block;height:100%;width:0;background:#ffe9a8;transition:width .5s}
+  #timelapse small{color:#ddd;font-size:12px}
+  #timelapse #tl-cap{font-size:16px;font-weight:700;color:#fff}
+  #timelapse #tl-trees{font-size:13.5px;color:#cfe9c0;min-height:1.2em}
+  #tl-skip{justify-self:end;font:700 13px "Malgun Gothic";padding:4px 12px;border-radius:8px;border:2px solid #ffe9a8;background:#6b3fa0;color:#fff;cursor:pointer}
+  #gauge .bar{width:200px;height:12px;background:#333;border-radius:6px;overflow:hidden}
+  #gauge-fill{display:block;height:100%;width:0;background:#e8823a;transition:width .2s}
+  #gauge-fill[data-kind=shade]{background:#5fa8c8}
+  #gauge em{font-style:normal;font-size:13px;min-width:110px}
+  #result table{border-collapse:collapse;width:100%;margin:8px 0} #result td,#result th{border-bottom:1px solid #ccc;padding:4px 6px;text-align:left}
+  #result .big{font-size:18px;font-weight:700} #result .note{font-size:12.5px;color:#555}
+  /* 두 미래 비교 카드(세션 10): 큰 숫자·막대·한 줄 뜻 */
+  #result{width:min(760px,94vw);max-width:94vw} #result h2{font-size:24px;margin:0 0 8px}
+  #result .cmp-head,#result .cmp-row{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:10px;align-items:center}
+  #result .cmp-head b{font-size:15px;text-align:center;padding:4px;border-radius:8px} #result .cmp-head .me{background:#e3f4ea;color:#11704a} #result .cmp-head .base{background:#ece9e2;color:#555}
+  #result .cmp-row{background:#fff;border:2px solid #d8d0bd;border-radius:12px;padding:10px 12px;margin:8px 0}
+  #result .cmp-row .lab{font:700 18px "Malgun Gothic"} #result .cmp-row .lab small{display:block;font-weight:400;font-size:13.5px;color:#666;margin-top:2px}
+  #result .val{font:800 28px "Malgun Gothic";text-align:center} #result .val small{font-size:15px} #result .val.me{color:#11704a} #result .val.base{color:#777}
+  #result .bar{display:block;height:8px;border-radius:4px;background:#eee;margin:4px auto 0;width:90%;overflow:hidden} #result .bar i{display:block;height:100%;background:currentColor}
+  #result .say{grid-column:1/-1;font:700 15px "Malgun Gothic";padding:4px 8px;border-radius:8px;background:#f2f0ea} #result .say.good{background:#e3f4ea;color:#11704a} #result .say.bad{background:#fdecea;color:#a3341f}
+  #result .tdiff{font-size:15px;margin:8px 2px} #result .tdiff small{color:#777}
+  #result details.more{margin-top:8px;font-size:13px;color:#555} #result details.more summary{cursor:pointer;font-weight:700} #result details.more p{font-size:13px}
+
+  /* 시작 화면 */
+  /* 시작 화면(세션 10): 생성한 키아트 + 움직이는 로고 */
+  #title{position:fixed;inset:0;z-index:20;overflow:hidden;background:#0b0a18}
+  #title .bg{position:absolute;inset:0;background:#0b0a18 url(assets/runtime/title_keyart.jpg) center/cover;animation:kb 26s ease-in-out infinite alternate;transform-origin:50% 0}
+  @keyframes kb{from{transform:scale(1)}to{transform:scale(1.06)}}
+  #title .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,6,24,0) 60%,rgba(8,6,24,.8) 100%)}
+  #title .logo{position:absolute;left:50%;top:5%;transform:translateX(-50%);text-align:center;width:min(980px,94vw);animation:drop .9s cubic-bezier(.2,1.4,.4,1) both}
+  @keyframes drop{from{opacity:0;transform:translate(-50%,-40px) scale(.9)}}
+  #title .tag{display:inline-block;font:800 clamp(13px,1.6vw,18px) "Malgun Gothic";letter-spacing:4px;color:#0b0a18;background:linear-gradient(90deg,#ffe9a8,#7ff3e0);padding:4px 16px;border-radius:999px;box-shadow:0 0 18px #7ff3e099}
+  #title h1{margin:6px 0 0;font:900 clamp(46px,9vw,118px)/1 "Malgun Gothic";letter-spacing:2px;color:#fff;
+    background:linear-gradient(180deg,#fffbe6 0%,#ffe08a 45%,#ff9f43 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+    filter:drop-shadow(0 4px 0 #3a1a5e) drop-shadow(0 0 22px #b48cffcc);animation:glow 2.6s ease-in-out infinite}
+  #title h1 em{font-style:normal;font-size:1.25em;letter-spacing:-2px}
+  @keyframes glow{50%{filter:drop-shadow(0 4px 0 #3a1a5e) drop-shadow(0 0 38px #7ff3e0)}}
+  #title .years{display:flex;justify-content:center;align-items:center;gap:14px;margin-top:10px;font:900 clamp(18px,2.6vw,30px) Consolas,monospace;color:#fff;text-shadow:0 2px 0 #000}
+  #title .years span{padding:2px 14px;border-radius:10px;border:3px solid #fff8;background:#22343acc} #title .years span.f{background:#5a2e6bcc;color:#ffe9a8;border-color:#ffe9a8}
+  #title .years i{font-style:normal;animation:spin 3s linear infinite;display:inline-block} @keyframes spin{to{transform:rotate(360deg)}}
+  #title .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  #title .sub{margin:0 0 12px;font:700 clamp(15px,2vw,22px) "Malgun Gothic";color:#fff;text-shadow:0 2px 6px #000}
+  #title .bottom{position:absolute;left:50%;bottom:5%;transform:translateX(-50%);text-align:center;width:min(720px,94vw)}
+  /* 시작 버튼 두 개(이어하기·처음부터): 크고 분명하게, 저장이 없으면 이어하기는 흐리게(누를 수 없음) */
+  #title .go{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+  #title .go button{display:flex;flex-direction:column;align-items:center;gap:2px;min-width:min(300px,42vw);font:900 clamp(22px,2.8vw,32px) "Malgun Gothic";padding:14px 30px;border-radius:22px;border:4px solid #ffe9a8;color:#fff;cursor:pointer;box-shadow:0 6px 0 #2b1640,0 0 26px #b48cff}
+  #title .go button small{font:700 clamp(13px,1.4vw,16px) "Malgun Gothic";opacity:.9}
+  #title #btn-continue{background:linear-gradient(180deg,#22a06b,#11704a)} #title #btn-start{background:linear-gradient(180deg,#8b5cf6,#5b21b6)}
+  #title .go button.main{animation:beat 1.6s ease-in-out infinite} #title .go button:hover:not(:disabled){filter:brightness(1.15)}
+  #title .go #btn-continue:disabled{background:#4b4b5a;border-color:#8a8a99;color:#c8c8d2;box-shadow:0 6px 0 #222;cursor:not-allowed}
+  #title .row button[hidden]{display:none} @keyframes beat{50%{box-shadow:0 6px 0 #2b1640,0 0 56px 8px #7ff3e0;filter:brightness(1.12)}}
+  #title .row{display:flex;gap:10px;justify-content:center;margin-top:14px}
+  #title .row button{font:700 15px "Malgun Gothic";padding:8px 18px;border-radius:999px;border:2px solid #fff8;background:#0b0a18aa;color:#fff;cursor:pointer}
+  #title .hint{margin:12px 0 0;color:#eee;font-size:14px;text-shadow:0 1px 4px #000}
+  #title .spark{position:absolute;width:6px;height:6px;border-radius:50%;background:#7ff3e0;box-shadow:0 0 12px 4px #7ff3e088;opacity:0;animation:rise 6s linear infinite}
+  @keyframes rise{10%{opacity:.9}to{opacity:0;transform:translateY(-60vh) scale(.4)}}
+  /* 제작자 표기(다른 바이브교실 콘텐츠와 같은 모양) */
+  #title .creator-credit{display:inline-flex;flex-direction:column;align-items:center;gap:3px;margin-top:12px;padding:8px 18px;border:1px solid rgba(255,255,255,.22);border-radius:10px;background:rgba(5,10,20,.6);backdrop-filter:blur(6px);color:#f7fbff;box-shadow:0 6px 20px rgba(0,0,0,.22)}
+  #title .creator-name{font-size:clamp(14px,1.3vw,18px);line-height:1.35;font-weight:700;word-break:keep-all} #title .creator-name strong{font-weight:900}
+  #title .creator-purpose{font-size:clamp(12px,1.05vw,15px);line-height:1.4;color:rgba(235,244,255,.82);word-break:keep-all}
+  @media (max-height:600px){#title .creator-credit{margin-top:6px;padding:4px 12px;gap:1px} #title .creator-name{font-size:13px} #title .creator-purpose{font-size:11px} #title .hint{display:none}}
+  @media (prefers-reduced-motion:reduce){#title .bg,#title h1,#title .go button,#title .spark,#title .years i{animation:none}}
+  /* 장 안내 */
+  #chapter{position:fixed;left:50%;top:22%;transform:translateX(-50%);z-index:8;pointer-events:none;text-align:center;background:rgba(43,22,64,.9);color:#fff;border:3px solid #ffe9a8;border-radius:16px;padding:14px 30px;box-shadow:0 6px 0 #000;animation:chap 3.6s ease forwards;max-width:90vw}
+  #chapter small{display:block;color:#ffe9a8;font-weight:700;font-size:15px;letter-spacing:2px}
+  #chapter b{display:block;font-size:28px;margin:2px 0 4px}
+  #chapter span{font-size:17px;color:#f3eefc}
+  body.banner #prompt,body.banner #marker,body.banner #nav,body.banner .bark{visibility:hidden}   /* 장 제목이 뜬 동안 다른 글자와 겹치지 않게 */
+  @keyframes chap{0%{opacity:0;transform:translate(-50%,-14px)}12%{opacity:1;transform:translate(-50%,0)}82%{opacity:1}100%{opacity:0}}
+  /* 약속 기록장 */
+  #btn-journal{position:fixed;left:12px;top:146px;font:700 14px "Malgun Gothic";padding:6px 10px;border-radius:8px;border:3px solid #ffe9a8;background:#3c6b3f;color:#fff;cursor:pointer}
+  #journal{max-width:min(760px,94vw)} #journal table{border-collapse:collapse;width:100%;table-layout:fixed}
+  #final .big{font-size:17px;font-weight:700;background:#fff4c9;border-radius:8px;padding:8px 10px;margin:4px 0 8px} #journal td,#journal th{border-bottom:1px solid #ccc;padding:6px;text-align:left;vertical-align:top;font-size:14px}
+  #journal td.i{font-size:22px;width:28px} #journal .todo{color:#999}
+  /* 교사용 */
+  /* 설정 */
+  #settings .snd{display:grid;grid-template-columns:auto 1fr;gap:6px 10px;align-items:center;margin:8px 0}
+  #planner.ch3 .body h3:last-of-type{background:#ffe9a8;padding:4px 8px;border-radius:6px;animation:pulse 1.2s ease-in-out 3}
+  body.cine #btn-journal{visibility:hidden}
+  /* RPG: 가방(인벤토리)·엽서 */
+  #inv{position:fixed;left:12px;bottom:12px;display:flex;gap:6px;align-items:center;background:rgba(16,24,26,.72);padding:5px 7px;border-radius:12px;max-width:60vw;flex-wrap:wrap}
+  #inv[hidden],#btn-album[hidden],#pc-new[hidden]{display:none}
+  #inv .slot{position:relative;width:42px;height:42px;border-radius:9px;border:2px solid #cfd8d6;background:#2a3a3e;font-size:22px;cursor:pointer;padding:0}
+  #inv .slot.clue{border-color:#ffe9a8;background:#3a3150}
+  #inv .slot small{position:absolute;right:2px;bottom:0;font:700 11px Consolas,monospace;color:#fff}
+  #inv .slot.new{animation:pop .9s ease}
+  @keyframes pop{30%{transform:scale(1.35);box-shadow:0 0 0 6px rgba(255,233,168,.6)}}
+  #inv .empty{color:#bbb;font-size:12px;padding:0 4px}
+  #btn-album{position:fixed;left:12px;top:188px;font:700 14px "Malgun Gothic";padding:6px 10px;border-radius:8px;border:3px solid #ffe9a8;background:#7a4a1f;color:#fff;cursor:pointer}
+  #album{max-width:min(900px,96vw)} #album .body{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}
+  #album .card{background:#fff;border-radius:8px;padding:6px;box-shadow:0 2px 0 #0003} #album .card b{display:block;margin:4px 0 2px} #album .card p{margin:0;font-size:12.5px;color:#444}
+  #album .pic{aspect-ratio:16/9;border-radius:6px;background:#ddd center/cover;display:grid;place-items:center;font:700 34px Consolas;color:#999}
+  #album .locked{opacity:.7} #album .note{grid-column:1/-1;font-size:12px;color:#555}
+  #pc-new{position:fixed;left:50%;top:18%;transform:translateX(-50%);z-index:9;background:#fff8e6;color:#2b1d10;border:4px solid #7a4a1f;border-radius:12px;padding:10px;width:min(360px,86vw);text-align:center;box-shadow:0 6px 0 #000;animation:chap 4.2s ease forwards;pointer-events:none}
+  #pc-new .pic{aspect-ratio:16/9;border-radius:6px;background:#ccc center/cover;margin-bottom:6px} #pc-new small{color:#7a4a1f;font-weight:700} #pc-new p{margin:4px 0 0;font-size:13px}
+  body.cine #inv,body.cine #btn-album,body.cine #btn-notebook,body.cine #btn-romi,body.cine #barks{visibility:hidden}
+  /* RPG v3: 선택지·말풍선·추리 노트 */
+  #talk.choosing small{display:none} #talk.choosing{cursor:default}
+  #talk-choices{display:flex;flex-direction:column;gap:5px;margin-top:6px} #talk-choices:empty{display:none}
+  #talk-choices button{text-align:left;font:700 15px "Malgun Gothic";padding:7px 10px;border-radius:8px;border:2px solid #b9b2a0;background:#fffdf5;color:#1d2b2a;cursor:pointer}
+  #talk-choices button.sel,#talk-choices button:hover{border-color:#6b3fa0;background:#efe6fb}
+  #talk-choices button.bye{font-weight:400;color:#555}
+  #talk-choices kbd{display:inline-block;min-width:18px;margin-right:8px;padding:0 4px;border-radius:4px;background:#1d2b2a;color:#fff;font:700 12px Consolas,monospace;text-align:center}
+  #barks{position:fixed;inset:0;pointer-events:none;z-index:3}
+  .bark{position:fixed;transform:translate(-50%,-100%);background:#fffdf5;color:#1d2b2a;border:2px solid #1d2b2a;border-radius:12px;padding:3px 9px;font:700 13px "Malgun Gothic";white-space:nowrap;box-shadow:0 2px 0 #0004;animation:barkIn .25s ease}
+  .bark::after{content:"";position:absolute;left:50%;bottom:-7px;margin-left:-6px;border:6px solid transparent;border-top-color:#1d2b2a;border-bottom:0}
+  .bark[hidden]{display:none} @keyframes barkIn{from{opacity:0;transform:translate(-50%,-80%)}}
+  #btn-notebook,#btn-romi{position:fixed;left:12px;font:700 14px "Malgun Gothic";padding:6px 10px;border-radius:8px;border:3px solid #ffe9a8;color:#fff;cursor:pointer}
+  #btn-notebook{top:226px;background:#3a3150} #btn-romi{top:264px;background:#1f5a6a}
+  #btn-notebook[hidden],#btn-romi[hidden]{display:none} #btn-notebook.new{animation:pop .9s ease 2}
+  /* Codex fullgame-art-v1 UI 재질: 노트·기록 종이, 가방 칸 */
+  /* 교과서 연결 카드·나의 실천(세션 10) */
+  #link{width:min(720px,94vw);background:#fffdf5;border:4px solid #2f5d8a;border-radius:16px;padding:18px 22px} #link h2{margin:0 0 10px;font-size:23px;color:#2f5d8a}
+  #link .lrow{display:grid;grid-template-columns:170px 1fr;gap:4px 12px;background:#fff;border:2px solid #d8e3ee;border-radius:12px;padding:10px 12px;margin:8px 0}
+  #link .lrow b{font-size:18px;grid-row:span 2} #link .lrow p{margin:0;font-size:17px;line-height:1.55} #link .lrow small{color:#6b7c8f;font-size:13px}
+  #link .ok{font:800 18px "Malgun Gothic";padding:10px 22px;border-radius:12px;border:0;background:#2f5d8a;color:#fff;cursor:pointer;margin-top:6px}
+  .pledge{background:#eef6fb;border:2px solid #b8d4e8;border-radius:12px;padding:10px 14px;margin:12px 0} .pledge h3{margin:0 0 6px;color:#2f5d8a} .pledge p{margin:4px 0;font-size:15px} .pledge small{color:#6b7c8f}
+  .pledge .pl{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0} .pledge .pl button{font:700 15px "Malgun Gothic";padding:7px 12px;border-radius:999px;border:2px solid #2f5d8a;background:#fff;color:#2f5d8a;cursor:pointer} .pledge .pl button.on{background:#2f5d8a;color:#fff}
+  .pledge .mine{font-weight:800;color:#11704a}
+  #notebook,#chrono,#relay{background:#f4efe1 url(assets/codex/fullgame-art-v1/notebook_v1.png) center/cover;padding:26px 42px 22px}   /* 책 테두리·가운데 제본 위로 글자가 넘어가지 않게 */
+  #inv .slot{background:#2a3a3e url(assets/codex/fullgame-art-v1/ui_inventory_slot_v1.png) center/cover}
+  #notebook{max-width:min(860px,96vw)} #notebook .q{font:700 17px "Malgun Gothic";background:#fff3c4;padding:8px 10px;border-radius:8px;margin:0 0 6px}
+  #notebook h3{margin:12px 0 6px} #notebook h3 small{font-weight:400;color:#666}
+  #notebook .facts{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:8px}
+  #notebook .fact{background:#fff;border-radius:8px;padding:6px 8px;box-shadow:0 2px 0 #0002} #notebook .fact p{margin:3px 0;font-size:13.5px} #notebook .fact small{color:#7a4a1f}
+  #notebook .fact img.clue{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:6px;margin-bottom:4px}
+  #notebook .empty{color:#666} #notebook .hyps{display:flex;flex-direction:column;gap:5px}
+  #notebook .hyp{text-align:left;font:15px "Malgun Gothic";padding:7px 10px;border-radius:8px;border:2px solid #b9b2a0;background:#fffdf5;cursor:pointer}
+  #notebook .hyp.mine{border-color:#2f8a4a;background:#e5f6e9;font-weight:700} #notebook .hyp.out{text-decoration:line-through;color:#888}
+  #notebook .verdict{min-height:22px;margin:8px 0;font-size:14.5px;color:#1f3f5a} #notebook .fut{margin:0;padding-left:18px;font-size:13.5px}
+  /* 3장: 타임뷰(기록 정렬)·약속 릴레이, 엔딩 세 축 */
+  #chrono,#relay{width:min(940px,96vw);max-width:96vw} #chrono .q,#relay .q{font:700 16px "Malgun Gothic";background:#fff3c4;padding:7px 10px;border-radius:8px}
+  #chrono .tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px} #chrono .tab{padding:5px 10px;border-radius:8px;border:2px solid #b9b2a0;background:#fffdf5;cursor:pointer;font:700 13px "Malgun Gothic"} #chrono .tab.on{border-color:#6b3fa0;background:#efe6fb}
+  #chrono .recs{display:grid;grid-template-columns:repeat(4,1fr);gap:8px} #chrono .rec{position:relative;aspect-ratio:512/336;border-radius:8px;border:3px solid #7a4a1f;background:#ccc center/cover;cursor:pointer;color:#1d2b2a;text-align:left;padding:0;overflow:hidden}
+  #chrono .rec span{position:absolute;left:0;right:0;bottom:0;background:#fffdf5e8;font:13px "Malgun Gothic";padding:4px 6px} #chrono .rec b{position:absolute;left:6px;top:4px;background:#1d2b2a;color:#fff;padding:1px 6px;border-radius:6px;font:700 12px Consolas,monospace}
+  #chrono .rec i{position:absolute;right:6px;top:4px;background:#6b3fa0;color:#fff;border-radius:50%;width:24px;height:24px;display:grid;place-items:center;font:700 13px Consolas;font-style:normal} #chrono .rec.placed{border-color:#2f8a4a}
+  #chrono .verdict,#relay .verdict{min-height:22px;margin:8px 0;font-size:14.5px;color:#1f3f5a} #chrono .note{font-size:14px;color:#3d3a33}
+  #relay .proms{display:grid;grid-template-columns:repeat(3,1fr);gap:8px} #relay .prom{background:#fff;border-radius:8px;padding:8px;box-shadow:0 2px 0 #0002} #relay .prom.on{background:#e5f6e9}
+  #relay .prom p{font-size:13px;margin:4px 0} #relay .prom button,#relay .opts button{font:700 14px "Malgun Gothic";padding:6px 10px;border-radius:8px;border:2px solid #6b3fa0;background:#fffdf5;cursor:pointer} #relay .prom button:disabled{opacity:.45;cursor:default}
+  #relay .ok{color:#2f8a4a;font-weight:700;display:block;margin-bottom:4px} #relay .chain{margin-top:10px;background:#f6f1e3;border-radius:8px;padding:8px}
+  #relay .links{display:flex;flex-wrap:wrap;align-items:center;gap:4px;margin:6px 0} #relay .link{padding:4px 8px;border-radius:6px;background:#ddd;font-size:13px} #relay .link.done{background:#c9ecd2} #relay .link.now{background:#ffe9a8;font-weight:700} #relay .links i{font-style:normal;color:#7a4a1f}
+  #relay .opts{display:flex;flex-direction:column;gap:5px}
+  #final .axes{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:6px 0} #final .axis{background:#fff;border-radius:8px;padding:8px;box-shadow:0 2px 0 #0002} #final .axis .v{display:block;font:700 18px "Malgun Gothic";color:#2f6b3a;margin:4px 0}
+  #final .axis small{color:#777} #final .axis p{font-size:13px;margin:4px 0 0} #final .pcs{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px} #final figure{margin:0} #final figure img{width:100%;border-radius:6px} #final figcaption{font-size:12px}
+  #album .pic{position:relative} #album .snap{position:absolute;right:4px;bottom:4px;width:34%;border:2px solid #fff;border-radius:4px;box-shadow:0 1px 3px #0006}
+  @media (max-width:700px){#chrono .recs{grid-template-columns:repeat(2,1fr)} #relay .proms,#final .axes{grid-template-columns:1fr}}
+  /* 엔딩 에필로그(100년 뒤에서 온 편지·엔딩 이름·만든 사람) */
+  #epilogue{position:fixed;inset:0;z-index:45;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;padding:16px;cursor:pointer;
+    background:linear-gradient(180deg,rgba(6,8,20,.88) 0 12%,rgba(6,8,20,.35) 30%,rgba(6,8,20,.35) 70%,rgba(6,8,20,.88) 88%);color:#fff}
+  #epilogue[hidden]{display:none} body.epi>*:not(#game):not(#epilogue):not(script){visibility:hidden!important}
+  #epilogue .ep-page{max-width:min(760px,94vw);text-align:center;opacity:0;transform:translateY(12px)} #epilogue .ep-page.in{animation:epIn 1.1s ease forwards}
+  @keyframes epIn{to{opacity:1;transform:none}}
+  #epilogue .ep-place{font:900 clamp(26px,4.2vw,46px) "Malgun Gothic";letter-spacing:2px;margin:0 0 12px;text-shadow:0 3px 12px #000}
+  #epilogue .ep-line{font:700 clamp(18px,2.4vw,26px)/1.5 "Malgun Gothic";text-shadow:0 2px 8px #000;margin:0}
+  #epilogue .ep-letter{background:#fffaf0 repeating-linear-gradient(180deg,transparent 0 33px,#e9dcc3 33px 34px);border:3px solid #d9b98a;color:#2b1d10;text-align:left;border-radius:14px;padding:clamp(18px,3vw,32px) clamp(22px,4vw,48px);box-shadow:0 12px 40px #000a;max-height:72vh;overflow:auto}
+  #epilogue .ep-letter h3{font:900 clamp(22px,2.8vw,30px) "Malgun Gothic";margin:0 0 10px;color:#6b3fa0} #epilogue .ep-letter p{font:clamp(16px,2vw,20px)/1.7 "Malgun Gothic";margin:6px 0}
+  #epilogue .ep-letter .sign{text-align:right;font-weight:800;color:#7a4a1f;margin-top:12px}
+  #epilogue .ep-end{background:rgba(20,12,40,.82);border:3px solid #ffe9a8;border-radius:20px;padding:22px clamp(18px,4vw,40px);box-shadow:0 0 40px #b48cff88}
+  #epilogue .ep-end small{display:block;color:#ffe9a8;font:800 16px "Malgun Gothic";letter-spacing:3px} #epilogue .ep-end b{display:block;font:900 clamp(30px,5vw,52px) "Malgun Gothic";margin:8px 0;color:#fffbe6;text-shadow:0 0 22px #7ff3e0}
+  #epilogue .ep-end p{font:700 clamp(16px,2vw,20px)/1.6 "Malgun Gothic";margin:8px 0} #epilogue .ep-now{color:#7ff3e0}
+  #epilogue .ep-found{display:flex;gap:8px;justify-content:center;align-items:center;flex-wrap:wrap;margin:10px 0} #epilogue .ep-found span{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font:900 22px "Malgun Gothic";background:#ffffff1a;border:2px dashed #fff6;color:#fff8}
+  #epilogue .ep-found span.on{background:#ffe9a8;border:2px solid #fff;color:#000} #epilogue .ep-found em{font-style:normal;font-weight:800;color:#ffe9a8;margin-left:6px}
+  #epilogue .ep-credit b{display:block;font:900 clamp(32px,5vw,56px) "Malgun Gothic";color:#ffe08a;text-shadow:0 4px 0 #3a1a5e,0 0 26px #b48cff;margin-bottom:12px} #epilogue .ep-credit p{font:700 clamp(16px,2vw,21px)/1.6 "Malgun Gothic";margin:6px 0;text-shadow:0 2px 6px #000} #epilogue .ep-credit .sm{font-size:14px;font-weight:400;color:#ddd}
+  #epilogue .ep-bar{display:flex;gap:10px} #epilogue .ep-bar button{font:800 18px "Malgun Gothic";padding:10px 22px;border-radius:999px;border:3px solid #ffe9a8;background:#6b3fa0;color:#fff;cursor:pointer} #epilogue .ep-bar .ep-skip{background:#0b0a18aa;border-color:#fff6;font-size:15px}
+  #final .ending-sub{font-size:17px;background:#efe6fb;border-radius:10px;padding:8px 12px;margin:0 0 8px} #final .ending-sub small{display:block;color:#6b3fa0;margin-top:2px}
+  #final .letter-mini{background:#fffaf0;border:2px dashed #d9b98a;border-radius:10px;padding:8px 14px;margin:0 0 8px} #final .letter-mini b{color:#7a4a1f} #final .letter-mini p{margin:3px 0;font-size:15px}
+  #finish{position:fixed;inset:0;z-index:46;display:grid;place-items:center;background:rgba(6,8,20,.82);padding:16px} #finish[hidden]{display:none}
+  #finish .fin-box{max-width:min(620px,94vw);text-align:center;background:#1c1033;border:3px solid #ffe9a8;border-radius:20px;padding:24px 26px;color:#fff;box-shadow:0 0 40px #b48cff88}
+  #finish b{display:block;font:900 clamp(24px,3.6vw,34px) "Malgun Gothic";color:#ffe08a;margin-bottom:10px} #finish p{font:700 clamp(15px,2vw,19px)/1.6 "Malgun Gothic";margin:8px 0} #finish p b{display:inline;font-size:inherit;color:#7ff3e0}
+  #finish .sm{font-size:13.5px;font-weight:400;color:#ccc} #finish .fin-go{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:14px}
+  #finish .fin-go button{font:800 18px "Malgun Gothic";padding:10px 20px;border-radius:999px;border:3px solid #ffe9a8;background:#6b3fa0;color:#fff;cursor:pointer} #finish #fin-stay{background:#0b0a18;border-color:#fff6}
+  #final .again .quit{background:#11704a;border-color:#0b3d28}
+  #itempic{max-width:min(720px,94vw);background:#fffdf5} #itempic img{display:block;width:100%;border-radius:10px;box-shadow:0 4px 14px #0004;margin:6px 0 10px} #itempic p{font-size:17px}
+  /* 엔딩 */
+  #final .chap{list-style:none;padding:0} #final .chap li{padding:4px 0;border-bottom:1px dashed #ccc}
+  .how{background:#fff3c4;border-radius:8px;padding:8px 12px;font:15px/1.5 "Malgun Gothic";color:#2b1640} #album .how{grid-column:1/-1}
+  #final .again{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+  #final .again button{font:700 15px "Malgun Gothic";padding:8px 14px;border-radius:10px;border:3px solid #3a2350;background:#6b3fa0;color:#fff;cursor:pointer}
+  /* 초등학생용 큰 글씨·하는 법(세션 10): 게임 그림은 창에 맞춰 커지므로 글자도 같이 키움 */
+  #goal{font-size:21px;max-width:62vw;padding:9px 14px;border:2px solid #ffe9a8}
+  #talk{width:min(860px,94vw);padding:12px 18px} #talk p{font-size:21px;line-height:1.55} #talk b{font-size:18px} #talk small{font-size:14px}
+  #talk-choices button{font-size:19px;padding:10px 12px} #talk-choices kbd{font-size:15px;min-width:24px}
+  #prompt{font-size:18px} #prompt kbd{font-size:16px}
+  #btn-final,#btn-info,#btn-journal,#btn-album,#btn-notebook,#btn-romi{font-size:17px;padding:8px 12px;left:12px}
+  #btn-final{top:70px} #btn-info{top:118px} #btn-album{top:166px} #btn-notebook{top:214px} #btn-romi{top:262px} #btn-map{top:310px} #btn-journal{top:358px}
+  /* 전체 지도(M): 게임 화면 위 두 번째 카메라 + 표시 */
+  body.mapopen>*:not(#game):not(#mapdlg):not(script){visibility:hidden!important}
+  #btn-map{position:fixed;left:12px;font:700 17px "Malgun Gothic";padding:8px 12px;border-radius:8px;border:3px solid #ffe9a8;background:#2f5d8a;color:#fff;cursor:pointer} #btn-map[hidden]{display:none}
+  body.cine #btn-map{visibility:hidden}
+  #mapdlg{position:fixed;inset:0;width:100vw;height:100vh;max-width:none;max-height:none;margin:0;padding:0;border:0;background:transparent;z-index:40;cursor:pointer}
+  #mapdlg .bar{position:absolute;left:0;right:0;top:0;display:flex;align-items:center;gap:14px;padding:8px 14px;background:#0b0a18e6;color:#fff;font:700 18px "Malgun Gothic"}
+  #mapdlg .bar #map-goal{flex:1;font-size:16px;color:#ffe9a8;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  #mapdlg .bar button{font:700 16px "Malgun Gothic";padding:6px 14px;border-radius:8px;border:2px solid #fff8;background:#3a3150;color:#fff;cursor:pointer}
+  #map-mini{display:grid;grid-template-columns:repeat(3,62px);grid-template-rows:repeat(2,34px);gap:3px}
+  #map-mini div{font:700 11px/1.15 "Malgun Gothic";text-align:center;padding:2px;border-radius:5px;background:#ffffff22;color:#ddd}
+  #map-mini .here{background:#2f8a5a;color:#fff} #map-mini .want{background:#c2410c;color:#fff;animation:pulse 1.2s ease-in-out infinite}
+  #map-marks .mk{position:fixed;transform:translate(-50%,-100%);pointer-events:none;white-space:nowrap}
+  #map-marks .mk span{display:inline-block;font:700 14px "Malgun Gothic";padding:3px 8px;border-radius:8px;background:#fffbe6;color:#2b1640;border:2px solid #3a2350;box-shadow:0 2px 0 #0006}
+  #map-marks .mk::after{content:"";display:block;width:10px;height:10px;margin:2px auto 0;border-radius:50%;background:#3a2350;border:2px solid #fff}
+  #map-marks .place span{background:#ffe0d6;font-size:15px} #map-marks .portal span{background:#d6ecff} #map-marks .npc span{font-size:12px;padding:1px 6px;background:#ffffffd9}
+  #map-marks .me span{background:#2f8a5a;color:#fff;border-color:#fff;font-size:16px} #map-marks .me::after{background:#2f8a5a}
+  #map-marks .goal span{background:#c2410c;color:#fff;border-color:#fff3c4;font-size:16px;animation:pulse 1.2s ease-in-out infinite} #map-marks .goal::after{background:#ffd34d;width:16px;height:16px}
+  #btn-romi{background:#c2410c;border-color:#fff3c4} #btn-romi.pulse{animation:pulse 1.2s ease-in-out infinite}
+  #btn-help{position:fixed;right:68px;top:12px;font:800 20px "Malgun Gothic";padding:4px 12px;border-radius:8px;border:3px solid #f4f1e6;background:#2d6a5a;color:#fff;cursor:pointer}
+  .bark{font-size:16px;padding:4px 11px} #toast{font-size:19px;padding:10px 16px} #btn-time{font-size:20px} #btn-lens{font-size:16px}
+  dialog{font-size:16px} #notebook .fact p{font-size:16px} #notebook .hyp{font-size:18px} #notebook .q,#chrono .q,#relay .q{font-size:19px}
+  #chrono .rec span{font-size:15px} #relay .prom p{font-size:15px} #relay .prom button,#relay .opts button{font-size:17px} #album .card p{font-size:15px}
+  #steps{position:fixed;right:12px;top:62px;width:min(330px,34vw);background:rgba(16,24,26,.82);border:2px solid #ffe9a8;border-radius:10px;padding:8px 10px;font-size:15.5px;line-height:1.45;z-index:2}
+  #steps .st.mission{font-weight:800;font-size:16px;color:#ffe9a8;margin-top:2px} #steps .st.sub{font-size:13.5px;line-height:1.6;opacity:.95;padding-left:10px}
+  #steps[hidden]{display:none} #steps{cursor:pointer;max-height:70vh;overflow:auto} #steps b{display:block;color:#ffe9a8;font-size:16px;margin-bottom:4px} #steps b small{float:right;font-weight:400;color:#cfd8d6;font-size:13px} #steps .st{color:#cfd8d6;padding:2px 0} #steps .st.done{color:#8fd19e;text-decoration:line-through;opacity:.8} #steps .st.now{color:#fff;font-weight:700;background:#6b3fa055;border-radius:6px;padding:3px 6px}
+  body.cine #steps{visibility:hidden}
+  @media (max-width:1100px){#goal{font-size:18px;max-width:56vw} #steps{top:80px;width:min(300px,38vw);font-size:14px} #steps b{font-size:14.5px}}
+  @media (max-height:640px){#talk p{font-size:18px} #talk-choices button{font-size:16px;padding:7px 10px} #steps{max-height:40vh}}
+  #help{max-width:min(760px,94vw);max-height:94vh;overflow:auto;background:#fffdf5;color:#1d2b2a} #help h2{font-size:26px;margin:4px 0 10px}
+  #help .story{font-size:19px;background:#fff3c4;border-radius:10px;padding:10px 14px;margin:0 0 12px;line-height:1.6}
+  #help ol{margin:0;padding-left:0;list-style:none;display:grid;gap:8px} #help li{display:grid;grid-template-columns:64px 1fr;align-items:center;gap:10px;font-size:18px;background:#fff;border-radius:10px;padding:8px 10px;box-shadow:0 2px 0 #0002}
+  #help li b{font-size:26px;text-align:center} #help kbd{background:#1d2b2a;color:#fff;border-radius:5px;padding:1px 7px;font:700 15px Consolas,monospace}
+  #help form button{font:800 20px "Malgun Gothic";padding:10px 26px;border-radius:12px;border:3px solid #2b1640;background:#6b3fa0;color:#fff;margin-top:12px;cursor:pointer}
+  /* 메뉴 시인성(세션 11): 왼쪽 메뉴를 같은 크기의 또렷한 버튼으로, 글자 그림자·테두리·누름 그림자 */
+  #btn-final,#btn-info,#btn-journal,#btn-album,#btn-notebook,#btn-romi,#btn-map{min-width:150px;text-align:left;font:800 17px/1.2 "Malgun Gothic";padding:8px 14px;border-radius:12px;border:3px solid #fff3c4;color:#fff;text-shadow:0 1px 2px #000;box-shadow:0 4px 0 rgba(0,0,0,.55),0 0 0 2px rgba(0,0,0,.35);transition:transform .1s,filter .1s}
+  #btn-final:hover,#btn-info:hover,#btn-journal:hover,#btn-album:hover,#btn-notebook:hover,#btn-romi:hover,#btn-map:hover{filter:brightness(1.15);transform:translateX(3px)}
+  #btn-final{background:#7a3f9e} #btn-info{background:#2f5d8a} #btn-album{background:#9a5a22} #btn-notebook{background:#4b3d7a} #btn-romi{background:#c2410c} #btn-map{background:#1f6f8b} #btn-journal{background:#3c6b3f}
+  #btn-final{top:66px} #btn-info{top:112px} #btn-album{top:158px} #btn-notebook{top:204px} #btn-romi{top:250px} #btn-map{top:296px} #btn-journal{top:342px}
+  #goal{background:rgba(20,14,40,.9);border:3px solid #ffe9a8;box-shadow:0 4px 0 rgba(0,0,0,.5);text-shadow:0 1px 2px #000;max-width:calc(100vw - min(330px,34vw) - 150px)}
+  #btn-help,#btn-set{box-shadow:0 3px 0 rgba(0,0,0,.55);min-width:44px;min-height:40px}
+  #btn-time{box-shadow:0 5px 0 #2b1640,0 0 18px rgba(180,140,255,.6)}
+  #steps{border-width:3px;box-shadow:0 4px 0 rgba(0,0,0,.45)}
+  dialog h2{text-shadow:none}
+  /* 태블릿(세로·좁은 화면) */
+  @media (max-width:900px){#goal{font-size:16px;max-width:calc(100vw - 260px)} #steps{width:min(280px,40vw);font-size:13.5px}
+    #btn-final,#btn-info,#btn-journal,#btn-album,#btn-notebook,#btn-romi,#btn-map{min-width:0;font-size:15px;padding:6px 10px}}
+  @media (orientation:portrait) and (max-width:900px){#steps{top:auto;bottom:84px;right:10px;left:auto;width:min(340px,60vw);max-height:26vh} #goal{max-width:calc(100vw - 260px)}}
+  /* 휴대폰 가로(높이가 낮음): 글자·버튼을 작게, 할 일 목록은 짧게 */
+  @media (max-height:500px){#year{font-size:18px;padding:4px 7px} #goal{font-size:14px;padding:5px 9px;max-width:calc(100vw - 330px)} #steps{top:60px;width:min(250px,30vw);font-size:12px;max-height:40vh}
+    #btn-final,#btn-info,#btn-journal,#btn-album,#btn-notebook,#btn-romi,#btn-map{font-size:13px;padding:4px 8px;border-width:2px;min-width:0}
+    #btn-final{top:50px} #btn-info{top:82px} #btn-album{top:114px} #btn-notebook{top:146px} #btn-romi{top:178px} #btn-map{top:210px} #btn-journal{top:242px}
+    #btn-time{font-size:15px;padding:8px 12px} #talk{bottom:8px;padding:8px 12px} #talk p{font-size:16px;line-height:1.45} #talk-choices button{font-size:15px;padding:6px 10px} #inv .slot{width:34px;height:34px;font-size:18px}
+    #prompt{font-size:15px} .bark{font-size:13px}}
+  @media (max-height:500px){#title .bg{background-position:center top}}
+  body:has(#title:not([hidden])) #rotate{display:none!important}
+  /* 휴대폰 세로: 가로로 돌리라는 안내(닫을 수 있음, 12초 뒤 저절로 닫힘) */
+  #rotate{position:fixed;left:10px;right:10px;top:64px;z-index:30;display:none;align-items:center;gap:8px;background:#2b1640f0;color:#fff;border:3px solid #ffe9a8;border-radius:12px;padding:8px 12px;font:700 15px "Malgun Gothic"}
+  #rotate button{margin-left:auto;font:700 14px "Malgun Gothic";border-radius:8px;border:2px solid #fff8;background:#0b0a18;color:#fff;padding:4px 10px}
+  @media (orientation:portrait) and (max-width:600px){#rotate{display:flex} body.rotate-ok #rotate{display:none} #goal{font-size:14px;max-width:calc(100vw - 240px)} #year{font-size:18px}
+    #btn-final,#btn-info,#btn-journal,#btn-album,#btn-notebook,#btn-romi,#btn-map{font-size:13px;padding:5px 8px} #steps{width:auto;left:10px;bottom:84px;font-size:12.5px;max-height:22vh}}
+</style>
+</head>
+<body data-year="2026">
+<div id="game"></div>
+<div class="hud"><div id="year">2026</div><div id="goal"></div></div>
+<div id="steps" hidden></div>
+<div id="talk" hidden><b id="talk-who"></b><p id="talk-text"></p><div id="talk-choices"></div><small>E · 스페이스 · 클릭: 다음</small></div>
+<div id="barks"></div>
+<div id="hint" hidden></div><div id="sci" hidden></div><div id="toast"></div>
+<div id="nav" hidden><img alt="" src="assets/codex/npc-environment-v3-v1/goal_arrow_badge_v1.png"><span></span></div>
+<div id="marker" hidden><b></b><img alt="" src="assets/codex/npc-environment-v3-v1/goal_tail_v1.png"></div>
+<button id="prompt" hidden></button>
+<div id="legend" hidden><b>그늘 지도</b> (2126년 폭염 때)<br><i style="background:#46aaff"></i>그늘이 많아 시원한 곳<br><i style="background:#ff7a32"></i>햇볕이 강해 뜨거운 곳<br><i style="background:transparent;border:1px solid #888"></i>보통<small>InVEST 도시 냉각 모델 값을 게임용 3단계로 나눈 표시예요.</small></div>
+<button id="btn-info" hidden>ℹ 자세히 보기</button>
+<div id="discover" hidden><p></p><button id="btn-compare" type="button">🔍 같은 자리 비교하기</button><button id="btn-discover-close" type="button">둘러보기</button></div>
+<dialog id="compare"><h2>같은 자리, 두 2126년</h2><div class="stage"><img id="cmp-b" alt=""><img id="cmp-a" alt=""><div class="handle"></div><span class="lab" style="left:8px" id="cmp-la"></span><span class="lab" style="right:8px" id="cmp-lb"></span></div>
+<input id="cmp-range" type="range" min="0" max="100" value="50"><div class="views">보는 곳: <button data-v="street" class="on">가로수 길</button><button data-v="gate">학교 앞</button><button data-v="basin">남쪽 저지대</button></div>
+<form method="dialog"><button>닫기</button></form></dialog>
+<div id="warp"><b></b></div>
+<button id="btn-act" hidden>살펴보기</button>
+<button id="btn-time">⏳ 시간여행</button>
+<button id="btn-set" title="설정">⚙</button><button id="btn-help" title="하는 법">❓</button>
+<dialog id="help"><h2>❓ 이렇게 놀아요</h2>
+  <p class="story">100년 뒤(2126년) 마을에 문제가 생겼어요. 🔍 <b>100년 뒤에서 이유를 찾고</b> → ⏳ <b>지금(2026년)으로 돌아가 마을 사람들과 바꾸고</b> → 🌳 <b>다시 100년 뒤에 가서</b> 무엇이 달라졌는지 직접 걸어 다니며 확인해요.</p>
+  <ol>
+    <li><b>🚶</b><span><kbd>방향키</kbd> 또는 <kbd>W A S D</kbd>로 걸어요. 가고 싶은 곳을 눌러도 걸어가요.</span></li>
+    <li><b>💬</b><span>사람이나 물건 앞에 말풍선이 뜨면 <kbd>E</kbd>(또는 <kbd>스페이스</kbd>, 말풍선 누르기)로 이야기하고 살펴봐요.</span></li>
+    <li><b>①</b><span>고르는 칸이 나오면 <kbd>숫자</kbd> 키를 누르거나 눌러서 골라요.</span></li>
+    <li><b>⏳</b><span><kbd>T</kbd> 또는 오른쪽 아래 <b style="font-size:inherit">시간여행</b> 버튼: 2026년 ↔ 2126년을 오가요.</span></li>
+    <li><b>📓</b><span><kbd>N</kbd> 추리 노트: 알아낸 것을 보고, '왜 그럴까?'에 내 생각을 골라요.</span></li>
+    <li><b>💡</b><span>막히면 왼쪽 <b style="font-size:inherit">💡 힌트</b> 버튼! 로미가 어디로 가면 좋을지 알려 줘요. 여러 번 누르면 더 자세히 알려 줘요.</span></li>
+    <li><b>🎯</b><span>왼쪽 위 노란 줄이 <b style="font-size:inherit">지금 할 일</b>이에요. 화면 끝의 표지판(▶ 시장길 등)으로 다른 곳에 갈 수 있어요.</span></li>
+  </ol>
+  <form method="dialog"><button>알겠어요! 시작</button></form></dialog>
+<button id="btn-journal" hidden>📒 약속 기록장</button>
+<div id="inv" hidden></div><button id="btn-album" hidden>🖼 엽서</button><button id="btn-notebook" hidden>📓 추리 노트</button><button id="btn-romi" hidden title="로미에게 힌트·측정 부탁하기">🤖 로미</button><button id="btn-map" hidden title="전체 지도 보기 (M)">🗺️ 지도 (M)</button>
+<dialog id="mapdlg"><div class="bar"><b id="map-title"></b><span id="map-goal"></span><div id="map-mini"></div><button type="button">✕ 닫기</button></div><div id="map-marks"></div></dialog>
+<dialog id="link"><h2></h2><div class="body"></div><form method="dialog"><button class="ok">알겠어요! ▶</button></form></dialog>
+<dialog id="notebook"><h2>📓 추리 노트</h2><div class="body"></div><form method="dialog"><button>닫기</button></form></dialog>
+<dialog id="chrono"><h2>⏳ 백년시계 시간 창 — 관리 기록</h2><div class="body"></div><form method="dialog"><button>닫기</button></form></dialog>
+<dialog id="relay"><h2>🤝 약속 릴레이 — 마을정원 주민 모임(2026)</h2><div class="body"></div><form method="dialog"><button>닫기</button></form></dialog>
+<div id="pc-new" hidden><small>미래 엽서를 얻었어요!</small><div class="pic"></div><b></b><p></p></div>
+<dialog id="album"><h2>🖼 미래 엽서 앨범</h2><div class="body"></div><form method="dialog"><button>닫기</button></form></dialog>
+<div id="chapter" hidden><small></small><b></b><span></span></div>
+<div id="title" hidden><div class="bg"></div><div class="shade"></div>
+  <h1 class="sr">100 투 더 퓨처 — 시간여행 기후 탐험 RPG</h1>
+  <div class="bottom"><p class="sub">오늘 우리 마을의 선택이 100년 뒤를 바꿔요</p><div class="go"><button id="btn-continue" type="button">▶ 이어하기<small>하던 곳부터</small></button><button id="btn-start" type="button">🌱 처음부터 시작하기<small>모은 엽서는 남아요</small></button></div>
+    <div class="row"><button id="btn-title-help" type="button">❓ 게임 방법</button>
+</div>
+    <p class="hint">방향키·WASD 또는 화면을 눌러 움직이고, E·스페이스로 살펴봐요</p>
+    <div class="creator-credit" aria-label="제작자 안내"><div class="creator-name">기획·제작: <strong>쓰로인훈쌤 김종훈</strong></div><div class="creator-purpose">초등 수업을 위한 무료 교육 콘텐츠</div></div></div>
+  <span class="spark" style="left:12%;bottom:8%;animation-delay:0s"></span><span class="spark" style="left:28%;bottom:4%;animation-delay:1.5s"></span><span class="spark" style="left:46%;bottom:10%;animation-delay:3s"></span>
+  <span class="spark" style="left:63%;bottom:6%;animation-delay:.8s"></span><span class="spark" style="left:79%;bottom:9%;animation-delay:2.2s"></span><span class="spark" style="left:91%;bottom:5%;animation-delay:4s"></span></div>
+<dialog id="journal"><h2>📒 약속 기록장</h2><div class="body"></div><form method="dialog"><button>닫기</button></form></dialog>
+<dialog id="settings"><h2>설정</h2>
+  <div class="snd"><label><input type="checkbox" id="s-bgm-on"> 배경음악</label><input type="range" id="s-bgm" min="0" max="1" step="0.05">
+  <label><input type="checkbox" id="s-sfx-on"> 효과음</label><input type="range" id="s-sfx" min="0" max="1" step="0.05"></div>
+  <p><label style="font-size:17px"><input type="checkbox" id="s-guide" checked> 길 안내 화살표·할 일 목록 보이기</label></p>
+  <p><button type="button" id="btn-fs2">⛶ 전체 화면</button> <button type="button" id="btn-set-help">❓ 게임 방법</button> <button type="button" id="btn-quit2" hidden>🏁 게임 마치기</button>
+</p><p>진행 상황은 이 브라우저에만 저장돼요(이름 등 개인정보 없음).</p><p class="note">조작: 방향키/WASD 이동(또는 화면 누르기) · E/스페이스 살펴보기 · T 시간여행 · L 그늘 지도</p><form method="dialog"><button>닫기</button></form></dialog>
+<button id="btn-final" hidden>📜 내 미래 보고서</button>
+<dialog id="final"><h2>내가 만든 2126년</h2><div class="story"></div><div class="body"></div>
+  <p class="how">🖼 <b>엽서 더 모으기</b> — 앨범의 힌트를 보고 다른 선택을 해 봐요. 모은 엽서는 처음부터 다시 해도 남아요.</p><div class="again"><button type="button" id="btn-again">🔁 2026년으로 가서 빗물 시설·약속 바꾸기</button><button type="button" id="btn-again-start">🌱 처음부터 다른 선택으로 (나무·운동장·뒷산)</button><button type="button" id="btn-again-album">🖼 엽서 앨범 보기</button><button type="button" id="btn-quit" class="quit">🏁 여기서 마치기</button></div><p><button id="btn-card" type="button">내 미래 카드 PNG 저장</button></p><form method="dialog"><button>닫기</button></form></dialog>
+<button id="btn-weather" hidden>⛈ 집중호우 때 모습 보기</button>
+<div id="timer" hidden></div>
+<button id="btn-lens" hidden class="off">🗺 그늘 지도(L)</button>
+<div id="gauge" hidden><span>더위</span><div class="bar"><i id="gauge-fill"></i></div><em id="gauge-txt"></em></div>
+<div id="timelapse" hidden><b>100년 타임랩스</b> <span id="tl-year">2026</span><span id="tl-cap"></span><span id="tl-trees"></span><div class="bar"><i id="tl-bar"></i></div><small>대표 변화 장면 — 나무 한 그루의 실제 운명이나 건물 예측이 아니에요</small><button id="tl-skip" type="button">건너뛰기 ▶▶ (스페이스)</button></div>
+<dialog id="result"><h2>같은 폭염, 두 미래</h2><div class="body"></div><form method="dialog"><button>닫기</button></form></dialog>
+<dialog id="planner"><h2>마을 계획 게시판 · 2026</h2><div class="body"></div><form method="dialog"><button>닫기</button></form></dialog>
+<div id="rotate"><span>📱 휴대폰을 <b>가로로</b> 돌리면 마을이 더 크게 보여요</span><button type="button" onclick="document.body.classList.add('rotate-ok')">닫기</button></div>
+<script>document.addEventListener('click', e => { if (e.target.closest('#btn-start,#btn-continue')) setTimeout(() => document.body.classList.add('rotate-ok'), 12000); });   /* 게임을 시작하고 12초 뒤 안내를 닫음 */</script>
+<dialog id="itempic"><h2></h2><img alt="하늘이가 그린 그림"><p></p><form method="dialog"><button>닫기</button></form></dialog>
+<div id="finish" hidden><div class="fin-box"><b>🏁 100 투 더 퓨처를 마쳤어요</b><p>2026년의 선택이 100년 뒤 마을을 바꾸는 걸 함께 봤어요.<br>고른 <b>나의 실천</b>을 일주일 동안 해 봐요!</p><p class="sm">기획·제작 쓰로인훈쌤 김종훈 · 모은 엽서와 발견한 엔딩은 이 브라우저에 남아요</p>
+  <div class="fin-go"><button type="button" id="fin-title">🏠 시작 화면으로</button><button type="button" id="fin-stay">🔍 마을 더 둘러보기</button></div></div></div>
+<div id="epilogue" hidden><div class="ep-page"></div><div class="ep-bar"><button type="button" class="ep-skip">건너뛰기 ▶▶</button><button type="button" class="ep-next">다음 ▶</button></div></div>
+<script src="vendor/phaser.min.js"></script>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>

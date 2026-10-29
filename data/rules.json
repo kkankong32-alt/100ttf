@@ -1,0 +1,46 @@
+{
+  "_note": "게임 규칙(과학 결과 아님). 문턱값은 GAMEPLAY_SPEC §5와 같아야 한다.",
+  "heat": {
+    "hotHM": 0.1,
+    "shadeHM": 0.35,
+    "gaugePerSec": {
+      "hot": 6,
+      "neutral": 3,
+      "shade": -8
+    },
+    "escortSpeed": 45,
+    "walkSpeed": 70,
+    "failRestartGauge": 40,
+    "start": [
+      55,
+      29
+    ],
+    "goal": [
+      14,
+      14
+    ],
+    "goalRadius": 1.6
+  },
+  "rain": {
+    "_note": "게임 규칙. D = SWMM 하류 관(C5·C6) 최대유량/만관용량. SWMM은 침수 깊이를 계산하지 않으므로 물고임은 가상 연출",
+    "shallowD": 0.9,
+    "deepD": 0.95,
+    "shallowSpeedFactor": 0.6,
+    "puddle": {
+      "x0": 31,
+      "x1": 36,
+      "y0": 30,
+      "y1": 33
+    },
+    "start": [
+      28,
+      29
+    ],
+    "goal": [
+      45,
+      29
+    ],
+    "goalRadius": 1.6,
+    "timeLimitSec": 10
+  }
+}

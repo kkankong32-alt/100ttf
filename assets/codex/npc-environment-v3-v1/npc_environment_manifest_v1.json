@@ -1,0 +1,1156 @@
+{
+ "package": "npc-environment-v3-v1",
+ "request": "art_spec/CODEX_REQUESTS_v3.md",
+ "status": "candidate_not_active",
+ "world": [
+  1536,
+  1344
+ ],
+ "camera": [
+  960,
+  540
+ ],
+ "assets": [
+  {
+   "id": "button_9slice_v1",
+   "file": "game/assets/codex/npc-environment-v3-v1/button_9slice_v1.png",
+   "size": [
+    256,
+    96
+   ],
+   "transparent": true,
+   "alphaBBox": [
+    1,
+    4,
+    255,
+    91
+   ],
+   "sha256": "d3e38e54f1ad5fcb22ab9d73cd87de94d3c59f71ed9e5b189042fa0864d9fe49",
+   "category": "ui",
+   "origin": [
+    0.5,
+    0.5
+   ],
+   "depth": "screen UI",
+   "nineSlice": [
+    18,
+    18,
+    18,
+    18
+   ]
+  },
+  {
+   "id": "century_ring_expand_sheet_v1",
+   "file": "game/assets/codex/npc-environment-v3-v1/century_ring_expand_sheet_v1.png",
+   "size": [
+    2048,
+    1024
+   ],
+   "transparent": true,
+   "alphaBBox": [
+    91,
+    119,
+    1931,
+    982
+   ],
+   "sha256": "63f0c5476daf78d3edf359dcde210f3e68fd47cc3dbdb7c3482d95529666365f",
+   "category": "transition",
+   "frameWidth": 512,
+   "frameHeight": 512,
+   "frames": 8,
+   "columns": 4,
+   "rows": 2,
+   "fps": 12,
+   "repeat": 0,
+   "origin": [
+    0.5,
+    0.5
+   ],
+   "depth": 60002
+  },
+  {
+   "id": "century_screen_border_v1",
+   "file": "game/assets/codex/npc-environment-v3-v1/century_screen_border_v1.png",
+   "size": [
+    960,
+    540
+   ],
+   "transparent": true,
+   "alphaBBox": [
+    0,
+    0,
+    960,
+    540
+   ],
+   "sha256": "907aea3c6d335c5317354c731bf0db6a9f1b7bc0d5c47519b1890d9bd59f3367",
+   "category": "transition",
+   "origin": [
+    0,
+    0
+   ],
+   "depth": 60003,
+   "scrollFactor": 0,
+   "condition": "time travel only; fade with ring"
+  },
+  {
+   "id": "goal_arrow_badge_v1",
+   "file": "game/assets/codex/npc-environment-v3-v1/goal_arrow_badge_v1.png",
+   "size": [
+    46,
+    46
+   ],
+   "transparent": true,
+   "alphaBBox": [
+    1,
+    1,
+    44,
+    45
+   ],
+   "sha256": "4e2e5a8669e2f3591da6424cffcfd758f7fdd90398ad43380cdcfc5b702e5830",
+   "category": "ui",
+   "origin": [
+    0.5,
+    0.5
+   ],
+   "depth": "screen UI",
+   "nineSlice": null
+  },
+  {
+   "id": "goal_tail_v1",
+   "file": "game/assets/codex/npc-environment-v3-v1/goal_tail_v1.png",
+   "size": [
+    24,
+    20
+   ],
+   "transparent": true,
+   "alphaBBox": [
+    1,
+    2,
+    23,
+    18
+   ],
+   "sha256": "358690c3fa9d0acec61497c18e9bbf3d8c5ad93f4a4d25590a0b4c5caef582bc",
+   "category": "ui",
+   "origin": [
+    0.5,
+    0.5
+   ],
+   "depth": "screen UI",
+   "nineSlice": null
+  },
+  {
+   "id": "granny_greet_v1",
+   "file": "game/assets/codex/npc-environment-v3-v1/granny_greet_v1.png",
+   "size": [
+    128,
+    192
+   ],
+   "transparent": true,
+   "alphaBBox": [
+    26,
+    12,
+    101,
+    180
+   ],
+   "sha256": "688cbed9a3d7eaafe5355ab1f681a1e2594bc8cd3ed9a7493c2c240154a6fb96",
+   "category": "npc_reaction",
+   "origin": [
+    0.5,
+    0.9375
+   ],
+   "display": [
+    40,
+    60
+   ],
+   "depth": "footY*10+1"
+  },
+  {
+   "id": "granny_idle_sheet_v1",
+   "file": "game/assets/codex/npc-environment-v3-v1/granny_idle_sheet_v1.png",
+   "size": [
+    1536,
+    768
+   ],
+   "transparent": true,
+   "alphaBBox": [
+    24,
+    9,
+    1512,
+    759
+   ],
+   "sha256": "d7e04f03f9390fcabede9ef7331a48ff1f5235011878e035d20e5098b1a162c8",
+   "frameWidth": 128,
+   "frameHeight": 192,
+   "rows": [
+    "down",
+    "left",
+    "right",
+    "up"
+   ],
+   "columns": 12,
+   "frameRate": 8,
+   "origin": [
+    0.5,
+    0.9375
+   ],
+   "displaySize": [
+    40,
+    60
+   ],
+   "depth": "footY*10+1",
+   "repeat": -1,
+   "category": "npc_animation",
+   "replaces": "static granny image visual only"
+  },
+  {
+   "id": "granny_shadow_v1",
+   "file": "game/assets/codex/npc-environment-v3-v1/granny_shadow_v1.png",
+   "size": [
+    128,
+    32
+   ],
+   "transparent": true,
+   "alphaBBox": [
+    13,
+    4,
+    116,
+    29
+   ],
+   "sha256": "45f5b1b9e918d15fbbfa8cee84997bc82cb9678063b8e8241feb1bf399001c7b",
+   "category": "shadow",
+   "origin": [
+    0.5,
+    0.5
+   ],
+   "depth": 10,
+   "display": [
+    40,
+    10
+   ]
+  },
+  {
+   "id": "granny_walk_sheet_v1",
+   "file": "game/assets/codex/npc-environment-v3-v1/granny_walk_sheet_v1.png",
+   "size": [
+    1536,
+    768
+   ],
+   "transparent": true,
+   "alphaBBox": [
+    22,
+    8,
+    1512,
+    759
+   ],
+   "sha256": "2d0234a8a24b2ed2611ba1d0ac8bb568e94ee1fbe5b7ef6ec9bcace8df69c946",
+   "frameWidth": 128,
+   "frameHeight": 192,
+   "rows": [
+    "down",
+    "left",
+    "right",
+    "up"
+   ],
+   "columns": 12,
+   "frameRate": 15,
+   "origin": [
+    0.5,
+    0.9375
+   ],
+   "displaySize": [
+    40,
+    60
+   ],
+   "depth": "footY*10+1",
+   "repeat": -1,
+   "category": "npc_animation",
+   "replaces": "static granny image visual only"
+  },
+  {
+   "id": "inspect_icon_v1",
+   "file": "game/assets/codex/npc-environment-v3-v1/inspect_icon_v1.png",
+   "size": [
+    48,
+    48
+   ],
+   "transparent": true,
+   "alphaBBox": [
+    2,
+    1,
+    46,
+    47
+   ],
+   "sha256": "92274efa4452ba104b153bb6ceeb3cc00778122d243e3d65f3831070f7c4b833",
+   "category": "ui",
+   "origin": [
+    0.5,
+    0.5
+   ],
+   "depth": "screen UI",
+   "nineSlice": null
+  },
+  {
+   "id": "lowland_base_2026_v1",
+   "file": "game/assets/codex/npc-environment-v3-v1/lowland_base_2026_v1.png",
+   "size": [
+    1536,
+    320
+   ],
+   "transparent": false,
+   "alphaBBox": [
+    0,
+    0,
+    1536,
+    320
+   ],
+   "sha256": "467bcaaa7a9d8c4b63bc14288fae5507a3bd1bde33572ff4021972e7ccdebbae",
+   "category": "ground",
+   "position": [
+    0,
+    1024
+   ],
+   "origin": [
+    0,
+    0
+   ],
+   "depth": 0.5,
+   "condition": "all years; facilities drawn above",
+   "opaque": true
+  },
+  {
+   "id": "pharm_greet_v1",
+   "file": "game/assets/codex/npc-environment-v3-v1/pharm_greet_v1.png",
+   "size": [
+    128,
+    192
+   ],
+   "transparent": true,
+   "alphaBBox": [
+    25,
+    12,
+    102,
+    180
+   ],
+   "sha256": "47811384eae2d3ab06b1476b97ebbda6b2921a48505f5f83978dd53baaf50cfd",
+   "category": "npc_reaction",
+   "origin": [
+    0.5,
+    0.9375
+   ],
+   "display": [
+    40,
+    60
+   ],
+   "depth": "footY*10+1"
+  },
+  {
+   "id": "pharm_idle_sheet_v1",
+   "file": "game/assets/codex/npc-environment-v3-v1/pharm_idle_sheet_v1.png",
+   "size": [
+    1536,
+    768
+   ],
+   "transparent": true,
+   "alphaBBox": [
+    20,
+    8,
+    1516,
+    759
+   ],
+   "sha256": "aa9109e6476542f8e1d4426a5e5631d4359f5bf98404263161966083ccb28136",
+   "frameWidth": 128,
+   "frameHeight": 192,
+   "rows": [
+    "down",
+    "left",
+    "right",
+    "up"
+   ],
+   "columns": 12,
+   "frameRate": 8,
+   "origin": [
+    0.5,
+    0.9375
+   ],
+   "displaySize": [
+    40,
+    60
+   ],
+   "depth": "footY*10+1",
+   "repeat": -1,
+   "category": "npc_animation",
+   "replaces": "static pharm image visual only"
+  },
+  {
+   "id": "pharm_shadow_v1",
+   "file": "game/assets/codex/npc-environment-v3-v1/pharm_shadow_v1.png",
+   "size": [
+    128,
+    32
+   ],
+   "transparent": true,
+   "alphaBBox": [
+    13,
+    4,
+    116,
+    29
+   ],
+   "sha256": "45f5b1b9e918d15fbbfa8cee84997bc82cb9678063b8e8241feb1bf399001c7b",
+   "category": "shadow",
+   "origin": [
+    0.5,
+    0.5
+   ],
+   "depth": 10,
+   "display": [
+    40,
+    10
+   ]
+  },
+  {
+   "id": "pharm_walk_sheet_v1",
+   "file": "game/assets/codex/npc-environment-v3-v1/pharm_walk_sheet_v1.png",
+   "size": [
+    1536,
+    768
+   ],
+   "transparent": true,
+   "alphaBBox": [
+    20,
+    8,
+    1517,
+    759
+   ],
+   "sha256": "8f34fafd8be7502a6082c5e19ec07734404d1449a0f3e376380ac2af7c5622c6",
+   "frameWidth": 128,
+   "frameHeight": 192,
+   "rows": [
+    "down",
+    "left",
+    "right",
+    "up"
+   ],
+   "columns": 12,
+   "frameRate": 15,
+   "origin": [
+    0.5,
+    0.9375
+   ],
+   "displaySize": [
+    40,
+    60
+   ],
+   "depth": "footY*10+1",
+   "repeat": -1,
+   "category": "npc_animation",
+   "replaces": "static pharm image visual only"
+  },
+  {
+   "id": "puddle_deep_pool_v1",
+   "file": "game/assets/codex/npc-environment-v3-v1/puddle_deep_pool_v1.png",
+   "size": [
+    260,
+    340
+   ],
+   "transparent": true,
+   "alphaBBox": [
+    2,
+    2,
+    258,
+    338
+   ],
+   "sha256": "877d7d57f365ef99cfe0927e5a5564b038da0a22e265b487ec0050a41d255cc1",
+   "category": "water_rule_visual",
+   "origin": [
+    0,
+    0
+   ],
+   "depth": 4,
+   "condition": "existing puddleLevel and zone.water rectangles; no depth prediction",
+   "display": [
+    260,
+    340
+   ]
+  },
+  {
+   "id": "puddle_deep_vertical_v1",
+   "file": "game/assets/codex/npc-environment-v3-v1/puddle_deep_vertical_v1.png",
+   "size": [
+    70,
+    780
+   ],
+   "transparent": true,
+   "alphaBBox": [
+    2,
+    2,
+    68,
+    778
+   ],
+   "sha256": "aa207f8060b88e4399cd911b2712c6716dcb9fc3d2ef53530a7848cb786b7d27",
+   "category": "water_rule_visual",
+   "origin": [
+    0,
+    0
+   ],
+   "depth": 4,
+   "condition": "existing puddleLevel and zone.water rectangles; no depth prediction",
+   "display": [
+    70,
+    780
+   ]
+  },
+  {
+   "id": "puddle_shallow_small_v1",
+   "file": "game/assets/codex/npc-environment-v3-v1/puddle_shallow_small_v1.png",
+   "size": [
+    120,
+    60
+   ],
+   "transparent": true,
+   "alphaBBox": [
+    2,
+    2,
+    118,
+    58
+   ],
+   "sha256": "95d1b2d24d321801dd0b40fdfe864e5568560a006985106cec7fb30b5cba3ef8",
+   "category": "water_rule_visual",
+   "origin": [
+    0,
+    0
+   ],
+   "depth": 4,
+   "condition": "existing puddleLevel and zone.water rectangles; no depth prediction",
+   "display": [
+    120,
+    60
+   ]
+  },
+  {
+   "id": "puddle_shallow_vertical_v1",
+   "file": "game/assets/codex/npc-environment-v3-v1/puddle_shallow_vertical_v1.png",
+   "size": [
+    70,
+    300
+   ],
+   "transparent": true,
+   "alphaBBox": [
+    2,
+    2,
+    68,
+    298
+   ],
+   "sha256": "0dce3b13b9e6dea4818a3f963df2238f7eab212017adeeac1a05ffdf7da2fe4b",
+   "category": "water_rule_visual",
+   "origin": [
+    0,
+    0
+   ],
+   "depth": 4,
+   "condition": "existing puddleLevel and zone.water rectangles; no depth prediction",
+   "display": [
+    70,
+    300
+   ]
+  },
+  {
+   "id": "puddle_shallow_wide_v1",
+   "file": "game/assets/codex/npc-environment-v3-v1/puddle_shallow_wide_v1.png",
+   "size": [
+    200,
+    90
+   ],
+   "transparent": true,
+   "alphaBBox": [
+    2,
+    2,
+    198,
+    88
+   ],
+   "sha256": "75f2158192a257529e1a811a690baae23784eb1ef58f91481fdf0d8e4185176a",
+   "category": "water_rule_visual",
+   "origin": [
+    0,
+    0
+   ],
+   "depth": 4,
+   "condition": "existing puddleLevel and zone.water rectangles; no depth prediction",
+   "display": [
+    200,
+    90
+   ]
+  },
+  {
+   "id": "rain_ripple_sheet_v1",
+   "file": "game/assets/codex/npc-environment-v3-v1/rain_ripple_sheet_v1.png",
+   "size": [
+    256,
+    32
+   ],
+   "transparent": true,
+   "alphaBBox": [
+    25,
+    8,
+    245,
+    24
+   ],
+   "sha256": "20c747985e8fd9d941812f822a593c973491ebcaa5600f931bde27cc496c04ed",
+   "category": "water_animation",
+   "frameWidth": 64,
+   "frameHeight": 32,
+   "frames": 4,
+   "fps": 8,
+   "origin": [
+    0.5,
+    0.5
+   ],
+   "depth": 4.1,
+   "condition": "over visible puddle only"
+  },
+  {
+   "id": "schoolyard_green_2026_v1",
+   "file": "game/assets/codex/npc-environment-v3-v1/schoolyard_green_2026_v1.png",
+   "size": [
+    544,
+    256
+   ],
+   "transparent": true,
+   "alphaBBox": [
+    2,
+    2,
+    362,
+    254
+   ],
+   "sha256": "1b75d8f6cfd7e8ec93e4ac659e6cb498d883242029715d9996446f3fc99d546b",
+   "category": "ground",
+   "position": [
+    32,
+    355
+   ],
+   "origin": [
+    0,
+    0
+   ],
+   "depth": 2,
+   "condition": "c1.schoolyard == 1; year < 2046",
+   "science": "Both visuals represent same yard_green category; no age model"
+  },
+  {
+   "id": "schoolyard_green_2046_v1",
+   "file": "game/assets/codex/npc-environment-v3-v1/schoolyard_green_2046_v1.png",
+   "size": [
+    544,
+    256
+   ],
+   "transparent": true,
+   "alphaBBox": [
+    2,
+    2,
+    362,
+    254
+   ],
+   "sha256": "31ef356b0d0f3d0df0c485ce3d72f2cb151636a5e50568272e2a07b2abfee3e3",
+   "category": "ground",
+   "position": [
+    32,
+    355
+   ],
+   "origin": [
+    0,
+    0
+   ],
+   "depth": 2,
+   "condition": "c1.schoolyard == 1; year >= 2046",
+   "science": "Both visuals represent same yard_green category; no age model"
+  },
+  {
+   "id": "talk_icon_v1",
+   "file": "game/assets/codex/npc-environment-v3-v1/talk_icon_v1.png",
+   "size": [
+    48,
+    48
+   ],
+   "transparent": true,
+   "alphaBBox": [
+    1,
+    6,
+    47,
+    42
+   ],
+   "sha256": "60e737e67a31240edefc9ca24ae9ad012b9de8914087b3e74f66372984a99fa7",
+   "category": "ui",
+   "origin": [
+    0.5,
+    0.5
+   ],
+   "depth": "screen UI",
+   "nineSlice": null
+  },
+  {
+   "id": "tree_replant_event_v1",
+   "file": "game/assets/codex/npc-environment-v3-v1/tree_replant_event_v1.png",
+   "size": [
+    160,
+    224
+   ],
+   "transparent": true,
+   "alphaBBox": [
+    22,
+    5,
+    137,
+    219
+   ],
+   "sha256": "6e7c45b821f5431724a507469b2fe3c9aaaaa071d405ee889685d3a02113cd2d",
+   "category": "event",
+   "origin": [
+    0.52,
+    0.969
+   ],
+   "depth": "footY*10+2",
+   "condition": "treeCare==1 AND representative age decreases; illustration only; never every year",
+   "reuseShadow": "tree_staked_registered_shadow_v1"
+  },
+  {
+   "id": "wet_paving_overlay_v1",
+   "file": "game/assets/codex/npc-environment-v3-v1/wet_paving_overlay_v1.png",
+   "size": [
+    1536,
+    1024
+   ],
+   "transparent": true,
+   "alphaBBox": [
+    0,
+    0,
+    1536,
+    960
+   ],
+   "sha256": "d1cbb326870daa408fa6e0f6bbe97d29e50b4092c56a3c7d4badf124ab1875e0",
+   "category": "weather",
+   "position": [
+    0,
+    0
+   ],
+   "origin": [
+    0,
+    0
+   ],
+   "depth": 1.5,
+   "condition": "year==2126 && weather==rain; cosmetic only"
+  }
+ ],
+ "animation": {
+  "sheets": [
+   {
+    "id": "granny_walk_sheet_v1",
+    "size": [
+     1536,
+     768
+    ],
+    "frameWidth": 128,
+    "frameHeight": 192,
+    "rows": [
+     "down",
+     "left",
+     "right",
+     "up"
+    ],
+    "columns": 12,
+    "frameRate": 15,
+    "origin": [
+     0.5,
+     0.9375
+    ],
+    "displaySize": [
+     40,
+     60
+    ],
+    "depth": "footY*10+1",
+    "repeat": -1
+   },
+   {
+    "id": "granny_idle_sheet_v1",
+    "size": [
+     1536,
+     768
+    ],
+    "frameWidth": 128,
+    "frameHeight": 192,
+    "rows": [
+     "down",
+     "left",
+     "right",
+     "up"
+    ],
+    "columns": 12,
+    "frameRate": 8,
+    "origin": [
+     0.5,
+     0.9375
+    ],
+    "displaySize": [
+     40,
+     60
+    ],
+    "depth": "footY*10+1",
+    "repeat": -1
+   },
+   {
+    "id": "pharm_walk_sheet_v1",
+    "size": [
+     1536,
+     768
+    ],
+    "frameWidth": 128,
+    "frameHeight": 192,
+    "rows": [
+     "down",
+     "left",
+     "right",
+     "up"
+    ],
+    "columns": 12,
+    "frameRate": 15,
+    "origin": [
+     0.5,
+     0.9375
+    ],
+    "displaySize": [
+     40,
+     60
+    ],
+    "depth": "footY*10+1",
+    "repeat": -1
+   },
+   {
+    "id": "pharm_idle_sheet_v1",
+    "size": [
+     1536,
+     768
+    ],
+    "frameWidth": 128,
+    "frameHeight": 192,
+    "rows": [
+     "down",
+     "left",
+     "right",
+     "up"
+    ],
+    "columns": 12,
+    "frameRate": 8,
+    "origin": [
+     0.5,
+     0.9375
+    ],
+    "displaySize": [
+     40,
+     60
+    ],
+    "depth": "footY*10+1",
+    "repeat": -1
+   }
+  ],
+  "directions": [
+   "down",
+   "left",
+   "right",
+   "up"
+  ],
+  "frameCount": 192,
+  "method": "fixed directional masters with deterministic articulated limb rig; no generative per-frame identity drift",
+  "referenceSpeedPxSec": {
+   "granny": 28,
+   "pharm": 35
+  },
+  "transition": "retain direction at rest; velocity hysteresis; ease stop to idle over100ms",
+  "clips": [
+   {
+    "id": "granny_walk_down",
+    "sheet": "granny_walk_sheet_v1",
+    "start": 0,
+    "end": 11,
+    "frameRate": 15,
+    "repeat": -1,
+    "origin": [
+     0.5,
+     0.9375
+    ]
+   },
+   {
+    "id": "granny_walk_left",
+    "sheet": "granny_walk_sheet_v1",
+    "start": 12,
+    "end": 23,
+    "frameRate": 15,
+    "repeat": -1,
+    "origin": [
+     0.5,
+     0.9375
+    ]
+   },
+   {
+    "id": "granny_walk_right",
+    "sheet": "granny_walk_sheet_v1",
+    "start": 24,
+    "end": 35,
+    "frameRate": 15,
+    "repeat": -1,
+    "origin": [
+     0.5,
+     0.9375
+    ]
+   },
+   {
+    "id": "granny_walk_up",
+    "sheet": "granny_walk_sheet_v1",
+    "start": 36,
+    "end": 47,
+    "frameRate": 15,
+    "repeat": -1,
+    "origin": [
+     0.5,
+     0.9375
+    ]
+   },
+   {
+    "id": "granny_idle_down",
+    "sheet": "granny_idle_sheet_v1",
+    "start": 0,
+    "end": 11,
+    "frameRate": 8,
+    "repeat": -1,
+    "origin": [
+     0.5,
+     0.9375
+    ]
+   },
+   {
+    "id": "granny_idle_left",
+    "sheet": "granny_idle_sheet_v1",
+    "start": 12,
+    "end": 23,
+    "frameRate": 8,
+    "repeat": -1,
+    "origin": [
+     0.5,
+     0.9375
+    ]
+   },
+   {
+    "id": "granny_idle_right",
+    "sheet": "granny_idle_sheet_v1",
+    "start": 24,
+    "end": 35,
+    "frameRate": 8,
+    "repeat": -1,
+    "origin": [
+     0.5,
+     0.9375
+    ]
+   },
+   {
+    "id": "granny_idle_up",
+    "sheet": "granny_idle_sheet_v1",
+    "start": 36,
+    "end": 47,
+    "frameRate": 8,
+    "repeat": -1,
+    "origin": [
+     0.5,
+     0.9375
+    ]
+   },
+   {
+    "id": "pharm_walk_down",
+    "sheet": "pharm_walk_sheet_v1",
+    "start": 0,
+    "end": 11,
+    "frameRate": 15,
+    "repeat": -1,
+    "origin": [
+     0.5,
+     0.9375
+    ]
+   },
+   {
+    "id": "pharm_walk_left",
+    "sheet": "pharm_walk_sheet_v1",
+    "start": 12,
+    "end": 23,
+    "frameRate": 15,
+    "repeat": -1,
+    "origin": [
+     0.5,
+     0.9375
+    ]
+   },
+   {
+    "id": "pharm_walk_right",
+    "sheet": "pharm_walk_sheet_v1",
+    "start": 24,
+    "end": 35,
+    "frameRate": 15,
+    "repeat": -1,
+    "origin": [
+     0.5,
+     0.9375
+    ]
+   },
+   {
+    "id": "pharm_walk_up",
+    "sheet": "pharm_walk_sheet_v1",
+    "start": 36,
+    "end": 47,
+    "frameRate": 15,
+    "repeat": -1,
+    "origin": [
+     0.5,
+     0.9375
+    ]
+   },
+   {
+    "id": "pharm_idle_down",
+    "sheet": "pharm_idle_sheet_v1",
+    "start": 0,
+    "end": 11,
+    "frameRate": 8,
+    "repeat": -1,
+    "origin": [
+     0.5,
+     0.9375
+    ]
+   },
+   {
+    "id": "pharm_idle_left",
+    "sheet": "pharm_idle_sheet_v1",
+    "start": 12,
+    "end": 23,
+    "frameRate": 8,
+    "repeat": -1,
+    "origin": [
+     0.5,
+     0.9375
+    ]
+   },
+   {
+    "id": "pharm_idle_right",
+    "sheet": "pharm_idle_sheet_v1",
+    "start": 24,
+    "end": 35,
+    "frameRate": 8,
+    "repeat": -1,
+    "origin": [
+     0.5,
+     0.9375
+    ]
+   },
+   {
+    "id": "pharm_idle_up",
+    "sheet": "pharm_idle_sheet_v1",
+    "start": 36,
+    "end": 47,
+    "frameRate": 8,
+    "repeat": -1,
+    "origin": [
+     0.5,
+     0.9375
+    ]
+   }
+  ],
+  "idleHolds": "12 timeline frames, 3 distinct subtle breathing poses; intentional holds",
+  "footContactPixelRange": [
+   178,
+   179
+  ],
+  "transitionsMs": 100
+ },
+ "readOnlySources": [
+  "game/src/main.js",
+  "game/src/sf_assets.js",
+  "game/data/zone_schoolfront.json",
+  "PROJECT_STATE.md"
+ ],
+ "science": "No rules or model changes. Water severity is a game display category, not flood-depth prediction.",
+ "placements": {
+  "npc": {
+   "granny": [
+    1280,
+    762
+   ],
+   "pharm": [
+    1120,
+    414
+   ]
+  },
+  "schoolyard": {
+   "rect": [
+    32,
+    355,
+    544,
+    256
+   ],
+   "treeFeet": [
+    [
+     120,
+     462
+    ],
+    [
+     268,
+     528
+    ],
+    [
+     132,
+     586
+    ]
+   ]
+  },
+  "lowland": [
+   0,
+   1024,
+   1536,
+   320
+  ],
+  "puddleShallow": [
+   [
+    1236,
+    360,
+    70,
+    420
+   ]
+  ],
+  "puddleDeep": [
+   [
+    1236,
+    0,
+    70,
+    780
+   ],
+   [
+    1170,
+    690,
+    260,
+    340
+   ]
+  ]
+ },
+ "requestCoverage": {
+  "1": "4 NPC sheets,2 greeting poses,2 shadows; 16 clips /192 frames",
+  "2": "5 puddle PNG,4-frame ripple sheet",
+  "3": "2 schoolyard green stages",
+  "4": "lowland1536x320 base with registered join",
+  "5": "wet paving1536x1024 overlay",
+  "6": "staked replant event with soil and shovel",
+  "7": "46px arrow,marker tail,magnifier,talk icon,9-slice panel",
+  "8": "8-frame512px ring and960x540 border"
+ },
+ "reuse": [
+  "schoolfront-pack-v1: approved NPC identity,clock style,background; existing schoolyard trees reused",
+  "choice-variants-animation-v1: player/romi sheets and existing basin/parking unchanged",
+  "century-change-v1: active era buildings,grounding,shadows unchanged"
+ ],
+ "generation": {
+  "mode": "Codex built-in imagegen",
+  "externalPaidAPI": false,
+  "prompts": "production/generation_prompts.json",
+  "animationMethod": "deterministic articulated 2D rig from generated fixed directional masters"
+ }
+}

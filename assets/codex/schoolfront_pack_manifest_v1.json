@@ -1,0 +1,2863 @@
+{
+ "schema_version": 1,
+ "id": "schoolfront-pack-v1",
+ "status": "candidate_renderer_verified_not_integrated",
+ "created": "2026-10-21",
+ "style": "premium illustrated 2D top-down quarter view",
+ "project_art_path": "art_spec/generated/schoolfront-pack-v1",
+ "asset_base": "schoolfront-pack-v1/",
+ "canvas": [
+  1536,
+  1024
+ ],
+ "runtime_index_modified": false,
+ "science_model_modified": false,
+ "scene_layer_origin": [
+  0,
+  0
+ ],
+ "scene_layers": [
+  "bg",
+  "ground_changes",
+  "shadow",
+  "mg",
+  "interactive",
+  "characters",
+  "fg"
+ ],
+ "scene_layout": {
+  "2026": [
+   {
+    "id": "school_shadow",
+    "asset": "school_facade_2026_v1_shadow.png",
+    "layer": "shadow",
+    "x": 38,
+    "y": 338,
+    "width": 600,
+    "height": 48,
+    "depth_anchor_y": 386
+   },
+   {
+    "id": "school_wall",
+    "asset": "school_facade_2026_v1_mg.png",
+    "layer": "mg",
+    "x": 24,
+    "y": 16,
+    "width": 600,
+    "height": 350,
+    "depth_anchor_y": 366
+   },
+   {
+    "id": "school_roof",
+    "asset": "school_facade_2026_v1_fg.png",
+    "layer": "fg",
+    "x": 24,
+    "y": 16,
+    "width": 600,
+    "height": 350,
+    "depth_anchor_y": 366
+   },
+   {
+    "id": "shop_shadow",
+    "asset": "shop_2026_v1_shadow.png",
+    "layer": "shadow",
+    "x": 1030,
+    "y": 318,
+    "width": 224,
+    "height": 48,
+    "depth_anchor_y": 366
+   },
+   {
+    "id": "shop_wall",
+    "asset": "shop_2026_v1_mg.png",
+    "layer": "mg",
+    "x": 1016,
+    "y": 32,
+    "width": 224,
+    "height": 314,
+    "depth_anchor_y": 346
+   },
+   {
+    "id": "shop_roof",
+    "asset": "shop_2026_v1_fg.png",
+    "layer": "fg",
+    "x": 1016,
+    "y": 32,
+    "width": 224,
+    "height": 314,
+    "depth_anchor_y": 346
+   },
+   {
+    "id": "house_shadow",
+    "asset": "house_2026_v1_shadow.png",
+    "layer": "shadow",
+    "x": 1314,
+    "y": 326,
+    "width": 224,
+    "height": 48,
+    "depth_anchor_y": 374
+   },
+   {
+    "id": "house_wall",
+    "asset": "house_2026_v1_mg.png",
+    "layer": "mg",
+    "x": 1300,
+    "y": 40,
+    "width": 224,
+    "height": 314,
+    "depth_anchor_y": 354
+   },
+   {
+    "id": "house_roof",
+    "asset": "house_2026_v1_fg.png",
+    "layer": "fg",
+    "x": 1300,
+    "y": 40,
+    "width": 224,
+    "height": 314,
+    "depth_anchor_y": 354
+   },
+   {
+    "id": "gate",
+    "asset": "school_gate_module_v1.png",
+    "layer": "mg",
+    "x": 344,
+    "y": 482,
+    "width": 280,
+    "height": 158,
+    "depth_anchor_y": 640
+   },
+   {
+    "id": "board",
+    "asset": "planning_board_v1.png",
+    "layer": "interactive",
+    "x": 620,
+    "y": 510,
+    "width": 96,
+    "height": 112,
+    "depth_anchor_y": 622
+   },
+   {
+    "id": "clock",
+    "asset": "century_clock_v1.png",
+    "layer": "interactive",
+    "x": 610,
+    "y": 628,
+    "width": 72,
+    "height": 116,
+    "depth_anchor_y": 744
+   },
+   {
+    "id": "drain_school",
+    "asset": "storm_drain_v1.png",
+    "layer": "interactive",
+    "x": 714,
+    "y": 744,
+    "width": 44,
+    "height": 28,
+    "depth_anchor_y": 772
+   },
+   {
+    "id": "drain_homes",
+    "asset": "storm_drain_v1.png",
+    "layer": "interactive",
+    "x": 1336,
+    "y": 744,
+    "width": 44,
+    "height": 28,
+    "depth_anchor_y": 772
+   },
+   {
+    "id": "tree_school_north_shadow",
+    "asset": "tree_zelkova_sapling_v1_shadow.png",
+    "layer": "shadow",
+    "x": 606,
+    "y": 309,
+    "width": 114,
+    "height": 32,
+    "depth_anchor_y": 341
+   },
+   {
+    "id": "tree_school_north_trunk",
+    "asset": "tree_zelkova_sapling_v1_mg.png",
+    "layer": "mg",
+    "x": 576,
+    "y": 228,
+    "width": 64,
+    "height": 96,
+    "depth_anchor_y": 324
+   },
+   {
+    "id": "tree_school_north_crown",
+    "asset": "tree_zelkova_sapling_v1_fg.png",
+    "layer": "fg",
+    "x": 576,
+    "y": 228,
+    "width": 64,
+    "height": 96,
+    "depth_anchor_y": 324
+   },
+   {
+    "id": "tree_plaza_shadow",
+    "asset": "tree_zelkova_young_v1_shadow.png",
+    "layer": "shadow",
+    "x": 148,
+    "y": 685,
+    "width": 146,
+    "height": 42,
+    "depth_anchor_y": 727
+   },
+   {
+    "id": "tree_plaza_trunk",
+    "asset": "tree_zelkova_young_v1_mg.png",
+    "layer": "mg",
+    "x": 118,
+    "y": 572,
+    "width": 96,
+    "height": 128,
+    "depth_anchor_y": 700
+   },
+   {
+    "id": "tree_plaza_crown",
+    "asset": "tree_zelkova_young_v1_fg.png",
+    "layer": "fg",
+    "x": 118,
+    "y": 572,
+    "width": 96,
+    "height": 128,
+    "depth_anchor_y": 700
+   },
+   {
+    "id": "tree_east_shadow",
+    "asset": "tree_zelkova_sapling_v1_shadow.png",
+    "layer": "shadow",
+    "x": 962,
+    "y": 685,
+    "width": 114,
+    "height": 32,
+    "depth_anchor_y": 717
+   },
+   {
+    "id": "tree_east_trunk",
+    "asset": "tree_zelkova_sapling_v1_mg.png",
+    "layer": "mg",
+    "x": 932,
+    "y": 604,
+    "width": 64,
+    "height": 96,
+    "depth_anchor_y": 700
+   },
+   {
+    "id": "tree_east_crown",
+    "asset": "tree_zelkova_sapling_v1_fg.png",
+    "layer": "fg",
+    "x": 932,
+    "y": 604,
+    "width": 64,
+    "height": 96,
+    "depth_anchor_y": 700
+   },
+   {
+    "id": "tree_home_shadow",
+    "asset": "tree_zelkova_young_v1_shadow.png",
+    "layer": "shadow",
+    "x": 1438,
+    "y": 577,
+    "width": 122,
+    "height": 32,
+    "depth_anchor_y": 609
+   },
+   {
+    "id": "tree_home_trunk",
+    "asset": "tree_zelkova_young_v1_mg.png",
+    "layer": "mg",
+    "x": 1408,
+    "y": 496,
+    "width": 72,
+    "height": 96,
+    "depth_anchor_y": 592
+   },
+   {
+    "id": "tree_home_crown",
+    "asset": "tree_zelkova_young_v1_fg.png",
+    "layer": "fg",
+    "x": 1408,
+    "y": 496,
+    "width": 72,
+    "height": 96,
+    "depth_anchor_y": 592
+   },
+   {
+    "id": "player",
+    "asset": "player_sprite_candidate_v1.png",
+    "layer": "characters",
+    "x": 704,
+    "y": 658,
+    "width": 44,
+    "height": 66,
+    "depth_anchor_y": 724
+   },
+   {
+    "id": "romi",
+    "asset": "romi_sprite_candidate_v1.png",
+    "layer": "characters",
+    "x": 724,
+    "y": 724,
+    "width": 40,
+    "height": 40,
+    "depth_anchor_y": 764
+   },
+   {
+    "id": "npc_grandmother",
+    "asset": "npc_grandmother_candidate_v1.png",
+    "layer": "characters",
+    "x": 1260,
+    "y": 712,
+    "width": 40,
+    "height": 60,
+    "depth_anchor_y": 772
+   },
+   {
+    "id": "npc_pharmacist",
+    "asset": "npc_pharmacist_candidate_v1.png",
+    "layer": "characters",
+    "x": 1100,
+    "y": 354,
+    "width": 40,
+    "height": 60,
+    "depth_anchor_y": 414
+   }
+  ],
+  "2126": [
+   {
+    "id": "permeable_market",
+    "asset": "ground_permeable_v1.png",
+    "layer": "ground_changes",
+    "x": 1024,
+    "y": 448,
+    "width": 512,
+    "height": 256,
+    "depth_anchor_y": 0
+   },
+   {
+    "id": "school_shadow",
+    "asset": "school_facade_2126_v1_shadow.png",
+    "layer": "shadow",
+    "x": 38,
+    "y": 338,
+    "width": 600,
+    "height": 48,
+    "depth_anchor_y": 386
+   },
+   {
+    "id": "school_wall",
+    "asset": "school_facade_2126_v1_mg.png",
+    "layer": "mg",
+    "x": 24,
+    "y": 16,
+    "width": 600,
+    "height": 350,
+    "depth_anchor_y": 366
+   },
+   {
+    "id": "school_roof",
+    "asset": "school_facade_2126_v1_fg.png",
+    "layer": "fg",
+    "x": 24,
+    "y": 16,
+    "width": 600,
+    "height": 350,
+    "depth_anchor_y": 366
+   },
+   {
+    "id": "shop_shadow",
+    "asset": "shop_2126_v1_shadow.png",
+    "layer": "shadow",
+    "x": 1030,
+    "y": 318,
+    "width": 224,
+    "height": 48,
+    "depth_anchor_y": 366
+   },
+   {
+    "id": "shop_wall",
+    "asset": "shop_2126_v1_mg.png",
+    "layer": "mg",
+    "x": 1016,
+    "y": 32,
+    "width": 224,
+    "height": 314,
+    "depth_anchor_y": 346
+   },
+   {
+    "id": "shop_roof",
+    "asset": "shop_2126_v1_fg.png",
+    "layer": "fg",
+    "x": 1016,
+    "y": 32,
+    "width": 224,
+    "height": 314,
+    "depth_anchor_y": 346
+   },
+   {
+    "id": "house_shadow",
+    "asset": "house_2126_v1_shadow.png",
+    "layer": "shadow",
+    "x": 1314,
+    "y": 326,
+    "width": 224,
+    "height": 48,
+    "depth_anchor_y": 374
+   },
+   {
+    "id": "house_wall",
+    "asset": "house_2126_v1_mg.png",
+    "layer": "mg",
+    "x": 1300,
+    "y": 40,
+    "width": 224,
+    "height": 314,
+    "depth_anchor_y": 354
+   },
+   {
+    "id": "house_roof",
+    "asset": "house_2126_v1_fg.png",
+    "layer": "fg",
+    "x": 1300,
+    "y": 40,
+    "width": 224,
+    "height": 314,
+    "depth_anchor_y": 354
+   },
+   {
+    "id": "gate",
+    "asset": "school_gate_module_v1.png",
+    "layer": "mg",
+    "x": 344,
+    "y": 482,
+    "width": 280,
+    "height": 158,
+    "depth_anchor_y": 640
+   },
+   {
+    "id": "board",
+    "asset": "planning_board_v1.png",
+    "layer": "interactive",
+    "x": 620,
+    "y": 510,
+    "width": 96,
+    "height": 112,
+    "depth_anchor_y": 622
+   },
+   {
+    "id": "clock",
+    "asset": "century_clock_v1.png",
+    "layer": "interactive",
+    "x": 610,
+    "y": 628,
+    "width": 72,
+    "height": 116,
+    "depth_anchor_y": 744
+   },
+   {
+    "id": "drain_school",
+    "asset": "storm_drain_v1.png",
+    "layer": "interactive",
+    "x": 714,
+    "y": 744,
+    "width": 44,
+    "height": 28,
+    "depth_anchor_y": 772
+   },
+   {
+    "id": "drain_homes",
+    "asset": "storm_drain_v1.png",
+    "layer": "interactive",
+    "x": 1336,
+    "y": 744,
+    "width": 44,
+    "height": 28,
+    "depth_anchor_y": 772
+   },
+   {
+    "id": "garden_house",
+    "asset": "rain_garden_module_v1.png",
+    "layer": "interactive",
+    "x": 1248,
+    "y": 622,
+    "width": 256,
+    "height": 106,
+    "depth_anchor_y": 728
+   },
+   {
+    "id": "garden_shop",
+    "asset": "rain_garden_module_v1.png",
+    "layer": "interactive",
+    "x": 1016,
+    "y": 454,
+    "width": 224,
+    "height": 94,
+    "depth_anchor_y": 548
+   },
+   {
+    "id": "gate_shade_posts",
+    "asset": "shade_pergola_v1_mg.png",
+    "layer": "mg",
+    "x": 350,
+    "y": 406,
+    "width": 256,
+    "height": 192,
+    "depth_anchor_y": 598
+   },
+   {
+    "id": "gate_shade_roof",
+    "asset": "shade_pergola_v1_fg.png",
+    "layer": "fg",
+    "x": 350,
+    "y": 406,
+    "width": 256,
+    "height": 192,
+    "depth_anchor_y": 598
+   },
+   {
+    "id": "tree_school_north_shadow",
+    "asset": "tree_zelkova_mid_v1_shadow.png",
+    "layer": "shadow",
+    "x": 538,
+    "y": 309,
+    "width": 250,
+    "height": 83,
+    "depth_anchor_y": 392
+   },
+   {
+    "id": "tree_school_north_trunk",
+    "asset": "tree_zelkova_mid_v1_mg.png",
+    "layer": "mg",
+    "x": 508,
+    "y": 74,
+    "width": 200,
+    "height": 250,
+    "depth_anchor_y": 324
+   },
+   {
+    "id": "tree_school_north_crown",
+    "asset": "tree_zelkova_mid_v1_fg.png",
+    "layer": "fg",
+    "x": 508,
+    "y": 74,
+    "width": 200,
+    "height": 250,
+    "depth_anchor_y": 324
+   },
+   {
+    "id": "tree_plaza_shadow",
+    "asset": "tree_zelkova_mature_v1_shadow.png",
+    "layer": "shadow",
+    "x": 46,
+    "y": 685,
+    "width": 350,
+    "height": 116,
+    "depth_anchor_y": 801
+   },
+   {
+    "id": "tree_plaza_trunk",
+    "asset": "tree_zelkova_mature_v1_mg.png",
+    "layer": "mg",
+    "x": 16,
+    "y": 350,
+    "width": 300,
+    "height": 350,
+    "depth_anchor_y": 700
+   },
+   {
+    "id": "tree_plaza_crown",
+    "asset": "tree_zelkova_mature_v1_fg.png",
+    "layer": "fg",
+    "x": 16,
+    "y": 350,
+    "width": 300,
+    "height": 350,
+    "depth_anchor_y": 700
+   },
+   {
+    "id": "tree_east_shadow",
+    "asset": "tree_zelkova_mature_v1_shadow.png",
+    "layer": "shadow",
+    "x": 864,
+    "y": 685,
+    "width": 310,
+    "height": 101,
+    "depth_anchor_y": 786
+   },
+   {
+    "id": "tree_east_trunk",
+    "asset": "tree_zelkova_mature_v1_mg.png",
+    "layer": "mg",
+    "x": 834,
+    "y": 396,
+    "width": 260,
+    "height": 304,
+    "depth_anchor_y": 700
+   },
+   {
+    "id": "tree_east_crown",
+    "asset": "tree_zelkova_mature_v1_fg.png",
+    "layer": "fg",
+    "x": 834,
+    "y": 396,
+    "width": 260,
+    "height": 304,
+    "depth_anchor_y": 700
+   },
+   {
+    "id": "tree_home_shadow",
+    "asset": "tree_zelkova_mature_v1_shadow.png",
+    "layer": "shadow",
+    "x": 1374,
+    "y": 577,
+    "width": 250,
+    "height": 78,
+    "depth_anchor_y": 655
+   },
+   {
+    "id": "tree_home_trunk",
+    "asset": "tree_zelkova_mature_v1_mg.png",
+    "layer": "mg",
+    "x": 1344,
+    "y": 358,
+    "width": 200,
+    "height": 234,
+    "depth_anchor_y": 592
+   },
+   {
+    "id": "tree_home_crown",
+    "asset": "tree_zelkova_mature_v1_fg.png",
+    "layer": "fg",
+    "x": 1344,
+    "y": 358,
+    "width": 200,
+    "height": 234,
+    "depth_anchor_y": 592
+   },
+   {
+    "id": "replacement_shadow",
+    "asset": "tree_replacement_staked_v1_shadow.png",
+    "layer": "shadow",
+    "x": 288,
+    "y": 673,
+    "width": 122,
+    "height": 33,
+    "depth_anchor_y": 706
+   },
+   {
+    "id": "replacement_trunk",
+    "asset": "tree_replacement_staked_v1_mg.png",
+    "layer": "mg",
+    "x": 258,
+    "y": 587,
+    "width": 72,
+    "height": 101,
+    "depth_anchor_y": 688
+   },
+   {
+    "id": "replacement_crown",
+    "asset": "tree_replacement_staked_v1_fg.png",
+    "layer": "fg",
+    "x": 258,
+    "y": 587,
+    "width": 72,
+    "height": 101,
+    "depth_anchor_y": 688
+   },
+   {
+    "id": "player",
+    "asset": "player_sprite_candidate_v1.png",
+    "layer": "characters",
+    "x": 704,
+    "y": 658,
+    "width": 44,
+    "height": 66,
+    "depth_anchor_y": 724
+   },
+   {
+    "id": "romi",
+    "asset": "romi_sprite_candidate_v1.png",
+    "layer": "characters",
+    "x": 724,
+    "y": 724,
+    "width": 40,
+    "height": 40,
+    "depth_anchor_y": 764
+   },
+   {
+    "id": "npc_grandmother",
+    "asset": "npc_grandmother_candidate_v1.png",
+    "layer": "characters",
+    "x": 1260,
+    "y": 712,
+    "width": 40,
+    "height": 60,
+    "depth_anchor_y": 772
+   },
+   {
+    "id": "npc_pharmacist",
+    "asset": "npc_pharmacist_candidate_v1.png",
+    "layer": "characters",
+    "x": 1100,
+    "y": 354,
+    "width": 40,
+    "height": 60,
+    "depth_anchor_y": 414
+   }
+  ]
+ },
+ "files": [
+  {
+   "file": "century_clock_v1.png",
+   "width": 160,
+   "height": 256,
+   "transparent_pixels": 21748,
+   "opaque_pixels": 16249,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "864f99b5e67695b776bc9b802a72ace63a9f502c3a61a2887e3c7d7df629575a",
+   "path": "schoolfront-pack-v1/century_clock_v1.png",
+   "id": "century_clock_v1",
+   "role": "interactive",
+   "source": "props_atlas",
+   "source_rect": [
+    1248,
+    59,
+    208,
+    438
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "ground_crosswalk_v1.png",
+   "width": 128,
+   "height": 128,
+   "transparent_pixels": 0,
+   "opaque_pixels": 16384,
+   "nontransparent_edge_pixels": 508,
+   "opposite_edge_channel_mismatches": 749,
+   "declared_size_matches": true,
+   "sha256": "2efe59a28af7ad34b722a319684d36c1c4efdf07b32497f4f6e4ee069f94fa17",
+   "path": "schoolfront-pack-v1/ground_crosswalk_v1.png",
+   "id": "ground_crosswalk_v1",
+   "role": "terrain_tile",
+   "source": "terrain_atlas",
+   "source_rect": [
+    836,
+    836,
+    418,
+    418
+   ],
+   "origin": [
+    0,
+    0
+   ],
+   "alpha_background": false
+  },
+  {
+   "file": "ground_dirt_v1_repeat.png",
+   "width": 256,
+   "height": 256,
+   "transparent_pixels": 0,
+   "opaque_pixels": 65536,
+   "nontransparent_edge_pixels": 1020,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "c540882d592fd66b09c530d57ceb289ecaa38479acf85a7f5400a64b166fece2",
+   "path": "schoolfront-pack-v1/ground_dirt_v1_repeat.png",
+   "id": "ground_dirt_v1_repeat",
+   "role": "seamless_mirrored_material",
+   "source": "ground_dirt_v1",
+   "source_rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "origin": [
+    0,
+    0
+   ],
+   "alpha_background": false
+  },
+  {
+   "file": "ground_dirt_v1.png",
+   "width": 128,
+   "height": 128,
+   "transparent_pixels": 0,
+   "opaque_pixels": 16384,
+   "nontransparent_edge_pixels": 508,
+   "opposite_edge_channel_mismatches": 760,
+   "declared_size_matches": true,
+   "sha256": "af82fed05df6ca461322512c65294127367d578625709c52effec63872f96c40",
+   "path": "schoolfront-pack-v1/ground_dirt_v1.png",
+   "id": "ground_dirt_v1",
+   "role": "terrain_tile",
+   "source": "terrain_atlas",
+   "source_rect": [
+    0,
+    0,
+    418,
+    418
+   ],
+   "origin": [
+    0,
+    0
+   ],
+   "alpha_background": false
+  },
+  {
+   "file": "ground_grass_dirt_edge_v1.png",
+   "width": 128,
+   "height": 128,
+   "transparent_pixels": 0,
+   "opaque_pixels": 16384,
+   "nontransparent_edge_pixels": 508,
+   "opposite_edge_channel_mismatches": 759,
+   "declared_size_matches": true,
+   "sha256": "9b6898b4cfeb93203f58340f1c03cad6802d686e7f5d3a24712bb6e887d3b533",
+   "path": "schoolfront-pack-v1/ground_grass_dirt_edge_v1.png",
+   "id": "ground_grass_dirt_edge_v1",
+   "role": "terrain_tile",
+   "source": "terrain_atlas",
+   "source_rect": [
+    0,
+    836,
+    418,
+    418
+   ],
+   "origin": [
+    0,
+    0
+   ],
+   "alpha_background": false
+  },
+  {
+   "file": "ground_grass_v1_repeat.png",
+   "width": 256,
+   "height": 256,
+   "transparent_pixels": 0,
+   "opaque_pixels": 65536,
+   "nontransparent_edge_pixels": 1020,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "8948533d5ceaf3e3345b0a322e391a7ccc626c76be78f70fe56baa99752298f6",
+   "path": "schoolfront-pack-v1/ground_grass_v1_repeat.png",
+   "id": "ground_grass_v1_repeat",
+   "role": "seamless_mirrored_material",
+   "source": "ground_grass_v1",
+   "source_rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "origin": [
+    0,
+    0
+   ],
+   "alpha_background": false
+  },
+  {
+   "file": "ground_grass_v1.png",
+   "width": 128,
+   "height": 128,
+   "transparent_pixels": 0,
+   "opaque_pixels": 16384,
+   "nontransparent_edge_pixels": 508,
+   "opposite_edge_channel_mismatches": 754,
+   "declared_size_matches": true,
+   "sha256": "08435a996f5123726d6cef6d86ccfa92c050e50dc9b25c68f646818ba4326e55",
+   "path": "schoolfront-pack-v1/ground_grass_v1.png",
+   "id": "ground_grass_v1",
+   "role": "terrain_tile",
+   "source": "terrain_atlas",
+   "source_rect": [
+    418,
+    0,
+    418,
+    418
+   ],
+   "origin": [
+    0,
+    0
+   ],
+   "alpha_background": false
+  },
+  {
+   "file": "ground_permeable_v1_repeat.png",
+   "width": 256,
+   "height": 256,
+   "transparent_pixels": 0,
+   "opaque_pixels": 65536,
+   "nontransparent_edge_pixels": 1020,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "b0c47628df94ea9a99af7d7190a66da76009871d8a29b1622fe35a178f60df08",
+   "path": "schoolfront-pack-v1/ground_permeable_v1_repeat.png",
+   "id": "ground_permeable_v1_repeat",
+   "role": "seamless_mirrored_material",
+   "source": "ground_permeable_v1",
+   "source_rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "origin": [
+    0,
+    0
+   ],
+   "alpha_background": false
+  },
+  {
+   "file": "ground_permeable_v1.png",
+   "width": 128,
+   "height": 128,
+   "transparent_pixels": 0,
+   "opaque_pixels": 16384,
+   "nontransparent_edge_pixels": 508,
+   "opposite_edge_channel_mismatches": 764,
+   "declared_size_matches": true,
+   "sha256": "1c319b66c3de52c24201d3c37e20129dca1dc2efaaf98da8928021532dc7d4e4",
+   "path": "schoolfront-pack-v1/ground_permeable_v1.png",
+   "id": "ground_permeable_v1",
+   "role": "terrain_tile",
+   "source": "terrain_atlas",
+   "source_rect": [
+    418,
+    418,
+    418,
+    418
+   ],
+   "origin": [
+    0,
+    0
+   ],
+   "alpha_background": false
+  },
+  {
+   "file": "ground_rain_garden_edge_v1.png",
+   "width": 128,
+   "height": 128,
+   "transparent_pixels": 0,
+   "opaque_pixels": 16384,
+   "nontransparent_edge_pixels": 508,
+   "opposite_edge_channel_mismatches": 761,
+   "declared_size_matches": true,
+   "sha256": "3e07520154c355c9bc57a71839e70a51ed8b38328b023314ad16e2ab10583c6d",
+   "path": "schoolfront-pack-v1/ground_rain_garden_edge_v1.png",
+   "id": "ground_rain_garden_edge_v1",
+   "role": "terrain_tile",
+   "source": "terrain_atlas",
+   "source_rect": [
+    418,
+    836,
+    418,
+    418
+   ],
+   "origin": [
+    0,
+    0
+   ],
+   "alpha_background": false
+  },
+  {
+   "file": "ground_road_v1_repeat.png",
+   "width": 256,
+   "height": 256,
+   "transparent_pixels": 0,
+   "opaque_pixels": 65536,
+   "nontransparent_edge_pixels": 1020,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "f315ff45b9fc8b9eccdd5d240fd670327089c5cadaccbbe7f9e4f0270f6f858d",
+   "path": "schoolfront-pack-v1/ground_road_v1_repeat.png",
+   "id": "ground_road_v1_repeat",
+   "role": "seamless_mirrored_material",
+   "source": "ground_road_v1",
+   "source_rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "origin": [
+    0,
+    0
+   ],
+   "alpha_background": false
+  },
+  {
+   "file": "ground_road_v1.png",
+   "width": 128,
+   "height": 128,
+   "transparent_pixels": 0,
+   "opaque_pixels": 16384,
+   "nontransparent_edge_pixels": 508,
+   "opposite_edge_channel_mismatches": 750,
+   "declared_size_matches": true,
+   "sha256": "e3cb0d57f2643045b814ec4621b1c7c22e18a42fcbab5dd54ede61b01564576d",
+   "path": "schoolfront-pack-v1/ground_road_v1.png",
+   "id": "ground_road_v1",
+   "role": "terrain_tile",
+   "source": "terrain_atlas",
+   "source_rect": [
+    0,
+    418,
+    418,
+    418
+   ],
+   "origin": [
+    0,
+    0
+   ],
+   "alpha_background": false
+  },
+  {
+   "file": "ground_shallow_puddle_v1.png",
+   "width": 128,
+   "height": 128,
+   "transparent_pixels": 0,
+   "opaque_pixels": 16384,
+   "nontransparent_edge_pixels": 508,
+   "opposite_edge_channel_mismatches": 751,
+   "declared_size_matches": true,
+   "sha256": "e4129b5ead5f8de4572e48cd8b59d9ef000336c5e8a96c7c43b0d5ce4f6353bf",
+   "path": "schoolfront-pack-v1/ground_shallow_puddle_v1.png",
+   "id": "ground_shallow_puddle_v1",
+   "role": "terrain_tile",
+   "source": "terrain_atlas",
+   "source_rect": [
+    836,
+    418,
+    418,
+    418
+   ],
+   "origin": [
+    0,
+    0
+   ],
+   "alpha_background": false
+  },
+  {
+   "file": "ground_sidewalk_v1_repeat.png",
+   "width": 256,
+   "height": 256,
+   "transparent_pixels": 0,
+   "opaque_pixels": 65536,
+   "nontransparent_edge_pixels": 1020,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "a9d0c8e38384fcbec3bc2f3cd3ee8ecbb5f1c29a8ce8d0e32c3608ac71249dec",
+   "path": "schoolfront-pack-v1/ground_sidewalk_v1_repeat.png",
+   "id": "ground_sidewalk_v1_repeat",
+   "role": "seamless_mirrored_material",
+   "source": "ground_sidewalk_v1",
+   "source_rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "origin": [
+    0,
+    0
+   ],
+   "alpha_background": false
+  },
+  {
+   "file": "ground_sidewalk_v1.png",
+   "width": 128,
+   "height": 128,
+   "transparent_pixels": 0,
+   "opaque_pixels": 16384,
+   "nontransparent_edge_pixels": 508,
+   "opposite_edge_channel_mismatches": 754,
+   "declared_size_matches": true,
+   "sha256": "c143f8ceab7782bd1c1b087a265d84a98061ff242a14d3fed55c5349c11c641d",
+   "path": "schoolfront-pack-v1/ground_sidewalk_v1.png",
+   "id": "ground_sidewalk_v1",
+   "role": "terrain_tile",
+   "source": "terrain_atlas",
+   "source_rect": [
+    836,
+    0,
+    418,
+    418
+   ],
+   "origin": [
+    0,
+    0
+   ],
+   "alpha_background": false
+  },
+  {
+   "file": "house_2026_v1_fg.png",
+   "width": 320,
+   "height": 448,
+   "transparent_pixels": 121571,
+   "opaque_pixels": 20717,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "134c5a0da2a1d18011b52f96aea429e8d31efa4929d961dc2bade91a5e37fe7e",
+   "path": "schoolfront-pack-v1/house_2026_v1_fg.png",
+   "id": "house_2026_v1_fg",
+   "role": "roof_occluder",
+   "source": "house_2026_v1",
+   "source_rect": [
+    0,
+    0,
+    320,
+    170
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "house_2026_v1_mg.png",
+   "width": 320,
+   "height": 448,
+   "transparent_pixels": 65162,
+   "opaque_pixels": 75491,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "34695fbd97d8f14a22419ada3fb20e73c2a0fa3c12b212c437d84469d2cb25fc",
+   "path": "schoolfront-pack-v1/house_2026_v1_mg.png",
+   "id": "house_2026_v1_mg",
+   "role": "building_wall",
+   "source": "house_2026_v1",
+   "source_rect": [
+    0,
+    170,
+    320,
+    278
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "house_2026_v1_shadow.png",
+   "width": 320,
+   "height": 149,
+   "transparent_pixels": 7988,
+   "opaque_pixels": 0,
+   "nontransparent_edge_pixels": 341,
+   "opposite_edge_channel_mismatches": 1311,
+   "declared_size_matches": true,
+   "sha256": "9261f0317b22041e6905a114b64bcc78d368abb529b4834e53e8f126a8c9d644",
+   "path": "schoolfront-pack-v1/house_2026_v1_shadow.png",
+   "id": "house_2026_v1_shadow",
+   "role": "visual_shadow_not_science_mask",
+   "source": "house_2026_v1_fg",
+   "source_rect": [
+    8,
+    83,
+    301,
+    87
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "house_2026_v1.png",
+   "width": 320,
+   "height": 448,
+   "transparent_pixels": 43373,
+   "opaque_pixels": 96208,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "04bf7bf7f065ea3b82135662fa0eb29e96cb274eb171ff2584f47a527587ef1e",
+   "path": "schoolfront-pack-v1/house_2026_v1.png",
+   "id": "house_2026_v1",
+   "role": "building",
+   "source": "buildings_atlas",
+   "source_rect": [
+    833,
+    93,
+    317,
+    369
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "house_2126_v1_fg.png",
+   "width": 320,
+   "height": 448,
+   "transparent_pixels": 124383,
+   "opaque_pixels": 18051,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "4fbeb3ab7d06997d38aece6976add7ae6571567b6d80c2ce7298c48947a21efd",
+   "path": "schoolfront-pack-v1/house_2126_v1_fg.png",
+   "id": "house_2126_v1_fg",
+   "role": "roof_occluder",
+   "source": "house_2126_v1",
+   "source_rect": [
+    0,
+    0,
+    320,
+    170
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "house_2126_v1_mg.png",
+   "width": 320,
+   "height": 448,
+   "transparent_pixels": 65865,
+   "opaque_pixels": 74651,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "d1db53697ef7c2219e7b5c592b90aafe2ba8b2140b14a3a6ca0ca6825c9cd50a",
+   "path": "schoolfront-pack-v1/house_2126_v1_mg.png",
+   "id": "house_2126_v1_mg",
+   "role": "building_wall",
+   "source": "house_2126_v1",
+   "source_rect": [
+    0,
+    170,
+    320,
+    278
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "house_2126_v1_shadow.png",
+   "width": 320,
+   "height": 149,
+   "transparent_pixels": 8136,
+   "opaque_pixels": 0,
+   "nontransparent_edge_pixels": 354,
+   "opposite_edge_channel_mismatches": 1309,
+   "declared_size_matches": true,
+   "sha256": "a8e7de4d225968170096b98f8207c67afe6b7f24b89d4f3640299edb2db8b48b",
+   "path": "schoolfront-pack-v1/house_2126_v1_shadow.png",
+   "id": "house_2126_v1_shadow",
+   "role": "visual_shadow_not_science_mask",
+   "source": "house_2126_v1_fg",
+   "source_rect": [
+    9,
+    91,
+    290,
+    79
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "house_2126_v1.png",
+   "width": 320,
+   "height": 448,
+   "transparent_pixels": 46888,
+   "opaque_pixels": 92702,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "373a5e45414e85924bc2c15d21c8eac2a8a6655fa1e33a11044a4402ec15bf48",
+   "path": "schoolfront-pack-v1/house_2126_v1.png",
+   "id": "house_2126_v1",
+   "role": "building",
+   "source": "buildings_atlas",
+   "source_rect": [
+    832,
+    560,
+    327,
+    373
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "npc_grandmother_candidate_v1.png",
+   "width": 128,
+   "height": 192,
+   "transparent_pixels": 14879,
+   "opaque_pixels": 8869,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "9f9e27a06278c6d58166aae58ca2420af4d0fce3f262618b70cef45a63ebf47b",
+   "path": "schoolfront-pack-v1/npc_grandmother_candidate_v1.png",
+   "id": "npc_grandmother_candidate_v1",
+   "role": "character_static_south",
+   "source": "characters_atlas",
+   "source_rect": [
+    240,
+    581,
+    287,
+    618
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "npc_pharmacist_candidate_v1.png",
+   "width": 128,
+   "height": 192,
+   "transparent_pixels": 14912,
+   "opaque_pixels": 8871,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "cfe42c4db63039becba42c5b16ffd74e5e5c5e829ec198284873b07c07239dca",
+   "path": "schoolfront-pack-v1/npc_pharmacist_candidate_v1.png",
+   "id": "npc_pharmacist_candidate_v1",
+   "role": "character_static_south",
+   "source": "characters_atlas",
+   "source_rect": [
+    747,
+    565,
+    312,
+    672
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "planning_board_v1.png",
+   "width": 192,
+   "height": 224,
+   "transparent_pixels": 20465,
+   "opaque_pixels": 20868,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "61d6931141d57c712df4434954bee3b070a2714e0c0621855c0dbf4d3550a2fa",
+   "path": "schoolfront-pack-v1/planning_board_v1.png",
+   "id": "planning_board_v1",
+   "role": "interactive",
+   "source": "props_atlas",
+   "source_rect": [
+    766,
+    111,
+    364,
+    351
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "player_sprite_candidate_v1.png",
+   "width": 128,
+   "height": 192,
+   "transparent_pixels": 13472,
+   "opaque_pixels": 10082,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "dcc5b52cf24b7ea0f8a05d10cf8ab918ef90db10db9bfc3bc245bf62257a16c2",
+   "path": "schoolfront-pack-v1/player_sprite_candidate_v1.png",
+   "id": "player_sprite_candidate_v1",
+   "role": "character_static_south",
+   "source": "characters_atlas",
+   "source_rect": [
+    274,
+    17,
+    268,
+    525
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "rain_garden_module_v1.png",
+   "width": 384,
+   "height": 160,
+   "transparent_pixels": 20726,
+   "opaque_pixels": 38607,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "e71a0a8ae895c77af96c353010ee13fbce6d3b17c5fab0e328d5a9efca752db2",
+   "path": "schoolfront-pack-v1/rain_garden_module_v1.png",
+   "id": "rain_garden_module_v1",
+   "role": "selectable_ground_object",
+   "source": "props_atlas",
+   "source_rect": [
+    37,
+    635,
+    673,
+    244
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "romi_sprite_candidate_v1.png",
+   "width": 128,
+   "height": 128,
+   "transparent_pixels": 9334,
+   "opaque_pixels": 6467,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "afefbf08a48515f26d1abe0c3d1ea18eb5e8ffa12791c40a3d8e85ed034be758",
+   "path": "schoolfront-pack-v1/romi_sprite_candidate_v1.png",
+   "id": "romi_sprite_candidate_v1",
+   "role": "character_static_south",
+   "source": "characters_atlas",
+   "source_rect": [
+    732,
+    176,
+    291,
+    277
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "school_facade_2026_v1_fg.png",
+   "width": 768,
+   "height": 448,
+   "transparent_pixels": 283939,
+   "opaque_pixels": 58152,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "debb918213e0cb5bce49ca58cc1a998a7748fe77ae7bc4bc81982c8b5543304a",
+   "path": "schoolfront-pack-v1/school_facade_2026_v1_fg.png",
+   "id": "school_facade_2026_v1_fg",
+   "role": "roof_occluder",
+   "source": "school_facade_2026_v1",
+   "source_rect": [
+    0,
+    0,
+    768,
+    170
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "school_facade_2026_v1_mg.png",
+   "width": 768,
+   "height": 448,
+   "transparent_pixels": 148903,
+   "opaque_pixels": 191620,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "27d1fd7e0e2300b37e62a003ea6eaa654eb51feb69d902d2f8e6bffd85a3b08b",
+   "path": "schoolfront-pack-v1/school_facade_2026_v1_mg.png",
+   "id": "school_facade_2026_v1_mg",
+   "role": "building_wall",
+   "source": "school_facade_2026_v1",
+   "source_rect": [
+    0,
+    170,
+    768,
+    278
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "school_facade_2026_v1_shadow.png",
+   "width": 768,
+   "height": 149,
+   "transparent_pixels": 22703,
+   "opaque_pixels": 0,
+   "nontransparent_edge_pixels": 809,
+   "opposite_edge_channel_mismatches": 3128,
+   "declared_size_matches": true,
+   "sha256": "43843294d4e94ced474d3030845a2405a23780ebbb13d99d54e95da4455231f4",
+   "path": "schoolfront-pack-v1/school_facade_2026_v1_shadow.png",
+   "id": "school_facade_2026_v1_shadow",
+   "role": "visual_shadow_not_science_mask",
+   "source": "school_facade_2026_v1_fg",
+   "source_rect": [
+    14,
+    69,
+    745,
+    101
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "school_facade_2026_v1.png",
+   "width": 768,
+   "height": 448,
+   "transparent_pixels": 88778,
+   "opaque_pixels": 249772,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "f95c8ea124180198c5849a6ec57920863a9e92df346a54f24df8787b02ea7aad",
+   "path": "schoolfront-pack-v1/school_facade_2026_v1.png",
+   "id": "school_facade_2026_v1",
+   "role": "building",
+   "source": "buildings_atlas",
+   "source_rect": [
+    58,
+    84,
+    751,
+    371
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "school_facade_2126_v1_fg.png",
+   "width": 768,
+   "height": 448,
+   "transparent_pixels": 285384,
+   "opaque_pixels": 56203,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "b66fdc243f195b9cf6f59dd35b5dd5ff3f97adba5441cf4d75cabfc9f1798ab4",
+   "path": "schoolfront-pack-v1/school_facade_2126_v1_fg.png",
+   "id": "school_facade_2126_v1_fg",
+   "role": "roof_occluder",
+   "source": "school_facade_2126_v1",
+   "source_rect": [
+    0,
+    0,
+    768,
+    170
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "school_facade_2126_v1_mg.png",
+   "width": 768,
+   "height": 448,
+   "transparent_pixels": 149980,
+   "opaque_pixels": 191284,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "f884f35c48c8c241140caf6fc60d44c3112b63a76994652755f23c80d4d81ed6",
+   "path": "schoolfront-pack-v1/school_facade_2126_v1_mg.png",
+   "id": "school_facade_2126_v1_mg",
+   "role": "building_wall",
+   "source": "school_facade_2126_v1",
+   "source_rect": [
+    0,
+    170,
+    768,
+    278
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "school_facade_2126_v1_shadow.png",
+   "width": 768,
+   "height": 149,
+   "transparent_pixels": 26742,
+   "opaque_pixels": 0,
+   "nontransparent_edge_pixels": 827,
+   "opposite_edge_channel_mismatches": 3163,
+   "declared_size_matches": true,
+   "sha256": "a8c234ff0c602317ae9473b9a9883f9aaa36d5b5f0c47649fe80e95c916b0623",
+   "path": "schoolfront-pack-v1/school_facade_2126_v1_shadow.png",
+   "id": "school_facade_2126_v1_shadow",
+   "role": "visual_shadow_not_science_mask",
+   "source": "school_facade_2126_v1_fg",
+   "source_rect": [
+    13,
+    66,
+    735,
+    104
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "school_facade_2126_v1.png",
+   "width": 768,
+   "height": 448,
+   "transparent_pixels": 91300,
+   "opaque_pixels": 247487,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "292a799b5e436b0a8765c5bf2c77931047661a1e7766e3cb4c8a47e00514a07f",
+   "path": "schoolfront-pack-v1/school_facade_2126_v1.png",
+   "id": "school_facade_2126_v1",
+   "role": "building",
+   "source": "buildings_atlas",
+   "source_rect": [
+    58,
+    548,
+    760,
+    378
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "school_gate_module_v1.png",
+   "width": 512,
+   "height": 288,
+   "transparent_pixels": 77763,
+   "opaque_pixels": 59873,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "c6bab218e91727282542c6f23373afd39ebbdd226ea8fedbe97dcbc354ad7f8a",
+   "path": "schoolfront-pack-v1/school_gate_module_v1.png",
+   "id": "school_gate_module_v1",
+   "role": "gate",
+   "source": "props_atlas",
+   "source_rect": [
+    25,
+    103,
+    719,
+    357
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "schoolfront_2026_bg_v1.png",
+   "width": 1536,
+   "height": 1024,
+   "transparent_pixels": 0,
+   "opaque_pixels": 1572864,
+   "nontransparent_edge_pixels": 5116,
+   "opposite_edge_channel_mismatches": 7478,
+   "declared_size_matches": true,
+   "sha256": "35a798a2d140483521b8db8da98db5d12421b22f1f669b3b57e2fac8b8dbecc6",
+   "path": "schoolfront-pack-v1/schoolfront_2026_bg_v1.png",
+   "alpha_background": false
+  },
+  {
+   "file": "schoolfront_2026_characters_v1.png",
+   "width": 1536,
+   "height": 1024,
+   "transparent_pixels": 1568682,
+   "opaque_pixels": 3269,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "508919f05f6b47a084586bd4bce8fd34ce190098f016a3588192d67a15b8fc85",
+   "path": "schoolfront-pack-v1/schoolfront_2026_characters_v1.png",
+   "alpha_background": true
+  },
+  {
+   "file": "schoolfront_2026_fg_v1.png",
+   "width": 1536,
+   "height": 1024,
+   "transparent_pixels": 1497783,
+   "opaque_pixels": 64166,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "5defabe6bdc415c65ac5c585935670e3e389b928411ceb2110b931179f608bfc",
+   "path": "schoolfront-pack-v1/schoolfront_2026_fg_v1.png",
+   "alpha_background": true
+  },
+  {
+   "file": "schoolfront_2026_ground_changes_v1.png",
+   "width": 1536,
+   "height": 1024,
+   "transparent_pixels": 1572864,
+   "opaque_pixels": 0,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "0e6b3ea863e6c793c17ca0327e7bb7945855c1092d871cefbdccb45c2885f659",
+   "path": "schoolfront-pack-v1/schoolfront_2026_ground_changes_v1.png",
+   "alpha_background": true
+  },
+  {
+   "file": "schoolfront_2026_interactive_v1.png",
+   "width": 1536,
+   "height": 1024,
+   "transparent_pixels": 1561139,
+   "opaque_pixels": 9753,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "5f1f7a7bd10019c384701fb1a3457bbd416a5d75afe7125ca9ce9cde09afda0f",
+   "path": "schoolfront-pack-v1/schoolfront_2026_interactive_v1.png",
+   "alpha_background": true
+  },
+  {
+   "file": "schoolfront_2026_mg_v1.png",
+   "width": 1536,
+   "height": 1024,
+   "transparent_pixels": 1351559,
+   "opaque_pixels": 209940,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "27767c66d06dc2b83fcdcf4aaeb7eb2c6efdbfafcc1360c307136a6884553848",
+   "path": "schoolfront-pack-v1/schoolfront_2026_mg_v1.png",
+   "alpha_background": true
+  },
+  {
+   "file": "schoolfront_2026_shadow_v1.png",
+   "width": 1536,
+   "height": 1024,
+   "transparent_pixels": 1521672,
+   "opaque_pixels": 0,
+   "nontransparent_edge_pixels": 27,
+   "opposite_edge_channel_mismatches": 104,
+   "declared_size_matches": true,
+   "sha256": "bcb08eef9bc3efb3e30767ff8b25faa8db23bdf1c5788eeacbc856fee12151c3",
+   "path": "schoolfront-pack-v1/schoolfront_2026_shadow_v1.png",
+   "alpha_background": true
+  },
+  {
+   "file": "schoolfront_2126_bg_v1.png",
+   "width": 1536,
+   "height": 1024,
+   "transparent_pixels": 0,
+   "opaque_pixels": 1572864,
+   "nontransparent_edge_pixels": 5116,
+   "opposite_edge_channel_mismatches": 7478,
+   "declared_size_matches": true,
+   "sha256": "35a798a2d140483521b8db8da98db5d12421b22f1f669b3b57e2fac8b8dbecc6",
+   "path": "schoolfront-pack-v1/schoolfront_2126_bg_v1.png",
+   "alpha_background": false
+  },
+  {
+   "file": "schoolfront_2126_characters_v1.png",
+   "width": 1536,
+   "height": 1024,
+   "transparent_pixels": 1568682,
+   "opaque_pixels": 3269,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "508919f05f6b47a084586bd4bce8fd34ce190098f016a3588192d67a15b8fc85",
+   "path": "schoolfront-pack-v1/schoolfront_2126_characters_v1.png",
+   "alpha_background": true
+  },
+  {
+   "file": "schoolfront_2126_fg_v1.png",
+   "width": 1536,
+   "height": 1024,
+   "transparent_pixels": 1393509,
+   "opaque_pixels": 131948,
+   "nontransparent_edge_pixels": 14,
+   "opposite_edge_channel_mismatches": 53,
+   "declared_size_matches": true,
+   "sha256": "aae27942483c4848fcbe67fe770a468455b32e765f0288187a430f9aeb206c45",
+   "path": "schoolfront-pack-v1/schoolfront_2126_fg_v1.png",
+   "alpha_background": true
+  },
+  {
+   "file": "schoolfront_2126_ground_changes_v1.png",
+   "width": 1536,
+   "height": 1024,
+   "transparent_pixels": 1441792,
+   "opaque_pixels": 131072,
+   "nontransparent_edge_pixels": 256,
+   "opposite_edge_channel_mismatches": 1024,
+   "declared_size_matches": true,
+   "sha256": "71a7eb7ee14a652662aa8697fdb01b40fbe4bcf4112304512f5bff43844a9f34",
+   "path": "schoolfront-pack-v1/schoolfront_2126_ground_changes_v1.png",
+   "alpha_background": true
+  },
+  {
+   "file": "schoolfront_2126_interactive_v1.png",
+   "width": 1536,
+   "height": 1024,
+   "transparent_pixels": 1528776,
+   "opaque_pixels": 39581,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "855452988ca555e26d3406c692e08af24a239d5a19e7e668d8b9a5b62fa4c7d2",
+   "path": "schoolfront-pack-v1/schoolfront_2126_interactive_v1.png",
+   "alpha_background": true
+  },
+  {
+   "file": "schoolfront_2126_mg_v1.png",
+   "width": 1536,
+   "height": 1024,
+   "transparent_pixels": 1337257,
+   "opaque_pixels": 216052,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "a30e641ff94e8c3d29c28cb6f0cfd08d0f3cc77eba5ef7483a9cea8a8ec384a2",
+   "path": "schoolfront-pack-v1/schoolfront_2126_mg_v1.png",
+   "alpha_background": true
+  },
+  {
+   "file": "schoolfront_2126_shadow_v1.png",
+   "width": 1536,
+   "height": 1024,
+   "transparent_pixels": 1460018,
+   "opaque_pixels": 0,
+   "nontransparent_edge_pixels": 81,
+   "opposite_edge_channel_mismatches": 317,
+   "declared_size_matches": true,
+   "sha256": "94efb8ac201e44282cb87cca5b7a98fea69f322d506525ba1e2a8f4ad2cfb6b1",
+   "path": "schoolfront-pack-v1/schoolfront_2126_shadow_v1.png",
+   "alpha_background": true
+  },
+  {
+   "file": "shade_pergola_v1_fg.png",
+   "width": 384,
+   "height": 288,
+   "transparent_pixels": 75666,
+   "opaque_pixels": 31595,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "3a8ed4f1637e23e4551a7892fbe089441ba03f7cec6c9570e22a4611416695bf",
+   "path": "schoolfront-pack-v1/shade_pergola_v1_fg.png",
+   "id": "shade_pergola_v1_fg",
+   "role": "pergola_occluder",
+   "source": "shade_pergola_v1",
+   "source_rect": [
+    0,
+    0,
+    384,
+    149
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "shade_pergola_v1_mg.png",
+   "width": 384,
+   "height": 288,
+   "transparent_pixels": 103024,
+   "opaque_pixels": 5964,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "87d42a68ef86cc540aa22f4d62e199038c51ca39eeb1570e2e7c7a32950df0c9",
+   "path": "schoolfront-pack-v1/shade_pergola_v1_mg.png",
+   "id": "shade_pergola_v1_mg",
+   "role": "pergola_posts",
+   "source": "shade_pergola_v1",
+   "source_rect": [
+    0,
+    149,
+    384,
+    139
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "shade_pergola_v1.png",
+   "width": 384,
+   "height": 288,
+   "transparent_pixels": 68098,
+   "opaque_pixels": 37559,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "41287b1b8abf9ca0a7c7c4c1c9cebc8010e6271fb8d854493192744de513e118",
+   "path": "schoolfront-pack-v1/shade_pergola_v1.png",
+   "id": "shade_pergola_v1",
+   "role": "climate_retrofit",
+   "source": "props_atlas",
+   "source_rect": [
+    1023,
+    536,
+    488,
+    374
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "shop_2026_v1_fg.png",
+   "width": 320,
+   "height": 448,
+   "transparent_pixels": 105724,
+   "opaque_pixels": 35992,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "7e74cfb4509ab43e71660b2a701b1a3a61da2fd8219a91643e2d7b9472f4290e",
+   "path": "schoolfront-pack-v1/shop_2026_v1_fg.png",
+   "id": "shop_2026_v1_fg",
+   "role": "roof_occluder",
+   "source": "shop_2026_v1",
+   "source_rect": [
+    0,
+    0,
+    320,
+    170
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "shop_2026_v1_mg.png",
+   "width": 320,
+   "height": 448,
+   "transparent_pixels": 62823,
+   "opaque_pixels": 78156,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "88a7dadcbb4cd493118c85e43f0b2ee4bad976631c46de7f37ee5e9a88c23574",
+   "path": "schoolfront-pack-v1/shop_2026_v1_mg.png",
+   "id": "shop_2026_v1_mg",
+   "role": "building_wall",
+   "source": "shop_2026_v1",
+   "source_rect": [
+    0,
+    170,
+    320,
+    278
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "shop_2026_v1_shadow.png",
+   "width": 320,
+   "height": 149,
+   "transparent_pixels": 6980,
+   "opaque_pixels": 0,
+   "nontransparent_edge_pixels": 426,
+   "opposite_edge_channel_mismatches": 1396,
+   "declared_size_matches": true,
+   "sha256": "b993ae4061a5e24aedb301d02976b5c18bc64867dbe794693783787454530512",
+   "path": "schoolfront-pack-v1/shop_2026_v1_shadow.png",
+   "id": "shop_2026_v1_shadow",
+   "role": "visual_shadow_not_science_mask",
+   "source": "shop_2026_v1_fg",
+   "source_rect": [
+    6,
+    27,
+    308,
+    143
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "shop_2026_v1.png",
+   "width": 320,
+   "height": 448,
+   "transparent_pixels": 25187,
+   "opaque_pixels": 114148,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "70dbb4073d0d1901fa53b0a5715b60ced4e8d2e043a88e88ce427fa61f407282",
+   "path": "schoolfront-pack-v1/shop_2026_v1.png",
+   "id": "shop_2026_v1",
+   "role": "building",
+   "source": "buildings_atlas",
+   "source_rect": [
+    1191,
+    80,
+    297,
+    400
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "shop_2126_v1_fg.png",
+   "width": 320,
+   "height": 448,
+   "transparent_pixels": 105600,
+   "opaque_pixels": 35803,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "4a56b74cfbd7fdef4f748542676f623591497a9759c4e2e94711d5d6551a41a9",
+   "path": "schoolfront-pack-v1/shop_2126_v1_fg.png",
+   "id": "shop_2126_v1_fg",
+   "role": "roof_occluder",
+   "source": "shop_2126_v1",
+   "source_rect": [
+    0,
+    0,
+    320,
+    170
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "shop_2126_v1_mg.png",
+   "width": 320,
+   "height": 448,
+   "transparent_pixels": 62340,
+   "opaque_pixels": 78258,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "07f60647907ed80581fe5d309f0260ff8ac8737514a2a8e895d67fcace58eeba",
+   "path": "schoolfront-pack-v1/shop_2126_v1_mg.png",
+   "id": "shop_2126_v1_mg",
+   "role": "building_wall",
+   "source": "shop_2126_v1",
+   "source_rect": [
+    0,
+    170,
+    320,
+    278
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "shop_2126_v1_shadow.png",
+   "width": 320,
+   "height": 149,
+   "transparent_pixels": 6501,
+   "opaque_pixels": 0,
+   "nontransparent_edge_pixels": 411,
+   "opposite_edge_channel_mismatches": 1350,
+   "declared_size_matches": true,
+   "sha256": "430c05dc214c0fceb369183a2d28745ecfe51e6ea2fefe62317d97730d2886bf",
+   "path": "schoolfront-pack-v1/shop_2126_v1_shadow.png",
+   "id": "shop_2126_v1_shadow",
+   "role": "visual_shadow_not_science_mask",
+   "source": "shop_2126_v1_fg",
+   "source_rect": [
+    6,
+    28,
+    308,
+    142
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "shop_2126_v1.png",
+   "width": 320,
+   "height": 448,
+   "transparent_pixels": 24580,
+   "opaque_pixels": 114061,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "7369f992bb1fbeeeed7241cd7d69ef5a8f9e3518a701af880ea7b79dffe85ea6",
+   "path": "schoolfront-pack-v1/shop_2126_v1.png",
+   "id": "shop_2126_v1",
+   "role": "building",
+   "source": "buildings_atlas",
+   "source_rect": [
+    1191,
+    544,
+    300,
+    403
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "storm_drain_v1.png",
+   "width": 128,
+   "height": 80,
+   "transparent_pixels": 3048,
+   "opaque_pixels": 6790,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "146fa845f1f09bbdfaba34f867432d582a6fc76251b7f226ba45ed572e4e22df",
+   "path": "schoolfront-pack-v1/storm_drain_v1.png",
+   "id": "storm_drain_v1",
+   "role": "interactive",
+   "source": "props_atlas",
+   "source_rect": [
+    735,
+    719,
+    272,
+    149
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "tree_forest_oak_v1_fg.png",
+   "width": 384,
+   "height": 448,
+   "transparent_pixels": 100392,
+   "opaque_pixels": 47917,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "9b5c94dfa391e62c1cc35c592e2c2ff75967e55dd08e41dfa4c8a94238a1c5e5",
+   "path": "schoolfront-pack-v1/tree_forest_oak_v1_fg.png",
+   "id": "tree_forest_oak_v1_fg",
+   "role": "tree_canopy_occluder",
+   "source": "tree_forest_oak_v1",
+   "source_rect": [
+    0,
+    0,
+    384,
+    448
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "tree_forest_oak_v1_mg.png",
+   "width": 384,
+   "height": 448,
+   "transparent_pixels": 160878,
+   "opaque_pixels": 5613,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "dee3759c656cc70bb745837b6c407367113eeb4a83c5b43bf6782aaee50c534d",
+   "path": "schoolfront-pack-v1/tree_forest_oak_v1_mg.png",
+   "id": "tree_forest_oak_v1_mg",
+   "role": "tree_trunk",
+   "source": "tree_forest_oak_v1",
+   "source_rect": [
+    0,
+    0,
+    384,
+    448
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "tree_forest_oak_v1_shadow.png",
+   "width": 384,
+   "height": 149,
+   "transparent_pixels": 22245,
+   "opaque_pixels": 0,
+   "nontransparent_edge_pixels": 46,
+   "opposite_edge_channel_mismatches": 163,
+   "declared_size_matches": true,
+   "sha256": "f81c8d961b7b94fca316100ba1b018355a955cf4502bbc151e9ab4daa91a2549",
+   "path": "schoolfront-pack-v1/tree_forest_oak_v1_shadow.png",
+   "id": "tree_forest_oak_v1_shadow",
+   "role": "visual_shadow_not_science_mask",
+   "source": "tree_forest_oak_v1_fg",
+   "source_rect": [
+    6,
+    74,
+    372,
+    319
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "tree_forest_oak_v1.png",
+   "width": 384,
+   "height": 448,
+   "transparent_pixels": 89238,
+   "opaque_pixels": 53530,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "560248c615aa1ecd22e086212490bcc93d76ee73112ea255e0e5db76884ed35f",
+   "path": "schoolfront-pack-v1/tree_forest_oak_v1.png",
+   "id": "tree_forest_oak_v1",
+   "role": "tree",
+   "source": "trees_atlas",
+   "source_rect": [
+    600,
+    502,
+    502,
+    497
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "tree_replacement_staked_v1_fg.png",
+   "width": 160,
+   "height": 224,
+   "transparent_pixels": 29873,
+   "opaque_pixels": 558,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "0c8a921b708294fe8aa302f15af3252cdc71bcd5e61f2024e65513f8d2b0db0d",
+   "path": "schoolfront-pack-v1/tree_replacement_staked_v1_fg.png",
+   "id": "tree_replacement_staked_v1_fg",
+   "role": "tree_canopy_occluder",
+   "source": "tree_replacement_staked_v1",
+   "source_rect": [
+    0,
+    0,
+    160,
+    224
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "tree_replacement_staked_v1_mg.png",
+   "width": 160,
+   "height": 224,
+   "transparent_pixels": 32472,
+   "opaque_pixels": 1182,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "052158e3689e64ef92a15ab6d17d0663ed795f828fb3cb1001578f3ba4f3ff9f",
+   "path": "schoolfront-pack-v1/tree_replacement_staked_v1_mg.png",
+   "id": "tree_replacement_staked_v1_mg",
+   "role": "tree_trunk",
+   "source": "tree_replacement_staked_v1",
+   "source_rect": [
+    0,
+    0,
+    160,
+    224
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "tree_replacement_staked_v1_shadow.png",
+   "width": 160,
+   "height": 74,
+   "transparent_pixels": 5109,
+   "opaque_pixels": 0,
+   "nontransparent_edge_pixels": 52,
+   "opposite_edge_channel_mismatches": 172,
+   "declared_size_matches": true,
+   "sha256": "cf6c826fe14e64a19ecc1dbf37b7be82a0376374e069dd1cfbafad67d00c5733",
+   "path": "schoolfront-pack-v1/tree_replacement_staked_v1_shadow.png",
+   "id": "tree_replacement_staked_v1_shadow",
+   "role": "visual_shadow_not_science_mask",
+   "source": "tree_replacement_staked_v1_fg",
+   "source_rect": [
+    28,
+    6,
+    104,
+    102
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "tree_replacement_staked_v1.png",
+   "width": 160,
+   "height": 224,
+   "transparent_pixels": 26505,
+   "opaque_pixels": 1740,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "c42bcb75d9be000c165ef4d29c2a169206010e3cd4016f4d1c63ea73b7288253",
+   "path": "schoolfront-pack-v1/tree_replacement_staked_v1.png",
+   "id": "tree_replacement_staked_v1",
+   "role": "tree",
+   "source": "trees_atlas",
+   "source_rect": [
+    1189,
+    576,
+    195,
+    399
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "tree_zelkova_mature_v1_fg.png",
+   "width": 384,
+   "height": 448,
+   "transparent_pixels": 111725,
+   "opaque_pixels": 38274,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "ede3539cd0db42181496936bc01cf4317f25555914b04e0519b2e78c0678349e",
+   "path": "schoolfront-pack-v1/tree_zelkova_mature_v1_fg.png",
+   "id": "tree_zelkova_mature_v1_fg",
+   "role": "tree_canopy_occluder",
+   "source": "tree_zelkova_mature_v1",
+   "source_rect": [
+    0,
+    0,
+    384,
+    448
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "tree_zelkova_mature_v1_mg.png",
+   "width": 384,
+   "height": 448,
+   "transparent_pixels": 162525,
+   "opaque_pixels": 4547,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "f6849ef1e6f70ac42b038b33d99b70691f96a8509e53bec1358faf4cb7049662",
+   "path": "schoolfront-pack-v1/tree_zelkova_mature_v1_mg.png",
+   "id": "tree_zelkova_mature_v1_mg",
+   "role": "tree_trunk",
+   "source": "tree_zelkova_mature_v1",
+   "source_rect": [
+    0,
+    0,
+    384,
+    448
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "tree_zelkova_mature_v1_shadow.png",
+   "width": 384,
+   "height": 149,
+   "transparent_pixels": 18064,
+   "opaque_pixels": 0,
+   "nontransparent_edge_pixels": 33,
+   "opposite_edge_channel_mismatches": 121,
+   "declared_size_matches": true,
+   "sha256": "f253dca08907bb9a86a86dffaef393e10b4f8ca875bd1e916b56e4681967392f",
+   "path": "schoolfront-pack-v1/tree_zelkova_mature_v1_shadow.png",
+   "id": "tree_zelkova_mature_v1_shadow",
+   "role": "visual_shadow_not_science_mask",
+   "source": "tree_zelkova_mature_v1_fg",
+   "source_rect": [
+    6,
+    116,
+    372,
+    239
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "tree_zelkova_mature_v1.png",
+   "width": 384,
+   "height": 448,
+   "transparent_pixels": 102218,
+   "opaque_pixels": 42821,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "cc8bedf0c8a12ad37984a46bcb9c376cd8661261352556a3c5b8cf499e157c8d",
+   "path": "schoolfront-pack-v1/tree_zelkova_mature_v1.png",
+   "id": "tree_zelkova_mature_v1",
+   "role": "tree",
+   "source": "trees_atlas",
+   "source_rect": [
+    7,
+    480,
+    593,
+    520
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "tree_zelkova_mid_v1_fg.png",
+   "width": 256,
+   "height": 320,
+   "transparent_pixels": 51568,
+   "opaque_pixels": 14780,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "09e250ec56bb0bbf84bd067a8a29067514da4e7edf77dc00a47557fbc6bfd769",
+   "path": "schoolfront-pack-v1/tree_zelkova_mid_v1_fg.png",
+   "id": "tree_zelkova_mid_v1_fg",
+   "role": "tree_canopy_occluder",
+   "source": "tree_zelkova_mid_v1",
+   "source_rect": [
+    0,
+    0,
+    256,
+    320
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "tree_zelkova_mid_v1_mg.png",
+   "width": 256,
+   "height": 320,
+   "transparent_pixels": 77278,
+   "opaque_pixels": 1716,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "fb34767f30d3c90e6dfca53b0a0b7c14a0fba0a823e5b090bbead107efaf48ed",
+   "path": "schoolfront-pack-v1/tree_zelkova_mid_v1_mg.png",
+   "id": "tree_zelkova_mid_v1_mg",
+   "role": "tree_trunk",
+   "source": "tree_zelkova_mid_v1",
+   "source_rect": [
+    0,
+    0,
+    256,
+    320
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "tree_zelkova_mid_v1_shadow.png",
+   "width": 256,
+   "height": 106,
+   "transparent_pixels": 8953,
+   "opaque_pixels": 0,
+   "nontransparent_edge_pixels": 21,
+   "opposite_edge_channel_mismatches": 63,
+   "declared_size_matches": true,
+   "sha256": "5ac3747513a9d9c039764008d92c245ac4f478fc81bbc7638c8d9a35151112be",
+   "path": "schoolfront-pack-v1/tree_zelkova_mid_v1_shadow.png",
+   "id": "tree_zelkova_mid_v1_shadow",
+   "role": "visual_shadow_not_science_mask",
+   "source": "tree_zelkova_mid_v1_fg",
+   "source_rect": [
+    6,
+    35,
+    244,
+    186
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "tree_zelkova_mid_v1.png",
+   "width": 256,
+   "height": 320,
+   "transparent_pixels": 46926,
+   "opaque_pixels": 16496,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "fb17a991130da6ed07b6347b0e794177da2854a2fc04e84260909a6978d580ee",
+   "path": "schoolfront-pack-v1/tree_zelkova_mid_v1.png",
+   "id": "tree_zelkova_mid_v1",
+   "role": "tree",
+   "source": "trees_atlas",
+   "source_rect": [
+    1063,
+    23,
+    400,
+    457
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "tree_zelkova_sapling_v1_fg.png",
+   "width": 128,
+   "height": 192,
+   "transparent_pixels": 19324,
+   "opaque_pixels": 136,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "606dc4a6f3aa53cfb24f5d789fbcd2e9a2265c7058429f3aa52e249227610c14",
+   "path": "schoolfront-pack-v1/tree_zelkova_sapling_v1_fg.png",
+   "id": "tree_zelkova_sapling_v1_fg",
+   "role": "tree_canopy_occluder",
+   "source": "tree_zelkova_sapling_v1",
+   "source_rect": [
+    0,
+    0,
+    128,
+    192
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "tree_zelkova_sapling_v1_mg.png",
+   "width": 128,
+   "height": 192,
+   "transparent_pixels": 22383,
+   "opaque_pixels": 256,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "73d018535e8d6d47def96a6299bd851d98271c4c915b670452ea1f389dc31b3c",
+   "path": "schoolfront-pack-v1/tree_zelkova_sapling_v1_mg.png",
+   "id": "tree_zelkova_sapling_v1_mg",
+   "role": "tree_trunk",
+   "source": "tree_zelkova_sapling_v1",
+   "source_rect": [
+    0,
+    0,
+    128,
+    192
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "tree_zelkova_sapling_v1_shadow.png",
+   "width": 128,
+   "height": 64,
+   "transparent_pixels": 3564,
+   "opaque_pixels": 0,
+   "nontransparent_edge_pixels": 41,
+   "opposite_edge_channel_mismatches": 123,
+   "declared_size_matches": true,
+   "sha256": "6321ac229926b42bd7c3b1fefc8cf7272000b1421dad27972f0fc5b5585a5f8e",
+   "path": "schoolfront-pack-v1/tree_zelkova_sapling_v1_shadow.png",
+   "id": "tree_zelkova_sapling_v1_shadow",
+   "role": "visual_shadow_not_science_mask",
+   "source": "tree_zelkova_sapling_v1_fg",
+   "source_rect": [
+    11,
+    6,
+    105,
+    88
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "tree_zelkova_sapling_v1.png",
+   "width": 128,
+   "height": 192,
+   "transparent_pixels": 17131,
+   "opaque_pixels": 392,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "5b16c0cdbc6d06a85cf24e883f253b023f275bbb0bac3d173919fccdb9f3a59e",
+   "path": "schoolfront-pack-v1/tree_zelkova_sapling_v1.png",
+   "id": "tree_zelkova_sapling_v1",
+   "role": "tree",
+   "source": "trees_atlas",
+   "source_rect": [
+    198,
+    206,
+    142,
+    243
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "tree_zelkova_young_v1_fg.png",
+   "width": 192,
+   "height": 256,
+   "transparent_pixels": 34582,
+   "opaque_pixels": 4284,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "4bb450ba478076784ae5ab9dae3c73e4282904b6ca44f1d000fa4f738bbe9bae",
+   "path": "schoolfront-pack-v1/tree_zelkova_young_v1_fg.png",
+   "id": "tree_zelkova_young_v1_fg",
+   "role": "tree_canopy_occluder",
+   "source": "tree_zelkova_young_v1",
+   "source_rect": [
+    0,
+    0,
+    192,
+    256
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "tree_zelkova_young_v1_mg.png",
+   "width": 192,
+   "height": 256,
+   "transparent_pixels": 45883,
+   "opaque_pixels": 574,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "e479f453c03677cfadf46aafc1faa39ab2667eec4dc5ee9d1efe2ff24b337088",
+   "path": "schoolfront-pack-v1/tree_zelkova_young_v1_mg.png",
+   "id": "tree_zelkova_young_v1_mg",
+   "role": "tree_trunk",
+   "source": "tree_zelkova_young_v1",
+   "source_rect": [
+    0,
+    0,
+    192,
+    256
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "tree_zelkova_young_v1_shadow.png",
+   "width": 192,
+   "height": 85,
+   "transparent_pixels": 7067,
+   "opaque_pixels": 0,
+   "nontransparent_edge_pixels": 24,
+   "opposite_edge_channel_mismatches": 84,
+   "declared_size_matches": true,
+   "sha256": "31c7c297230afa29304df807d8fdd3a49c6ce68438ed4c7be6da74c577e5d158",
+   "path": "schoolfront-pack-v1/tree_zelkova_young_v1_shadow.png",
+   "id": "tree_zelkova_young_v1_shadow",
+   "role": "visual_shadow_not_science_mask",
+   "source": "tree_zelkova_young_v1_fg",
+   "source_rect": [
+    11,
+    6,
+    170,
+    152
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  },
+  {
+   "file": "tree_zelkova_young_v1.png",
+   "width": 192,
+   "height": 256,
+   "transparent_pixels": 31313,
+   "opaque_pixels": 4858,
+   "nontransparent_edge_pixels": 0,
+   "opposite_edge_channel_mismatches": 0,
+   "declared_size_matches": true,
+   "sha256": "cfab8d1851c85933d0d6c2720b40e7fee0261ff61b992c1aa1b0338ee90bd75d",
+   "path": "schoolfront-pack-v1/tree_zelkova_young_v1.png",
+   "id": "tree_zelkova_young_v1",
+   "role": "tree",
+   "source": "trees_atlas",
+   "source_rect": [
+    641,
+    104,
+    248,
+    357
+   ],
+   "origin": [
+    0.5,
+    1
+   ],
+   "alpha_background": true
+  }
+ ],
+ "qa": {
+  "browser": {
+   "ready": true,
+   "phaserVersion": "4.2.1",
+   "renderer": "CANVAS",
+   "year": "2126",
+   "errors": [],
+   "loaded": 16,
+   "onlyBgVisible": true,
+   "consoleErrors": [],
+   "passed": true
+  },
+  "dimensions": true,
+  "seamless_material_edges": true,
+  "shared_background_identical": true,
+  "missing_references": 0
+ },
+ "limitations": [
+  "Static single-frame characters; no directional animation",
+  "Scene coordinates require mapping to existing logical world",
+  "Canopy/roof split masks do not restore hidden object interiors",
+  "Visual shadows are not science simulation masks",
+  "No gameplay collision or mobile/WebGL performance validation"
+ ],
+ "documents_read": [
+  "ART_DIRECTION.md",
+  "ASSET_MANIFEST.md",
+  "CODEX_IMAGE_TASKS.md",
+  "codex_manifest.json",
+  "GAMEPLAY_SPEC.md",
+  "GAME_DESIGN.md",
+  "HANDOFF_SUMMARY.md",
+  "NEXT_ACTIONS.md",
+  "NEXT_SESSION.md",
+  "PROJECT_STATE.md",
+  "RUN_AND_CHECK.md",
+  "SCENARIO_MATRIX.md",
+  "SCIENCE_MODEL.md",
+  "SCIENCE_WARNINGS.md",
+  "WORLD_MAP.md"
+ ]
+}

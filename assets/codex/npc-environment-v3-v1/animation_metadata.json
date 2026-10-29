@@ -1,0 +1,325 @@
+{
+ "sheets": [
+  {
+   "id": "granny_walk_sheet_v1",
+   "size": [
+    1536,
+    768
+   ],
+   "frameWidth": 128,
+   "frameHeight": 192,
+   "rows": [
+    "down",
+    "left",
+    "right",
+    "up"
+   ],
+   "columns": 12,
+   "frameRate": 15,
+   "origin": [
+    0.5,
+    0.9375
+   ],
+   "displaySize": [
+    40,
+    60
+   ],
+   "depth": "footY*10+1",
+   "repeat": -1
+  },
+  {
+   "id": "granny_idle_sheet_v1",
+   "size": [
+    1536,
+    768
+   ],
+   "frameWidth": 128,
+   "frameHeight": 192,
+   "rows": [
+    "down",
+    "left",
+    "right",
+    "up"
+   ],
+   "columns": 12,
+   "frameRate": 8,
+   "origin": [
+    0.5,
+    0.9375
+   ],
+   "displaySize": [
+    40,
+    60
+   ],
+   "depth": "footY*10+1",
+   "repeat": -1
+  },
+  {
+   "id": "pharm_walk_sheet_v1",
+   "size": [
+    1536,
+    768
+   ],
+   "frameWidth": 128,
+   "frameHeight": 192,
+   "rows": [
+    "down",
+    "left",
+    "right",
+    "up"
+   ],
+   "columns": 12,
+   "frameRate": 15,
+   "origin": [
+    0.5,
+    0.9375
+   ],
+   "displaySize": [
+    40,
+    60
+   ],
+   "depth": "footY*10+1",
+   "repeat": -1
+  },
+  {
+   "id": "pharm_idle_sheet_v1",
+   "size": [
+    1536,
+    768
+   ],
+   "frameWidth": 128,
+   "frameHeight": 192,
+   "rows": [
+    "down",
+    "left",
+    "right",
+    "up"
+   ],
+   "columns": 12,
+   "frameRate": 8,
+   "origin": [
+    0.5,
+    0.9375
+   ],
+   "displaySize": [
+    40,
+    60
+   ],
+   "depth": "footY*10+1",
+   "repeat": -1
+  }
+ ],
+ "directions": [
+  "down",
+  "left",
+  "right",
+  "up"
+ ],
+ "frameCount": 192,
+ "method": "fixed directional masters with deterministic articulated limb rig; no generative per-frame identity drift",
+ "referenceSpeedPxSec": {
+  "granny": 28,
+  "pharm": 35
+ },
+ "transition": "retain direction at rest; velocity hysteresis; ease stop to idle over100ms",
+ "clips": [
+  {
+   "id": "granny_walk_down",
+   "sheet": "granny_walk_sheet_v1",
+   "start": 0,
+   "end": 11,
+   "frameRate": 15,
+   "repeat": -1,
+   "origin": [
+    0.5,
+    0.9375
+   ]
+  },
+  {
+   "id": "granny_walk_left",
+   "sheet": "granny_walk_sheet_v1",
+   "start": 12,
+   "end": 23,
+   "frameRate": 15,
+   "repeat": -1,
+   "origin": [
+    0.5,
+    0.9375
+   ]
+  },
+  {
+   "id": "granny_walk_right",
+   "sheet": "granny_walk_sheet_v1",
+   "start": 24,
+   "end": 35,
+   "frameRate": 15,
+   "repeat": -1,
+   "origin": [
+    0.5,
+    0.9375
+   ]
+  },
+  {
+   "id": "granny_walk_up",
+   "sheet": "granny_walk_sheet_v1",
+   "start": 36,
+   "end": 47,
+   "frameRate": 15,
+   "repeat": -1,
+   "origin": [
+    0.5,
+    0.9375
+   ]
+  },
+  {
+   "id": "granny_idle_down",
+   "sheet": "granny_idle_sheet_v1",
+   "start": 0,
+   "end": 11,
+   "frameRate": 8,
+   "repeat": -1,
+   "origin": [
+    0.5,
+    0.9375
+   ]
+  },
+  {
+   "id": "granny_idle_left",
+   "sheet": "granny_idle_sheet_v1",
+   "start": 12,
+   "end": 23,
+   "frameRate": 8,
+   "repeat": -1,
+   "origin": [
+    0.5,
+    0.9375
+   ]
+  },
+  {
+   "id": "granny_idle_right",
+   "sheet": "granny_idle_sheet_v1",
+   "start": 24,
+   "end": 35,
+   "frameRate": 8,
+   "repeat": -1,
+   "origin": [
+    0.5,
+    0.9375
+   ]
+  },
+  {
+   "id": "granny_idle_up",
+   "sheet": "granny_idle_sheet_v1",
+   "start": 36,
+   "end": 47,
+   "frameRate": 8,
+   "repeat": -1,
+   "origin": [
+    0.5,
+    0.9375
+   ]
+  },
+  {
+   "id": "pharm_walk_down",
+   "sheet": "pharm_walk_sheet_v1",
+   "start": 0,
+   "end": 11,
+   "frameRate": 15,
+   "repeat": -1,
+   "origin": [
+    0.5,
+    0.9375
+   ]
+  },
+  {
+   "id": "pharm_walk_left",
+   "sheet": "pharm_walk_sheet_v1",
+   "start": 12,
+   "end": 23,
+   "frameRate": 15,
+   "repeat": -1,
+   "origin": [
+    0.5,
+    0.9375
+   ]
+  },
+  {
+   "id": "pharm_walk_right",
+   "sheet": "pharm_walk_sheet_v1",
+   "start": 24,
+   "end": 35,
+   "frameRate": 15,
+   "repeat": -1,
+   "origin": [
+    0.5,
+    0.9375
+   ]
+  },
+  {
+   "id": "pharm_walk_up",
+   "sheet": "pharm_walk_sheet_v1",
+   "start": 36,
+   "end": 47,
+   "frameRate": 15,
+   "repeat": -1,
+   "origin": [
+    0.5,
+    0.9375
+   ]
+  },
+  {
+   "id": "pharm_idle_down",
+   "sheet": "pharm_idle_sheet_v1",
+   "start": 0,
+   "end": 11,
+   "frameRate": 8,
+   "repeat": -1,
+   "origin": [
+    0.5,
+    0.9375
+   ]
+  },
+  {
+   "id": "pharm_idle_left",
+   "sheet": "pharm_idle_sheet_v1",
+   "start": 12,
+   "end": 23,
+   "frameRate": 8,
+   "repeat": -1,
+   "origin": [
+    0.5,
+    0.9375
+   ]
+  },
+  {
+   "id": "pharm_idle_right",
+   "sheet": "pharm_idle_sheet_v1",
+   "start": 24,
+   "end": 35,
+   "frameRate": 8,
+   "repeat": -1,
+   "origin": [
+    0.5,
+    0.9375
+   ]
+  },
+  {
+   "id": "pharm_idle_up",
+   "sheet": "pharm_idle_sheet_v1",
+   "start": 36,
+   "end": 47,
+   "frameRate": 8,
+   "repeat": -1,
+   "origin": [
+    0.5,
+    0.9375
+   ]
+  }
+ ],
+ "idleHolds": "12 timeline frames, 3 distinct subtle breathing poses; intentional holds",
+ "footContactPixelRange": [
+  178,
+  179
+ ],
+ "transitionsMs": 100
+}

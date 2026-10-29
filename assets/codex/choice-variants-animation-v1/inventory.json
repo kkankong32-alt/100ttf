@@ -1,0 +1,449 @@
+[
+ {
+  "id": "tree_dead_v1",
+  "file": "tree_dead_v1.png",
+  "role": "tree",
+  "width": 384,
+  "height": 448,
+  "origin": [
+   0.5,
+   1
+  ],
+  "source": "neglected_objects",
+  "source_rect": [
+   0,
+   0,
+   550,
+   575
+  ]
+ },
+ {
+  "id": "tree_dead_mg_v1",
+  "file": "tree_dead_mg_v1.png",
+  "role": "trunk",
+  "width": 384,
+  "height": 448,
+  "origin": [
+   0.5,
+   1
+  ],
+  "source": "tree_dead_v1"
+ },
+ {
+  "id": "tree_dead_fg_v1",
+  "file": "tree_dead_fg_v1.png",
+  "role": "branches_occluder",
+  "width": 384,
+  "height": 448,
+  "origin": [
+   0.5,
+   1
+  ],
+  "source": "tree_dead_v1"
+ },
+ {
+  "id": "tree_dead_shadow_v1",
+  "file": "tree_dead_shadow_v1.png",
+  "role": "visual_shadow",
+  "width": 384,
+  "height": 128,
+  "origin": [
+   0.5,
+   1
+  ],
+  "source": "tree_dead_v1"
+ },
+ {
+  "id": "tree_stump_v1",
+  "file": "tree_stump_v1.png",
+  "role": "tree_remnant",
+  "width": 160,
+  "height": 128,
+  "origin": [
+   0.5,
+   1
+  ],
+  "source": "neglected_objects",
+  "source_rect": [
+   560,
+   280,
+   1010,
+   580
+  ]
+ },
+ {
+  "id": "tree_stump_shadow_v1",
+  "file": "tree_stump_shadow_v1.png",
+  "role": "visual_shadow",
+  "width": 160,
+  "height": 32,
+  "origin": [
+   0.5,
+   1
+  ],
+  "source": "tree_stump_v1"
+ },
+ {
+  "id": "planting_empty_v1",
+  "file": "planting_empty_v1.png",
+  "role": "ground_decal",
+  "width": 192,
+  "height": 96,
+  "origin": [
+   0.5,
+   1
+  ],
+  "source": "neglected_objects",
+  "source_rect": [
+   1020,
+   280,
+   1536,
+   580
+  ]
+ },
+ {
+  "id": "watering_bag_v1",
+  "file": "watering_bag_v1.png",
+  "role": "maintenance_prop",
+  "width": 96,
+  "height": 192,
+  "origin": [
+   0.5,
+   1
+  ],
+  "source": "neglected_objects",
+  "source_rect": [
+   80,
+   580,
+   340,
+   1024
+  ]
+ },
+ {
+  "id": "watering_bag_shadow_v1",
+  "file": "watering_bag_shadow_v1.png",
+  "role": "visual_shadow",
+  "width": 96,
+  "height": 32,
+  "origin": [
+   0.5,
+   1
+  ],
+  "source": "watering_bag_v1"
+ },
+ {
+  "id": "rain_garden_neglected_v1",
+  "file": "rain_garden_neglected_v1.png",
+  "role": "facility",
+  "width": 384,
+  "height": 160,
+  "origin": [
+   0.5,
+   1
+  ],
+  "source": "neglected_objects",
+  "source_rect": [
+   380,
+   650,
+   1010,
+   1000
+  ]
+ },
+ {
+  "id": "drain_clogged_v1",
+  "file": "drain_clogged_v1.png",
+  "role": "facility",
+  "width": 128,
+  "height": 80,
+  "origin": [
+   0.5,
+   1
+  ],
+  "source": "neglected_objects",
+  "source_rect": [
+   1020,
+   650,
+   1536,
+   1000
+  ]
+ },
+ {
+  "id": "permeable_clogged_v1",
+  "file": "permeable_clogged_v1.png",
+  "role": "terrain",
+  "width": 128,
+  "height": 128,
+  "origin": [
+   0,
+   0
+  ],
+  "source": "permeable_clogged"
+ },
+ {
+  "id": "permeable_clogged_repeat_v1",
+  "file": "permeable_clogged_repeat_v1.png",
+  "role": "repeat_material",
+  "width": 256,
+  "height": 256,
+  "origin": [
+   0,
+   0
+  ],
+  "source": "permeable_clogged_v1"
+ },
+ {
+  "id": "player_idle_sheet_v1",
+  "file": "player_idle_sheet_v1.png",
+  "role": "animation_sheet",
+  "width": 1536,
+  "height": 768,
+  "origin": [
+   0.5,
+   0.9375
+  ],
+  "source": "deterministic_rig",
+  "frameWidth": 128,
+  "frameHeight": 192,
+  "columns": 12,
+  "rows": 4,
+  "clips": {
+   "player_idle_down": {
+    "start": 0,
+    "end": 11,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "player_idle_left": {
+    "start": 12,
+    "end": 23,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "player_idle_right": {
+    "start": 24,
+    "end": 35,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "player_idle_up": {
+    "start": 36,
+    "end": 47,
+    "frameRate": 8,
+    "repeat": -1
+   }
+  }
+ },
+ {
+  "id": "player_walk_sheet_v1",
+  "file": "player_walk_sheet_v1.png",
+  "role": "animation_sheet",
+  "width": 1536,
+  "height": 768,
+  "origin": [
+   0.5,
+   0.9375
+  ],
+  "source": "deterministic_rig",
+  "frameWidth": 128,
+  "frameHeight": 192,
+  "columns": 12,
+  "rows": 4,
+  "clips": {
+   "player_walk_down": {
+    "start": 0,
+    "end": 11,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "player_walk_left": {
+    "start": 12,
+    "end": 23,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "player_walk_right": {
+    "start": 24,
+    "end": 35,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "player_walk_up": {
+    "start": 36,
+    "end": 47,
+    "frameRate": 15,
+    "repeat": -1
+   }
+  }
+ },
+ {
+  "id": "player_ground_shadow_v1",
+  "file": "player_ground_shadow_v1.png",
+  "role": "visual_shadow",
+  "width": 128,
+  "height": 32,
+  "origin": [
+   0.5,
+   0.5
+  ],
+  "source": null
+ },
+ {
+  "id": "romi_idle_sheet_v1",
+  "file": "romi_idle_sheet_v1.png",
+  "role": "animation_sheet",
+  "width": 1536,
+  "height": 512,
+  "origin": [
+   0.5,
+   0.92
+  ],
+  "source": "deterministic_rig",
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "columns": 12,
+  "rows": 4,
+  "clips": {
+   "romi_idle_down": {
+    "start": 0,
+    "end": 11,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "romi_idle_left": {
+    "start": 12,
+    "end": 23,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "romi_idle_right": {
+    "start": 24,
+    "end": 35,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "romi_idle_up": {
+    "start": 36,
+    "end": 47,
+    "frameRate": 8,
+    "repeat": -1
+   }
+  }
+ },
+ {
+  "id": "romi_move_sheet_v1",
+  "file": "romi_move_sheet_v1.png",
+  "role": "animation_sheet",
+  "width": 1536,
+  "height": 512,
+  "origin": [
+   0.5,
+   0.92
+  ],
+  "source": "deterministic_rig",
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "columns": 12,
+  "rows": 4,
+  "clips": {
+   "romi_move_down": {
+    "start": 0,
+    "end": 11,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "romi_move_left": {
+    "start": 12,
+    "end": 23,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "romi_move_right": {
+    "start": 24,
+    "end": 35,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "romi_move_up": {
+    "start": 36,
+    "end": 47,
+    "frameRate": 15,
+    "repeat": -1
+   }
+  }
+ },
+ {
+  "id": "romi_ground_shadow_v1",
+  "file": "romi_ground_shadow_v1.png",
+  "role": "visual_shadow",
+  "width": 128,
+  "height": 32,
+  "origin": [
+   0.5,
+   0.5
+  ],
+  "source": null
+ },
+ {
+  "id": "basin_dry_v1",
+  "file": "basin_dry_v1.png",
+  "role": "detention_facility",
+  "width": 640,
+  "height": 320,
+  "origin": [
+   0.5,
+   1
+  ],
+  "source": "basin_states",
+  "water_depth_prediction": false
+ },
+ {
+  "id": "basin_wet_illustrative_v1",
+  "file": "basin_wet_illustrative_v1.png",
+  "role": "detention_facility",
+  "width": 640,
+  "height": 320,
+  "origin": [
+   0.5,
+   1
+  ],
+  "source": "basin_states",
+  "water_depth_prediction": false
+ },
+ {
+  "id": "basin_sediment_v1",
+  "file": "basin_sediment_v1.png",
+  "role": "detention_facility",
+  "width": 640,
+  "height": 320,
+  "origin": [
+   0.5,
+   1
+  ],
+  "source": "basin_states",
+  "water_depth_prediction": false
+ },
+ {
+  "id": "permeable_clogged_patch_v1",
+  "file": "permeable_clogged_patch_v1.png",
+  "role": "ground_change_overlay",
+  "width": 1536,
+  "height": 1024,
+  "origin": [
+   0,
+   0
+  ],
+  "source": "permeable_clogged_repeat_v1"
+ },
+ {
+  "id": "basin_absent_parking_v1",
+  "file": "basin_absent_parking_v1.png",
+  "role": "ground_state",
+  "width": 640,
+  "height": 320,
+  "origin": [
+   0,
+   0
+  ],
+  "source": "reused_ground_road_v1_repeat"
+ }
+]

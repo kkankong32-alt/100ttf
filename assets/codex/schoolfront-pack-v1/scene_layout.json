@@ -1,0 +1,686 @@
+{
+ "2026": [
+  {
+   "id": "school_shadow",
+   "asset": "school_facade_2026_v1_shadow.png",
+   "layer": "shadow",
+   "x": 38,
+   "y": 338,
+   "width": 600,
+   "height": 48,
+   "depth_anchor_y": 386
+  },
+  {
+   "id": "school_wall",
+   "asset": "school_facade_2026_v1_mg.png",
+   "layer": "mg",
+   "x": 24,
+   "y": 16,
+   "width": 600,
+   "height": 350,
+   "depth_anchor_y": 366
+  },
+  {
+   "id": "school_roof",
+   "asset": "school_facade_2026_v1_fg.png",
+   "layer": "fg",
+   "x": 24,
+   "y": 16,
+   "width": 600,
+   "height": 350,
+   "depth_anchor_y": 366
+  },
+  {
+   "id": "shop_shadow",
+   "asset": "shop_2026_v1_shadow.png",
+   "layer": "shadow",
+   "x": 1030,
+   "y": 318,
+   "width": 224,
+   "height": 48,
+   "depth_anchor_y": 366
+  },
+  {
+   "id": "shop_wall",
+   "asset": "shop_2026_v1_mg.png",
+   "layer": "mg",
+   "x": 1016,
+   "y": 32,
+   "width": 224,
+   "height": 314,
+   "depth_anchor_y": 346
+  },
+  {
+   "id": "shop_roof",
+   "asset": "shop_2026_v1_fg.png",
+   "layer": "fg",
+   "x": 1016,
+   "y": 32,
+   "width": 224,
+   "height": 314,
+   "depth_anchor_y": 346
+  },
+  {
+   "id": "house_shadow",
+   "asset": "house_2026_v1_shadow.png",
+   "layer": "shadow",
+   "x": 1314,
+   "y": 326,
+   "width": 224,
+   "height": 48,
+   "depth_anchor_y": 374
+  },
+  {
+   "id": "house_wall",
+   "asset": "house_2026_v1_mg.png",
+   "layer": "mg",
+   "x": 1300,
+   "y": 40,
+   "width": 224,
+   "height": 314,
+   "depth_anchor_y": 354
+  },
+  {
+   "id": "house_roof",
+   "asset": "house_2026_v1_fg.png",
+   "layer": "fg",
+   "x": 1300,
+   "y": 40,
+   "width": 224,
+   "height": 314,
+   "depth_anchor_y": 354
+  },
+  {
+   "id": "gate",
+   "asset": "school_gate_module_v1.png",
+   "layer": "mg",
+   "x": 344,
+   "y": 482,
+   "width": 280,
+   "height": 158,
+   "depth_anchor_y": 640
+  },
+  {
+   "id": "board",
+   "asset": "planning_board_v1.png",
+   "layer": "interactive",
+   "x": 620,
+   "y": 510,
+   "width": 96,
+   "height": 112,
+   "depth_anchor_y": 622
+  },
+  {
+   "id": "clock",
+   "asset": "century_clock_v1.png",
+   "layer": "interactive",
+   "x": 610,
+   "y": 628,
+   "width": 72,
+   "height": 116,
+   "depth_anchor_y": 744
+  },
+  {
+   "id": "drain_school",
+   "asset": "storm_drain_v1.png",
+   "layer": "interactive",
+   "x": 714,
+   "y": 744,
+   "width": 44,
+   "height": 28,
+   "depth_anchor_y": 772
+  },
+  {
+   "id": "drain_homes",
+   "asset": "storm_drain_v1.png",
+   "layer": "interactive",
+   "x": 1336,
+   "y": 744,
+   "width": 44,
+   "height": 28,
+   "depth_anchor_y": 772
+  },
+  {
+   "id": "tree_school_north_shadow",
+   "asset": "tree_zelkova_sapling_v1_shadow.png",
+   "layer": "shadow",
+   "x": 606,
+   "y": 309,
+   "width": 114,
+   "height": 32,
+   "depth_anchor_y": 341
+  },
+  {
+   "id": "tree_school_north_trunk",
+   "asset": "tree_zelkova_sapling_v1_mg.png",
+   "layer": "mg",
+   "x": 576,
+   "y": 228,
+   "width": 64,
+   "height": 96,
+   "depth_anchor_y": 324
+  },
+  {
+   "id": "tree_school_north_crown",
+   "asset": "tree_zelkova_sapling_v1_fg.png",
+   "layer": "fg",
+   "x": 576,
+   "y": 228,
+   "width": 64,
+   "height": 96,
+   "depth_anchor_y": 324
+  },
+  {
+   "id": "tree_plaza_shadow",
+   "asset": "tree_zelkova_young_v1_shadow.png",
+   "layer": "shadow",
+   "x": 148,
+   "y": 685,
+   "width": 146,
+   "height": 42,
+   "depth_anchor_y": 727
+  },
+  {
+   "id": "tree_plaza_trunk",
+   "asset": "tree_zelkova_young_v1_mg.png",
+   "layer": "mg",
+   "x": 118,
+   "y": 572,
+   "width": 96,
+   "height": 128,
+   "depth_anchor_y": 700
+  },
+  {
+   "id": "tree_plaza_crown",
+   "asset": "tree_zelkova_young_v1_fg.png",
+   "layer": "fg",
+   "x": 118,
+   "y": 572,
+   "width": 96,
+   "height": 128,
+   "depth_anchor_y": 700
+  },
+  {
+   "id": "tree_east_shadow",
+   "asset": "tree_zelkova_sapling_v1_shadow.png",
+   "layer": "shadow",
+   "x": 962,
+   "y": 685,
+   "width": 114,
+   "height": 32,
+   "depth_anchor_y": 717
+  },
+  {
+   "id": "tree_east_trunk",
+   "asset": "tree_zelkova_sapling_v1_mg.png",
+   "layer": "mg",
+   "x": 932,
+   "y": 604,
+   "width": 64,
+   "height": 96,
+   "depth_anchor_y": 700
+  },
+  {
+   "id": "tree_east_crown",
+   "asset": "tree_zelkova_sapling_v1_fg.png",
+   "layer": "fg",
+   "x": 932,
+   "y": 604,
+   "width": 64,
+   "height": 96,
+   "depth_anchor_y": 700
+  },
+  {
+   "id": "tree_home_shadow",
+   "asset": "tree_zelkova_young_v1_shadow.png",
+   "layer": "shadow",
+   "x": 1438,
+   "y": 577,
+   "width": 122,
+   "height": 32,
+   "depth_anchor_y": 609
+  },
+  {
+   "id": "tree_home_trunk",
+   "asset": "tree_zelkova_young_v1_mg.png",
+   "layer": "mg",
+   "x": 1408,
+   "y": 496,
+   "width": 72,
+   "height": 96,
+   "depth_anchor_y": 592
+  },
+  {
+   "id": "tree_home_crown",
+   "asset": "tree_zelkova_young_v1_fg.png",
+   "layer": "fg",
+   "x": 1408,
+   "y": 496,
+   "width": 72,
+   "height": 96,
+   "depth_anchor_y": 592
+  },
+  {
+   "id": "player",
+   "asset": "player_sprite_candidate_v1.png",
+   "layer": "characters",
+   "x": 704,
+   "y": 658,
+   "width": 44,
+   "height": 66,
+   "depth_anchor_y": 724
+  },
+  {
+   "id": "romi",
+   "asset": "romi_sprite_candidate_v1.png",
+   "layer": "characters",
+   "x": 724,
+   "y": 724,
+   "width": 40,
+   "height": 40,
+   "depth_anchor_y": 764
+  },
+  {
+   "id": "npc_grandmother",
+   "asset": "npc_grandmother_candidate_v1.png",
+   "layer": "characters",
+   "x": 1260,
+   "y": 712,
+   "width": 40,
+   "height": 60,
+   "depth_anchor_y": 772
+  },
+  {
+   "id": "npc_pharmacist",
+   "asset": "npc_pharmacist_candidate_v1.png",
+   "layer": "characters",
+   "x": 1100,
+   "y": 354,
+   "width": 40,
+   "height": 60,
+   "depth_anchor_y": 414
+  }
+ ],
+ "2126": [
+  {
+   "id": "permeable_market",
+   "asset": "ground_permeable_v1.png",
+   "layer": "ground_changes",
+   "x": 1024,
+   "y": 448,
+   "width": 512,
+   "height": 256,
+   "depth_anchor_y": 0
+  },
+  {
+   "id": "school_shadow",
+   "asset": "school_facade_2126_v1_shadow.png",
+   "layer": "shadow",
+   "x": 38,
+   "y": 338,
+   "width": 600,
+   "height": 48,
+   "depth_anchor_y": 386
+  },
+  {
+   "id": "school_wall",
+   "asset": "school_facade_2126_v1_mg.png",
+   "layer": "mg",
+   "x": 24,
+   "y": 16,
+   "width": 600,
+   "height": 350,
+   "depth_anchor_y": 366
+  },
+  {
+   "id": "school_roof",
+   "asset": "school_facade_2126_v1_fg.png",
+   "layer": "fg",
+   "x": 24,
+   "y": 16,
+   "width": 600,
+   "height": 350,
+   "depth_anchor_y": 366
+  },
+  {
+   "id": "shop_shadow",
+   "asset": "shop_2126_v1_shadow.png",
+   "layer": "shadow",
+   "x": 1030,
+   "y": 318,
+   "width": 224,
+   "height": 48,
+   "depth_anchor_y": 366
+  },
+  {
+   "id": "shop_wall",
+   "asset": "shop_2126_v1_mg.png",
+   "layer": "mg",
+   "x": 1016,
+   "y": 32,
+   "width": 224,
+   "height": 314,
+   "depth_anchor_y": 346
+  },
+  {
+   "id": "shop_roof",
+   "asset": "shop_2126_v1_fg.png",
+   "layer": "fg",
+   "x": 1016,
+   "y": 32,
+   "width": 224,
+   "height": 314,
+   "depth_anchor_y": 346
+  },
+  {
+   "id": "house_shadow",
+   "asset": "house_2126_v1_shadow.png",
+   "layer": "shadow",
+   "x": 1314,
+   "y": 326,
+   "width": 224,
+   "height": 48,
+   "depth_anchor_y": 374
+  },
+  {
+   "id": "house_wall",
+   "asset": "house_2126_v1_mg.png",
+   "layer": "mg",
+   "x": 1300,
+   "y": 40,
+   "width": 224,
+   "height": 314,
+   "depth_anchor_y": 354
+  },
+  {
+   "id": "house_roof",
+   "asset": "house_2126_v1_fg.png",
+   "layer": "fg",
+   "x": 1300,
+   "y": 40,
+   "width": 224,
+   "height": 314,
+   "depth_anchor_y": 354
+  },
+  {
+   "id": "gate",
+   "asset": "school_gate_module_v1.png",
+   "layer": "mg",
+   "x": 344,
+   "y": 482,
+   "width": 280,
+   "height": 158,
+   "depth_anchor_y": 640
+  },
+  {
+   "id": "board",
+   "asset": "planning_board_v1.png",
+   "layer": "interactive",
+   "x": 620,
+   "y": 510,
+   "width": 96,
+   "height": 112,
+   "depth_anchor_y": 622
+  },
+  {
+   "id": "clock",
+   "asset": "century_clock_v1.png",
+   "layer": "interactive",
+   "x": 610,
+   "y": 628,
+   "width": 72,
+   "height": 116,
+   "depth_anchor_y": 744
+  },
+  {
+   "id": "drain_school",
+   "asset": "storm_drain_v1.png",
+   "layer": "interactive",
+   "x": 714,
+   "y": 744,
+   "width": 44,
+   "height": 28,
+   "depth_anchor_y": 772
+  },
+  {
+   "id": "drain_homes",
+   "asset": "storm_drain_v1.png",
+   "layer": "interactive",
+   "x": 1336,
+   "y": 744,
+   "width": 44,
+   "height": 28,
+   "depth_anchor_y": 772
+  },
+  {
+   "id": "garden_house",
+   "asset": "rain_garden_module_v1.png",
+   "layer": "interactive",
+   "x": 1248,
+   "y": 622,
+   "width": 256,
+   "height": 106,
+   "depth_anchor_y": 728
+  },
+  {
+   "id": "garden_shop",
+   "asset": "rain_garden_module_v1.png",
+   "layer": "interactive",
+   "x": 1016,
+   "y": 454,
+   "width": 224,
+   "height": 94,
+   "depth_anchor_y": 548
+  },
+  {
+   "id": "gate_shade_posts",
+   "asset": "shade_pergola_v1_mg.png",
+   "layer": "mg",
+   "x": 350,
+   "y": 406,
+   "width": 256,
+   "height": 192,
+   "depth_anchor_y": 598
+  },
+  {
+   "id": "gate_shade_roof",
+   "asset": "shade_pergola_v1_fg.png",
+   "layer": "fg",
+   "x": 350,
+   "y": 406,
+   "width": 256,
+   "height": 192,
+   "depth_anchor_y": 598
+  },
+  {
+   "id": "tree_school_north_shadow",
+   "asset": "tree_zelkova_mid_v1_shadow.png",
+   "layer": "shadow",
+   "x": 538,
+   "y": 309,
+   "width": 250,
+   "height": 83,
+   "depth_anchor_y": 392
+  },
+  {
+   "id": "tree_school_north_trunk",
+   "asset": "tree_zelkova_mid_v1_mg.png",
+   "layer": "mg",
+   "x": 508,
+   "y": 74,
+   "width": 200,
+   "height": 250,
+   "depth_anchor_y": 324
+  },
+  {
+   "id": "tree_school_north_crown",
+   "asset": "tree_zelkova_mid_v1_fg.png",
+   "layer": "fg",
+   "x": 508,
+   "y": 74,
+   "width": 200,
+   "height": 250,
+   "depth_anchor_y": 324
+  },
+  {
+   "id": "tree_plaza_shadow",
+   "asset": "tree_zelkova_mature_v1_shadow.png",
+   "layer": "shadow",
+   "x": 46,
+   "y": 685,
+   "width": 350,
+   "height": 116,
+   "depth_anchor_y": 801
+  },
+  {
+   "id": "tree_plaza_trunk",
+   "asset": "tree_zelkova_mature_v1_mg.png",
+   "layer": "mg",
+   "x": 16,
+   "y": 350,
+   "width": 300,
+   "height": 350,
+   "depth_anchor_y": 700
+  },
+  {
+   "id": "tree_plaza_crown",
+   "asset": "tree_zelkova_mature_v1_fg.png",
+   "layer": "fg",
+   "x": 16,
+   "y": 350,
+   "width": 300,
+   "height": 350,
+   "depth_anchor_y": 700
+  },
+  {
+   "id": "tree_east_shadow",
+   "asset": "tree_zelkova_mature_v1_shadow.png",
+   "layer": "shadow",
+   "x": 864,
+   "y": 685,
+   "width": 310,
+   "height": 101,
+   "depth_anchor_y": 786
+  },
+  {
+   "id": "tree_east_trunk",
+   "asset": "tree_zelkova_mature_v1_mg.png",
+   "layer": "mg",
+   "x": 834,
+   "y": 396,
+   "width": 260,
+   "height": 304,
+   "depth_anchor_y": 700
+  },
+  {
+   "id": "tree_east_crown",
+   "asset": "tree_zelkova_mature_v1_fg.png",
+   "layer": "fg",
+   "x": 834,
+   "y": 396,
+   "width": 260,
+   "height": 304,
+   "depth_anchor_y": 700
+  },
+  {
+   "id": "tree_home_shadow",
+   "asset": "tree_zelkova_mature_v1_shadow.png",
+   "layer": "shadow",
+   "x": 1374,
+   "y": 577,
+   "width": 250,
+   "height": 78,
+   "depth_anchor_y": 655
+  },
+  {
+   "id": "tree_home_trunk",
+   "asset": "tree_zelkova_mature_v1_mg.png",
+   "layer": "mg",
+   "x": 1344,
+   "y": 358,
+   "width": 200,
+   "height": 234,
+   "depth_anchor_y": 592
+  },
+  {
+   "id": "tree_home_crown",
+   "asset": "tree_zelkova_mature_v1_fg.png",
+   "layer": "fg",
+   "x": 1344,
+   "y": 358,
+   "width": 200,
+   "height": 234,
+   "depth_anchor_y": 592
+  },
+  {
+   "id": "replacement_shadow",
+   "asset": "tree_replacement_staked_v1_shadow.png",
+   "layer": "shadow",
+   "x": 288,
+   "y": 673,
+   "width": 122,
+   "height": 33,
+   "depth_anchor_y": 706
+  },
+  {
+   "id": "replacement_trunk",
+   "asset": "tree_replacement_staked_v1_mg.png",
+   "layer": "mg",
+   "x": 258,
+   "y": 587,
+   "width": 72,
+   "height": 101,
+   "depth_anchor_y": 688
+  },
+  {
+   "id": "replacement_crown",
+   "asset": "tree_replacement_staked_v1_fg.png",
+   "layer": "fg",
+   "x": 258,
+   "y": 587,
+   "width": 72,
+   "height": 101,
+   "depth_anchor_y": 688
+  },
+  {
+   "id": "player",
+   "asset": "player_sprite_candidate_v1.png",
+   "layer": "characters",
+   "x": 704,
+   "y": 658,
+   "width": 44,
+   "height": 66,
+   "depth_anchor_y": 724
+  },
+  {
+   "id": "romi",
+   "asset": "romi_sprite_candidate_v1.png",
+   "layer": "characters",
+   "x": 724,
+   "y": 724,
+   "width": 40,
+   "height": 40,
+   "depth_anchor_y": 764
+  },
+  {
+   "id": "npc_grandmother",
+   "asset": "npc_grandmother_candidate_v1.png",
+   "layer": "characters",
+   "x": 1260,
+   "y": 712,
+   "width": 40,
+   "height": 60,
+   "depth_anchor_y": 772
+  },
+  {
+   "id": "npc_pharmacist",
+   "asset": "npc_pharmacist_candidate_v1.png",
+   "layer": "characters",
+   "x": 1100,
+   "y": 354,
+   "width": 40,
+   "height": 60,
+   "depth_anchor_y": 414
+  }
+ ]
+}

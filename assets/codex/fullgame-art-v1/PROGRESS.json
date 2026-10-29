@@ -1,0 +1,23 @@
+{
+ "status": "art_candidate_pack_prepared_not_full_release",
+ "master_read_in_full": true,
+ "regions": {
+  "A": "independent assets + era/choice preview + movement QA delivered",
+  "B": "independent assets + era/choice preview + movement QA delivered",
+  "C": "independent assets + era/choice preview + movement QA delivered",
+  "D": "independent assets + era/choice preview + movement QA delivered"
+ },
+ "newPng": 147,
+ "reusedPng": 73,
+ "newNpcClips": 64,
+ "normalPhaserClipsPassed": 64,
+ "remaining": [
+  "B/C/D authoritative science coordinate adapter and final quest/portal integration (Claude)",
+  "bespoke tool-use/greeting/independent arm acting clips",
+  "final visual approval for density/repetition/foreground fading",
+  "physical school PC/tablet and full-story playtesting"
+ ],
+ "nextResume": "Read MASTER GDD, this file, QA_REPORT and COVERAGE_AND_REMAINING. Reuse this pack. Do not overwrite; use fullgame-art-v2 for revised art. Existing game/science/index untouched.",
+ "generationMode": "built-in imagegen",
+ "workScripts": "production/README.md"
+}

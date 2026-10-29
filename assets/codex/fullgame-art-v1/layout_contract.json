@@ -1,0 +1,90 @@
+{
+ "coordinateUnits": "region-local art pixels, not meters",
+ "A": {
+  "size": [
+   1536,
+   1344
+  ],
+  "mappingSource": "game/data/zone_schoolfront.json",
+  "preserve": true
+ },
+ "B": {
+  "size": [
+   1536,
+   1024
+  ],
+  "semanticZones": {
+   "permeable": "world_def market [26,10,4,21]",
+   "rainGarden": "world_def RAIN_GARDENS; representative visual module only",
+   "basin": "world_def vacant_lot [2,34,20,6]"
+  },
+  "physicalMappingStatus": "host adapter required"
+ },
+ "C": {
+  "size": [
+   1536,
+   1024
+  ],
+  "semanticZones": {
+   "westForest": "world_def [0,0,17,7]",
+   "eastForest": "world_def [17,0,17,7]"
+  },
+  "physicalMappingStatus": "host adapter required"
+ },
+ "D": {
+  "size": [
+   1536,
+   1024
+  ],
+  "semanticZones": {
+   "nursery": "story/participation area; does not add new LULC or count three saplings as20 street trees"
+  },
+  "physicalMappingStatus": "story space only"
+ },
+ "portals": {
+  "A_to_B": [
+   1500,
+   744
+  ],
+  "A_to_C": [
+   810,
+   50
+  ],
+  "A_to_D": [
+   60,
+   950
+  ],
+  "B_to_A": [
+   30,
+   520
+  ],
+  "C_to_A": [
+   768,
+   1000
+  ],
+  "D_to_A": [
+   768,
+   1000
+  ]
+ },
+ "depth": {
+  "bg": 0,
+  "ground": 2,
+  "shadow": 10,
+  "body": "footY*10",
+  "character": "footY*10+1",
+  "foreground": "footY*10+2"
+ },
+ "deck": {
+  "walkableEntry": [
+   713,
+   338,
+   109,
+   92
+  ],
+  "floorDepth": 2,
+  "backRailDepth": 3080,
+  "frontRailDepth": 4302
+ },
+ "science": "Do not calculate from these art pixels. Use existing normalized scenario keys and model values."
+}

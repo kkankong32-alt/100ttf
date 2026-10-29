@@ -1,0 +1,146 @@
+{
+ "trees_absent": {
+  "c1": {
+   "forest": "keep",
+   "streetTrees": 0,
+   "schoolyard": 0,
+   "coolPave": 0
+  },
+  "c2": {
+   "permeable": 0,
+   "rainGarden": 0,
+   "basin": 0
+  },
+  "c3": {
+   "treeCare": 0,
+   "facilityCare": 1,
+   "forestLaw": 0
+  }
+ },
+ "trees_neglected": {
+  "c1": {
+   "forest": "keep",
+   "streetTrees": 1,
+   "schoolyard": 0,
+   "coolPave": 0
+  },
+  "c2": {
+   "permeable": 0,
+   "rainGarden": 0,
+   "basin": 0
+  },
+  "c3": {
+   "treeCare": 0,
+   "facilityCare": 1,
+   "forestLaw": 0
+  }
+ },
+ "trees_maintained": {
+  "c1": {
+   "forest": "keep",
+   "streetTrees": 1,
+   "schoolyard": 0,
+   "coolPave": 0
+  },
+  "c2": {
+   "permeable": 0,
+   "rainGarden": 0,
+   "basin": 0
+  },
+  "c3": {
+   "treeCare": 1,
+   "facilityCare": 1,
+   "forestLaw": 0
+  }
+ },
+ "water_before": {
+  "c1": {
+   "forest": "keep",
+   "streetTrees": 1,
+   "schoolyard": 0,
+   "coolPave": 0
+  },
+  "c2": {
+   "permeable": 0,
+   "rainGarden": 0,
+   "basin": 0
+  },
+  "c3": {
+   "treeCare": 1,
+   "facilityCare": 1,
+   "forestLaw": 0
+  }
+ },
+ "water_maintained": {
+  "c1": {
+   "forest": "keep",
+   "streetTrees": 1,
+   "schoolyard": 0,
+   "coolPave": 0
+  },
+  "c2": {
+   "permeable": 1,
+   "rainGarden": 1,
+   "basin": 0
+  },
+  "c3": {
+   "treeCare": 1,
+   "facilityCare": 1,
+   "forestLaw": 0
+  }
+ },
+ "water_neglected": {
+  "c1": {
+   "forest": "keep",
+   "streetTrees": 1,
+   "schoolyard": 0,
+   "coolPave": 0
+  },
+  "c2": {
+   "permeable": 1,
+   "rainGarden": 1,
+   "basin": 0
+  },
+  "c3": {
+   "treeCare": 1,
+   "facilityCare": 0,
+   "forestLaw": 0
+  }
+ },
+ "basin_maintained": {
+  "c1": {
+   "forest": "keep",
+   "streetTrees": 1,
+   "schoolyard": 0,
+   "coolPave": 0
+  },
+  "c2": {
+   "permeable": 0,
+   "rainGarden": 0,
+   "basin": 1
+  },
+  "c3": {
+   "treeCare": 1,
+   "facilityCare": 1,
+   "forestLaw": 0
+  }
+ },
+ "basin_neglected": {
+  "c1": {
+   "forest": "keep",
+   "streetTrees": 1,
+   "schoolyard": 0,
+   "coolPave": 0
+  },
+  "c2": {
+   "permeable": 0,
+   "rainGarden": 0,
+   "basin": 1
+  },
+  "c3": {
+   "treeCare": 1,
+   "facilityCare": 0,
+   "forestLaw": 0
+  }
+ }
+}

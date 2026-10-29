@@ -1,0 +1,2251 @@
+{
+ "package": "century-change-v1",
+ "status": "candidate_not_active",
+ "canvas": [
+  1536,
+  1344
+ ],
+ "artCanvas": [
+  1536,
+  1024
+ ],
+ "viewport": [
+  960,
+  540
+ ],
+ "buildings": [
+  {
+   "key": "school_facade",
+   "x": 24,
+   "y": 16,
+   "w": 600,
+   "h": 350,
+   "anchor": 366
+  },
+  {
+   "key": "house",
+   "x": 1300,
+   "y": 40,
+   "w": 224,
+   "h": 314,
+   "anchor": 354
+  },
+  {
+   "key": "shop",
+   "x": 1016,
+   "y": 32,
+   "w": 224,
+   "h": 314,
+   "anchor": 346
+  }
+ ],
+ "trees": {
+  "staked": {
+   "size": [
+    160,
+    224
+   ],
+   "originX": 0.52,
+   "groundY": 196,
+   "mgFrame": [
+    0,
+    0,
+    160,
+    196
+   ],
+   "fgOrigin": [
+    0.52,
+    0.875
+   ],
+   "shadowOrigin": [
+    0.25,
+    0.15342465753424658
+   ],
+   "canopyWidth": 104,
+   "reuse": "game/assets/codex/schoolfront-pack-v1/tree_replacement_staked_v1"
+  },
+  "young": {
+   "size": [
+    192,
+    256
+   ],
+   "originX": 0.504,
+   "groundY": 222,
+   "mgFrame": [
+    0,
+    0,
+    192,
+    222
+   ],
+   "fgOrigin": [
+    0.504,
+    0.8671875
+   ],
+   "shadowOrigin": [
+    0.25,
+    0.1532934131736527
+   ],
+   "canopyWidth": 170,
+   "reuse": "game/assets/codex/schoolfront-pack-v1/tree_zelkova_young_v1"
+  },
+  "mid": {
+   "size": [
+    256,
+    320
+   ],
+   "originX": 0.517,
+   "groundY": 280,
+   "mgFrame": [
+    0,
+    0,
+    256,
+    280
+   ],
+   "fgOrigin": [
+    0.517,
+    0.875
+   ],
+   "shadowOrigin": [
+    0.25,
+    0.15384615384615385
+   ],
+   "canopyWidth": 244,
+   "reuse": "game/assets/codex/schoolfront-pack-v1/tree_zelkova_mid_v1"
+  },
+  "mature": {
+   "size": [
+    384,
+    448
+   ],
+   "originX": 0.492,
+   "groundY": 395,
+   "mgFrame": [
+    0,
+    0,
+    384,
+    395
+   ],
+   "fgOrigin": [
+    0.492,
+    0.8816964285714286
+   ],
+   "shadowOrigin": [
+    0.25,
+    0.15342465753424658
+   ],
+   "canopyWidth": 372,
+   "reuse": "game/assets/codex/schoolfront-pack-v1/tree_zelkova_mature_v1"
+  },
+  "dead": {
+   "size": [
+    384,
+    448
+   ],
+   "originX": 0.49,
+   "groundY": 399,
+   "mgFrame": [
+    0,
+    0,
+    384,
+    399
+   ],
+   "fgOrigin": [
+    0.49,
+    0.890625
+   ],
+   "shadowOrigin": [
+    0.25,
+    0.15342465753424658
+   ],
+   "canopyWidth": 368,
+   "reuse": "game/assets/codex/choice-variants-animation-v1/tree_dead"
+  }
+ },
+ "assets": [
+  {
+   "id": "school_facade_2046_century_v1",
+   "file": "game/assets/codex/century-change-v1/school_facade_2046_century_v1.png",
+   "size": [
+    768,
+    448
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    6,
+    69,
+    762,
+    442
+   ],
+   "sha256": "bc2e0f927a9d5b6784430a9edbc58f12bb60655f31b03b0c2f99c82a5d2cd7f4",
+   "category": "common_era",
+   "era": 2046,
+   "placement": {
+    "key": "school_facade",
+    "x": 24,
+    "y": 16,
+    "w": 600,
+    "h": 350,
+    "anchor": 366
+   },
+   "origin": [
+    0,
+    0
+   ],
+   "depth": 3660,
+   "replaces": "school_facade_2026/2126",
+   "condition": "year only; independent of c1,c2,c3",
+   "note": "new era variant",
+   "applicableYears": [
+    2046,
+    2085
+   ],
+   "candidate": true,
+   "reuses": "approved schoolfront visual language; original source retained"
+  },
+  {
+   "id": "school_facade_2046_century_v1_mg",
+   "file": "game/assets/codex/century-change-v1/school_facade_2046_century_v1_mg.png",
+   "size": [
+    768,
+    448
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    6,
+    170,
+    762,
+    442
+   ],
+   "sha256": "f2c0f43ecd8c655a346aaeb8013671ebd4cc823f2a04a7f804db9da5df42e952",
+   "category": "common_era",
+   "era": 2046,
+   "placement": {
+    "key": "school_facade",
+    "x": 24,
+    "y": 16,
+    "w": 600,
+    "h": 350,
+    "anchor": 366
+   },
+   "origin": [
+    0,
+    0
+   ],
+   "depth": 3660,
+   "replaces": "school_facade_2026/2126",
+   "condition": "year only; independent of c1,c2,c3",
+   "note": "new era variant",
+   "applicableYears": [
+    2046,
+    2085
+   ],
+   "candidate": true,
+   "reuses": "approved schoolfront visual language; original source retained"
+  },
+  {
+   "id": "school_facade_2046_century_v1_fg",
+   "file": "game/assets/codex/century-change-v1/school_facade_2046_century_v1_fg.png",
+   "size": [
+    768,
+    448
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    8,
+    69,
+    761,
+    170
+   ],
+   "sha256": "b711b993dc4705ffd5d43d3b0f54c41efea53c852c673d2e97fb7fa0c6641d0f",
+   "category": "common_era",
+   "era": 2046,
+   "placement": {
+    "key": "school_facade",
+    "x": 24,
+    "y": 16,
+    "w": 600,
+    "h": 350,
+    "anchor": 366
+   },
+   "origin": [
+    0,
+    0
+   ],
+   "depth": 3662,
+   "replaces": "school_facade_2026/2126",
+   "condition": "year only; independent of c1,c2,c3",
+   "note": "new era variant",
+   "applicableYears": [
+    2046,
+    2085
+   ],
+   "candidate": true,
+   "reuses": "approved schoolfront visual language; original source retained"
+  },
+  {
+   "id": "house_2046_century_v1",
+   "file": "game/assets/codex/century-change-v1/house_2046_century_v1.png",
+   "size": [
+    320,
+    448
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    6,
+    83,
+    314,
+    442
+   ],
+   "sha256": "20246dd50cc2c6c4f736a9d6e4a8c04858c762596678e3b2891608f9c2121d1a",
+   "category": "common_era",
+   "era": 2046,
+   "placement": {
+    "key": "house",
+    "x": 1300,
+    "y": 40,
+    "w": 224,
+    "h": 314,
+    "anchor": 354
+   },
+   "origin": [
+    0,
+    0
+   ],
+   "depth": 3540,
+   "replaces": "house_2026/2126",
+   "condition": "year only; independent of c1,c2,c3",
+   "note": "new era variant",
+   "applicableYears": [
+    2046,
+    2085
+   ],
+   "candidate": true,
+   "reuses": "approved schoolfront visual language; original source retained"
+  },
+  {
+   "id": "house_2046_century_v1_mg",
+   "file": "game/assets/codex/century-change-v1/house_2046_century_v1_mg.png",
+   "size": [
+    320,
+    448
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    6,
+    170,
+    314,
+    442
+   ],
+   "sha256": "94322debedf1dab367024866316db5bcd22139577988cda8c05a24cd7721a835",
+   "category": "common_era",
+   "era": 2046,
+   "placement": {
+    "key": "house",
+    "x": 1300,
+    "y": 40,
+    "w": 224,
+    "h": 314,
+    "anchor": 354
+   },
+   "origin": [
+    0,
+    0
+   ],
+   "depth": 3540,
+   "replaces": "house_2026/2126",
+   "condition": "year only; independent of c1,c2,c3",
+   "note": "new era variant",
+   "applicableYears": [
+    2046,
+    2085
+   ],
+   "candidate": true,
+   "reuses": "approved schoolfront visual language; original source retained"
+  },
+  {
+   "id": "house_2046_century_v1_fg",
+   "file": "game/assets/codex/century-change-v1/house_2046_century_v1_fg.png",
+   "size": [
+    320,
+    448
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    7,
+    83,
+    313,
+    170
+   ],
+   "sha256": "3ed47d43166dda476254d5df4fea079431401d2f9ae476c63bab85afc3e1c345",
+   "category": "common_era",
+   "era": 2046,
+   "placement": {
+    "key": "house",
+    "x": 1300,
+    "y": 40,
+    "w": 224,
+    "h": 314,
+    "anchor": 354
+   },
+   "origin": [
+    0,
+    0
+   ],
+   "depth": 3542,
+   "replaces": "house_2026/2126",
+   "condition": "year only; independent of c1,c2,c3",
+   "note": "new era variant",
+   "applicableYears": [
+    2046,
+    2085
+   ],
+   "candidate": true,
+   "reuses": "approved schoolfront visual language; original source retained"
+  },
+  {
+   "id": "shop_2046_century_v1",
+   "file": "game/assets/codex/century-change-v1/shop_2046_century_v1.png",
+   "size": [
+    320,
+    448
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    6,
+    27,
+    314,
+    442
+   ],
+   "sha256": "068e426b6f0bdb6be0b97665f9bb95460a1f2963c1f740a6e216117c5c75d7db",
+   "category": "common_era",
+   "era": 2046,
+   "placement": {
+    "key": "shop",
+    "x": 1016,
+    "y": 32,
+    "w": 224,
+    "h": 314,
+    "anchor": 346
+   },
+   "origin": [
+    0,
+    0
+   ],
+   "depth": 3460,
+   "replaces": "shop_2026/2126",
+   "condition": "year only; independent of c1,c2,c3",
+   "note": "new era variant",
+   "applicableYears": [
+    2046,
+    2085
+   ],
+   "candidate": true,
+   "reuses": "approved schoolfront visual language; original source retained"
+  },
+  {
+   "id": "shop_2046_century_v1_mg",
+   "file": "game/assets/codex/century-change-v1/shop_2046_century_v1_mg.png",
+   "size": [
+    320,
+    448
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    6,
+    170,
+    314,
+    442
+   ],
+   "sha256": "8f1109d9a799292e765dc73b8c01c0e49434f72b5ad863af231af867ade894c7",
+   "category": "common_era",
+   "era": 2046,
+   "placement": {
+    "key": "shop",
+    "x": 1016,
+    "y": 32,
+    "w": 224,
+    "h": 314,
+    "anchor": 346
+   },
+   "origin": [
+    0,
+    0
+   ],
+   "depth": 3460,
+   "replaces": "shop_2026/2126",
+   "condition": "year only; independent of c1,c2,c3",
+   "note": "new era variant",
+   "applicableYears": [
+    2046,
+    2085
+   ],
+   "candidate": true,
+   "reuses": "approved schoolfront visual language; original source retained"
+  },
+  {
+   "id": "shop_2046_century_v1_fg",
+   "file": "game/assets/codex/century-change-v1/shop_2046_century_v1_fg.png",
+   "size": [
+    320,
+    448
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    6,
+    27,
+    314,
+    170
+   ],
+   "sha256": "f50c2cbe6a78be6ea473e97a960c8e81301681972be21a88417de63a6a397b83",
+   "category": "common_era",
+   "era": 2046,
+   "placement": {
+    "key": "shop",
+    "x": 1016,
+    "y": 32,
+    "w": 224,
+    "h": 314,
+    "anchor": 346
+   },
+   "origin": [
+    0,
+    0
+   ],
+   "depth": 3462,
+   "replaces": "shop_2026/2126",
+   "condition": "year only; independent of c1,c2,c3",
+   "note": "new era variant",
+   "applicableYears": [
+    2046,
+    2085
+   ],
+   "candidate": true,
+   "reuses": "approved schoolfront visual language; original source retained"
+  },
+  {
+   "id": "school_facade_2126_century_v1",
+   "file": "game/assets/codex/century-change-v1/school_facade_2126_century_v1.png",
+   "size": [
+    768,
+    448
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    6,
+    69,
+    762,
+    442
+   ],
+   "sha256": "b4bbfdc5a2a9af893eb52c51611e1ed7b289085bea8c0465df12a3f8b70eb996",
+   "category": "common_era",
+   "era": 2126,
+   "placement": {
+    "key": "school_facade",
+    "x": 24,
+    "y": 16,
+    "w": 600,
+    "h": 350,
+    "anchor": 366
+   },
+   "origin": [
+    0,
+    0
+   ],
+   "depth": 3660,
+   "replaces": "school_facade_2026/2126",
+   "condition": "year only; independent of c1,c2,c3",
+   "note": "new era variant",
+   "applicableYears": [
+    2126,
+    2126
+   ],
+   "candidate": true,
+   "reuses": "approved schoolfront visual language; original source retained"
+  },
+  {
+   "id": "school_facade_2126_century_v1_mg",
+   "file": "game/assets/codex/century-change-v1/school_facade_2126_century_v1_mg.png",
+   "size": [
+    768,
+    448
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    6,
+    170,
+    762,
+    442
+   ],
+   "sha256": "0ac4b8a763de7fd3f55a5dcb6c9a947cf6899c8bfd837c8aa44aa151663c44d8",
+   "category": "common_era",
+   "era": 2126,
+   "placement": {
+    "key": "school_facade",
+    "x": 24,
+    "y": 16,
+    "w": 600,
+    "h": 350,
+    "anchor": 366
+   },
+   "origin": [
+    0,
+    0
+   ],
+   "depth": 3660,
+   "replaces": "school_facade_2026/2126",
+   "condition": "year only; independent of c1,c2,c3",
+   "note": "new era variant",
+   "applicableYears": [
+    2126,
+    2126
+   ],
+   "candidate": true,
+   "reuses": "approved schoolfront visual language; original source retained"
+  },
+  {
+   "id": "school_facade_2126_century_v1_fg",
+   "file": "game/assets/codex/century-change-v1/school_facade_2126_century_v1_fg.png",
+   "size": [
+    768,
+    448
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    20,
+    69,
+    760,
+    170
+   ],
+   "sha256": "d0e8b10afada2577898b18a497f9d9ee0647564b74cef0a7406a53dc5ce1634a",
+   "category": "common_era",
+   "era": 2126,
+   "placement": {
+    "key": "school_facade",
+    "x": 24,
+    "y": 16,
+    "w": 600,
+    "h": 350,
+    "anchor": 366
+   },
+   "origin": [
+    0,
+    0
+   ],
+   "depth": 3662,
+   "replaces": "school_facade_2026/2126",
+   "condition": "year only; independent of c1,c2,c3",
+   "note": "new era variant",
+   "applicableYears": [
+    2126,
+    2126
+   ],
+   "candidate": true,
+   "reuses": "approved schoolfront visual language; original source retained"
+  },
+  {
+   "id": "house_2126_century_v1",
+   "file": "game/assets/codex/century-change-v1/house_2126_century_v1.png",
+   "size": [
+    320,
+    448
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    6,
+    83,
+    314,
+    442
+   ],
+   "sha256": "b2f3b3d3039c1c30a52c20c2d117978a8327d0b4e3275459b6e349b6058735bf",
+   "category": "common_era",
+   "era": 2126,
+   "placement": {
+    "key": "house",
+    "x": 1300,
+    "y": 40,
+    "w": 224,
+    "h": 314,
+    "anchor": 354
+   },
+   "origin": [
+    0,
+    0
+   ],
+   "depth": 3540,
+   "replaces": "house_2026/2126",
+   "condition": "year only; independent of c1,c2,c3",
+   "note": "new era variant",
+   "applicableYears": [
+    2126,
+    2126
+   ],
+   "candidate": true,
+   "reuses": "approved schoolfront visual language; original source retained"
+  },
+  {
+   "id": "house_2126_century_v1_mg",
+   "file": "game/assets/codex/century-change-v1/house_2126_century_v1_mg.png",
+   "size": [
+    320,
+    448
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    6,
+    170,
+    314,
+    442
+   ],
+   "sha256": "e96d371138b8715ac90f0e4aec723a064c43b62fe4dab89f72ab4bd9f71081d2",
+   "category": "common_era",
+   "era": 2126,
+   "placement": {
+    "key": "house",
+    "x": 1300,
+    "y": 40,
+    "w": 224,
+    "h": 314,
+    "anchor": 354
+   },
+   "origin": [
+    0,
+    0
+   ],
+   "depth": 3540,
+   "replaces": "house_2026/2126",
+   "condition": "year only; independent of c1,c2,c3",
+   "note": "new era variant",
+   "applicableYears": [
+    2126,
+    2126
+   ],
+   "candidate": true,
+   "reuses": "approved schoolfront visual language; original source retained"
+  },
+  {
+   "id": "house_2126_century_v1_fg",
+   "file": "game/assets/codex/century-change-v1/house_2126_century_v1_fg.png",
+   "size": [
+    320,
+    448
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    8,
+    83,
+    313,
+    170
+   ],
+   "sha256": "1101acab44641025358121dd9dd7c675094c946b2d2ca69ba1c9933c40100fe0",
+   "category": "common_era",
+   "era": 2126,
+   "placement": {
+    "key": "house",
+    "x": 1300,
+    "y": 40,
+    "w": 224,
+    "h": 314,
+    "anchor": 354
+   },
+   "origin": [
+    0,
+    0
+   ],
+   "depth": 3542,
+   "replaces": "house_2026/2126",
+   "condition": "year only; independent of c1,c2,c3",
+   "note": "new era variant",
+   "applicableYears": [
+    2126,
+    2126
+   ],
+   "candidate": true,
+   "reuses": "approved schoolfront visual language; original source retained"
+  },
+  {
+   "id": "shop_2126_century_v1",
+   "file": "game/assets/codex/century-change-v1/shop_2126_century_v1.png",
+   "size": [
+    320,
+    448
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    6,
+    27,
+    314,
+    442
+   ],
+   "sha256": "87297d96a91ad62926d0b4028d69cde9415c91ba51cd49dd354e785872f1ead2",
+   "category": "common_era",
+   "era": 2126,
+   "placement": {
+    "key": "shop",
+    "x": 1016,
+    "y": 32,
+    "w": 224,
+    "h": 314,
+    "anchor": 346
+   },
+   "origin": [
+    0,
+    0
+   ],
+   "depth": 3460,
+   "replaces": "shop_2026/2126",
+   "condition": "year only; independent of c1,c2,c3",
+   "note": "new era variant",
+   "applicableYears": [
+    2126,
+    2126
+   ],
+   "candidate": true,
+   "reuses": "approved schoolfront visual language; original source retained"
+  },
+  {
+   "id": "shop_2126_century_v1_mg",
+   "file": "game/assets/codex/century-change-v1/shop_2126_century_v1_mg.png",
+   "size": [
+    320,
+    448
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    6,
+    170,
+    314,
+    442
+   ],
+   "sha256": "a3a42dc3fa1d04b9c39577e7bf417009dd775fb4c68dc4a11013814e49a5aa7a",
+   "category": "common_era",
+   "era": 2126,
+   "placement": {
+    "key": "shop",
+    "x": 1016,
+    "y": 32,
+    "w": 224,
+    "h": 314,
+    "anchor": 346
+   },
+   "origin": [
+    0,
+    0
+   ],
+   "depth": 3460,
+   "replaces": "shop_2026/2126",
+   "condition": "year only; independent of c1,c2,c3",
+   "note": "new era variant",
+   "applicableYears": [
+    2126,
+    2126
+   ],
+   "candidate": true,
+   "reuses": "approved schoolfront visual language; original source retained"
+  },
+  {
+   "id": "shop_2126_century_v1_fg",
+   "file": "game/assets/codex/century-change-v1/shop_2126_century_v1_fg.png",
+   "size": [
+    320,
+    448
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    6,
+    27,
+    311,
+    170
+   ],
+   "sha256": "ad7f625bb9129cc769c16ab44a45c84ef4023394d115531b3687942d61c39caa",
+   "category": "common_era",
+   "era": 2126,
+   "placement": {
+    "key": "shop",
+    "x": 1016,
+    "y": 32,
+    "w": 224,
+    "h": 314,
+    "anchor": 346
+   },
+   "origin": [
+    0,
+    0
+   ],
+   "depth": 3462,
+   "replaces": "shop_2026/2126",
+   "condition": "year only; independent of c1,c2,c3",
+   "note": "new era variant",
+   "applicableYears": [
+    2126,
+    2126
+   ],
+   "candidate": true,
+   "reuses": "approved schoolfront visual language; original source retained"
+  },
+  {
+   "id": "school_facade_2086_century_v1",
+   "file": "game/assets/codex/century-change-v1/school_facade_2086_century_v1.png",
+   "size": [
+    768,
+    448
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    6,
+    69,
+    762,
+    442
+   ],
+   "sha256": "6fcc65b584b5ded80252b77eb3991557f1fa702b1a7955224b0e724516e67f44",
+   "category": "common_era",
+   "era": 2086,
+   "placement": {
+    "key": "school_facade",
+    "x": 24,
+    "y": 16,
+    "w": 600,
+    "h": 350,
+    "anchor": 366
+   },
+   "origin": [
+    0,
+    0
+   ],
+   "depth": 3660,
+   "replaces": "school_facade_2026/2126",
+   "condition": "year only; independent of c1,c2,c3",
+   "note": "2086 retains existing design with water barrel removed",
+   "applicableYears": [
+    2086,
+    2125
+   ],
+   "candidate": true,
+   "reuses": "approved schoolfront visual language; original source retained"
+  },
+  {
+   "id": "school_facade_2086_century_v1_mg",
+   "file": "game/assets/codex/century-change-v1/school_facade_2086_century_v1_mg.png",
+   "size": [
+    768,
+    448
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    6,
+    170,
+    762,
+    442
+   ],
+   "sha256": "7bbfb86d2c525202df180a669c3da376dbdc6d84ae18bc577064c2f565e470f3",
+   "category": "common_era",
+   "era": 2086,
+   "placement": {
+    "key": "school_facade",
+    "x": 24,
+    "y": 16,
+    "w": 600,
+    "h": 350,
+    "anchor": 366
+   },
+   "origin": [
+    0,
+    0
+   ],
+   "depth": 3660,
+   "replaces": "school_facade_2026/2126",
+   "condition": "year only; independent of c1,c2,c3",
+   "note": "2086 retains existing design with water barrel removed",
+   "applicableYears": [
+    2086,
+    2125
+   ],
+   "candidate": true,
+   "reuses": "approved schoolfront visual language; original source retained"
+  },
+  {
+   "id": "school_facade_2086_century_v1_fg",
+   "file": "game/assets/codex/century-change-v1/school_facade_2086_century_v1_fg.png",
+   "size": [
+    768,
+    448
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    12,
+    69,
+    760,
+    170
+   ],
+   "sha256": "f8db66c3067442733b80f3fb55b3c36ba8b9bf23c4898e032a8203297aa4cd6e",
+   "category": "common_era",
+   "era": 2086,
+   "placement": {
+    "key": "school_facade",
+    "x": 24,
+    "y": 16,
+    "w": 600,
+    "h": 350,
+    "anchor": 366
+   },
+   "origin": [
+    0,
+    0
+   ],
+   "depth": 3662,
+   "replaces": "school_facade_2026/2126",
+   "condition": "year only; independent of c1,c2,c3",
+   "note": "2086 retains existing design with water barrel removed",
+   "applicableYears": [
+    2086,
+    2125
+   ],
+   "candidate": true,
+   "reuses": "approved schoolfront visual language; original source retained"
+  },
+  {
+   "id": "house_2086_century_v1",
+   "file": "game/assets/codex/century-change-v1/house_2086_century_v1.png",
+   "size": [
+    320,
+    448
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    6,
+    83,
+    314,
+    442
+   ],
+   "sha256": "d806c80177bbf36b72e13f7d5b28b9a436c6215ad35c45a53055a0f18891c5e8",
+   "category": "common_era",
+   "era": 2086,
+   "placement": {
+    "key": "house",
+    "x": 1300,
+    "y": 40,
+    "w": 224,
+    "h": 314,
+    "anchor": 354
+   },
+   "origin": [
+    0,
+    0
+   ],
+   "depth": 3540,
+   "replaces": "house_2026/2126",
+   "condition": "year only; independent of c1,c2,c3",
+   "note": "2086 retains existing design with water barrel removed",
+   "applicableYears": [
+    2086,
+    2125
+   ],
+   "candidate": true,
+   "reuses": "approved schoolfront visual language; original source retained"
+  },
+  {
+   "id": "house_2086_century_v1_mg",
+   "file": "game/assets/codex/century-change-v1/house_2086_century_v1_mg.png",
+   "size": [
+    320,
+    448
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    6,
+    170,
+    314,
+    442
+   ],
+   "sha256": "c597f6e6f0ac6c7dae05ab9308ed1370d99cb0578a0cee7598fc25b087b9f819",
+   "category": "common_era",
+   "era": 2086,
+   "placement": {
+    "key": "house",
+    "x": 1300,
+    "y": 40,
+    "w": 224,
+    "h": 314,
+    "anchor": 354
+   },
+   "origin": [
+    0,
+    0
+   ],
+   "depth": 3540,
+   "replaces": "house_2026/2126",
+   "condition": "year only; independent of c1,c2,c3",
+   "note": "2086 retains existing design with water barrel removed",
+   "applicableYears": [
+    2086,
+    2125
+   ],
+   "candidate": true,
+   "reuses": "approved schoolfront visual language; original source retained"
+  },
+  {
+   "id": "house_2086_century_v1_fg",
+   "file": "game/assets/codex/century-change-v1/house_2086_century_v1_fg.png",
+   "size": [
+    320,
+    448
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    8,
+    83,
+    310,
+    170
+   ],
+   "sha256": "729aede4d414adbaae948fa5067f30fac7b2a5286f80c941d3ab573bd9ad4ba1",
+   "category": "common_era",
+   "era": 2086,
+   "placement": {
+    "key": "house",
+    "x": 1300,
+    "y": 40,
+    "w": 224,
+    "h": 314,
+    "anchor": 354
+   },
+   "origin": [
+    0,
+    0
+   ],
+   "depth": 3542,
+   "replaces": "house_2026/2126",
+   "condition": "year only; independent of c1,c2,c3",
+   "note": "2086 retains existing design with water barrel removed",
+   "applicableYears": [
+    2086,
+    2125
+   ],
+   "candidate": true,
+   "reuses": "approved schoolfront visual language; original source retained"
+  },
+  {
+   "id": "tree_pit_flush_v1",
+   "file": "game/assets/codex/century-change-v1/tree_pit_flush_v1.png",
+   "size": [
+    256,
+    128
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    4,
+    6,
+    252,
+    121
+   ],
+   "sha256": "392aaa44916bf7bdad4939b3cea91867be415c8f1d66a11f85f725f5d36103fa",
+   "origin": [
+    0.5,
+    0.52
+   ],
+   "category": "choice_grounding",
+   "depth": 3,
+   "condition": "c1[spot.gate] === 1; stage selected from heat.timelapse[TC0/TC1][year].trees[slot].rep; see adapter",
+   "placement": "zone.trees.spots[].foot",
+   "applicableYears": [
+    2026,
+    2126
+   ],
+   "candidate": true,
+   "reuses": "approved schoolfront visual language; original source retained",
+   "replaces": "root-on-pavement junction; does not replace planted state or change soil science"
+  },
+  {
+   "id": "tree_pit_flush_lip_v1",
+   "file": "game/assets/codex/century-change-v1/tree_pit_flush_lip_v1.png",
+   "size": [
+    256,
+    128
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    16,
+    92,
+    240,
+    121
+   ],
+   "sha256": "331d902551029c6e76b23cc061d1828a7e1cb925d4e122c3e8d4ee65a457277b",
+   "origin": [
+    0.5,
+    0.52
+   ],
+   "category": "choice_grounding",
+   "depth": "footY*10+3",
+   "condition": "c1[spot.gate] === 1; stage selected from heat.timelapse[TC0/TC1][year].trees[slot].rep; see adapter",
+   "placement": "same as pit",
+   "applicableYears": [
+    2026,
+    2126
+   ],
+   "candidate": true,
+   "reuses": "approved schoolfront visual language; original source retained",
+   "replaces": "root-on-pavement junction; does not replace planted state or change soil science"
+  },
+  {
+   "id": "tree_mulch_lawn_v1",
+   "file": "game/assets/codex/century-change-v1/tree_mulch_lawn_v1.png",
+   "size": [
+    256,
+    128
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    14,
+    4,
+    241,
+    124
+   ],
+   "sha256": "1841cebe539987590c22a97222b412593659bb72265772c822804bd6327d8860",
+   "origin": [
+    0.5,
+    0.52
+   ],
+   "category": "choice_grounding",
+   "depth": 3,
+   "condition": "c1[spot.gate] === 1; stage selected from heat.timelapse[TC0/TC1][year].trees[slot].rep; see adapter",
+   "placement": "zone.trees.spots[].foot",
+   "applicableYears": [
+    2026,
+    2126
+   ],
+   "candidate": true,
+   "reuses": "approved schoolfront visual language; original source retained",
+   "replaces": "root-on-pavement junction; does not replace planted state or change soil science"
+  },
+  {
+   "id": "tree_fallen_v1",
+   "file": "game/assets/codex/century-change-v1/tree_fallen_v1.png",
+   "size": [
+    384,
+    160
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    4,
+    11,
+    380,
+    148
+   ],
+   "sha256": "001c337027ef0a3d8a740f540629a71432911c0c4c4f33a79ebbf30b057160e4",
+   "origin": [
+    0.16,
+    0.7
+   ],
+   "category": "choice_residue",
+   "depth": "footY*10",
+   "condition": "c1[spot.gate] === 1; rep.state != tree; illustrative residue elapsed 10..19 years",
+   "placement": "zone.trees.spots[].foot",
+   "applicableYears": [
+    2026,
+    2126
+   ],
+   "candidate": true,
+   "reuses": "approved schoolfront visual language; original source retained"
+  },
+  {
+   "id": "information_post_2126_v1",
+   "file": "game/assets/codex/century-change-v1/information_post_2126_v1.png",
+   "size": [
+    160,
+    256
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    5,
+    4,
+    155,
+    252
+   ],
+   "sha256": "042a9cd90b1eec184462b00feb3e681c50a9b18e5d848973e453cbc556b6a14e",
+   "origin": [
+    0.5,
+    0.96
+   ],
+   "category": "common_era",
+   "depth": "footY*10",
+   "condition": "year >= 2126",
+   "placement": [
+    668,
+    622
+   ],
+   "applicableYears": [
+    2126,
+    2126
+   ],
+   "candidate": true,
+   "reuses": "approved schoolfront visual language; original source retained",
+   "replaces": "planning_board_v1.png visual only; interaction anchor remains [668,622]"
+  },
+  {
+   "id": "street_renewal_2126_overlay_v1",
+   "file": "game/assets/codex/century-change-v1/street_renewal_2126_overlay_v1.png",
+   "size": [
+    1536,
+    1024
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    0,
+    0,
+    1536,
+    901
+   ],
+   "sha256": "91394b76a9eb3501d5619857549e265b1094011d63b037421aaae3ea4fbd49b7",
+   "origin": [
+    0,
+    0
+   ],
+   "placement": [
+    0,
+    0
+   ],
+   "depth": 1,
+   "category": "common_era",
+   "condition": "year >= 2126; not permeable paving",
+   "applicableYears": [
+    2126,
+    2126
+   ],
+   "candidate": true,
+   "reuses": "approved schoolfront visual language; original source retained"
+  },
+  {
+   "id": "tree_staked_registered_shadow_v1",
+   "file": "game/assets/codex/century-change-v1/tree_staked_registered_shadow_v1.png",
+   "size": [
+    320,
+    146
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    78,
+    34,
+    192,
+    62
+   ],
+   "sha256": "97f71ff2c029f02bef4b78bbbf0a33bb7b63d1933e9cfc6d1f1708fc90e75406",
+   "origin": [
+    0.25,
+    0.15342465753424658
+   ],
+   "placement": "same exact tree foot; scale same as tree pixels",
+   "depth": 10,
+   "category": "choice_shadow",
+   "condition": "c1[spot.gate] === 1; stage selected from heat.timelapse[TC0/TC1][year].trees[slot].rep; see adapter",
+   "projection": [
+    0.9,
+    0.45,
+    0.08,
+    0.18
+   ],
+   "applicableYears": [
+    2026,
+    2126
+   ],
+   "candidate": true,
+   "replaces": "same-stage original detached shadow; does not alter quantitative shade",
+   "reuses": "approved schoolfront visual language; original source retained"
+  },
+  {
+   "id": "tree_young_registered_shadow_v1",
+   "file": "game/assets/codex/century-change-v1/tree_young_registered_shadow_v1.png",
+   "size": [
+    384,
+    167
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    71,
+    31,
+    234,
+    69
+   ],
+   "sha256": "5f0defe01bd53c29ac58114b02850dd0f5f14e1697347948e45df548b63f2069",
+   "origin": [
+    0.25,
+    0.1532934131736527
+   ],
+   "placement": "same exact tree foot; scale same as tree pixels",
+   "depth": 10,
+   "category": "choice_shadow",
+   "condition": "c1[spot.gate] === 1; stage selected from heat.timelapse[TC0/TC1][year].trees[slot].rep; see adapter",
+   "projection": [
+    0.9,
+    0.45,
+    0.08,
+    0.18
+   ],
+   "applicableYears": [
+    2026,
+    2126
+   ],
+   "candidate": true,
+   "replaces": "same-stage original detached shadow; does not alter quantitative shade",
+   "reuses": "approved schoolfront visual language; original source retained"
+  },
+  {
+   "id": "tree_mid_registered_shadow_v1",
+   "file": "game/assets/codex/century-change-v1/tree_mid_registered_shadow_v1.png",
+   "size": [
+    512,
+    208
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    65,
+    35,
+    304,
+    83
+   ],
+   "sha256": "92eddce136b46821b694998534ffe6e4cb22250eca6856ac21b848a10bdc56f7",
+   "origin": [
+    0.25,
+    0.15384615384615385
+   ],
+   "placement": "same exact tree foot; scale same as tree pixels",
+   "depth": 10,
+   "category": "choice_shadow",
+   "condition": "c1[spot.gate] === 1; stage selected from heat.timelapse[TC0/TC1][year].trees[slot].rep; see adapter",
+   "projection": [
+    0.9,
+    0.45,
+    0.08,
+    0.18
+   ],
+   "applicableYears": [
+    2026,
+    2126
+   ],
+   "candidate": true,
+   "replaces": "same-stage original detached shadow; does not alter quantitative shade",
+   "reuses": "approved schoolfront visual language; original source retained"
+  },
+  {
+   "id": "tree_mature_registered_shadow_v1",
+   "file": "game/assets/codex/century-change-v1/tree_mature_registered_shadow_v1.png",
+   "size": [
+    768,
+    292
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    69,
+    41,
+    442,
+    102
+   ],
+   "sha256": "4726e105b0bcebbf38e5a31e8a86014043a75d30dfc812d8aefae6c11403b2ba",
+   "origin": [
+    0.25,
+    0.15342465753424658
+   ],
+   "placement": "same exact tree foot; scale same as tree pixels",
+   "depth": 10,
+   "category": "choice_shadow",
+   "condition": "c1[spot.gate] === 1; stage selected from heat.timelapse[TC0/TC1][year].trees[slot].rep; see adapter",
+   "projection": [
+    0.9,
+    0.45,
+    0.08,
+    0.18
+   ],
+   "applicableYears": [
+    2026,
+    2126
+   ],
+   "candidate": true,
+   "replaces": "same-stage original detached shadow; does not alter quantitative shade",
+   "reuses": "approved schoolfront visual language; original source retained"
+  },
+  {
+   "id": "tree_dead_registered_shadow_v1",
+   "file": "game/assets/codex/century-change-v1/tree_dead_registered_shadow_v1.png",
+   "size": [
+    768,
+    292
+   ],
+   "transparent": true,
+   "alpha_bbox": [
+    138,
+    58,
+    487,
+    119
+   ],
+   "sha256": "67416a75ad4cd17e6fca2c70d394fed69d0a0b8c8c0e1fb7e7ca08c94c61293e",
+   "origin": [
+    0.25,
+    0.15342465753424658
+   ],
+   "placement": "same exact tree foot; scale same as tree pixels",
+   "depth": 10,
+   "category": "choice_shadow",
+   "condition": "c1[spot.gate] === 1; stage selected from heat.timelapse[TC0/TC1][year].trees[slot].rep; see adapter",
+   "projection": [
+    0.9,
+    0.45,
+    0.08,
+    0.18
+   ],
+   "applicableYears": [
+    2026,
+    2126
+   ],
+   "candidate": true,
+   "replaces": "same-stage original detached shadow; does not alter quantitative shade",
+   "reuses": "approved schoolfront visual language; original source retained"
+  }
+ ],
+ "eraPolicy": {
+  "2026": "reuse original 2026",
+  "2046": "new wear and repair",
+  "2086": "reuse existing retrofit design; school/house barrel-removal edits; original shop unchanged",
+  "2126": "new second retrofit and renewed road"
+ },
+ "science": "All common renovations and residue durations are illustrative. No climate/model parameters modified.",
+ "treeSpots": [
+  {
+   "id": "schoolN",
+   "foot": [
+    608,
+    324
+   ],
+   "slot": 2,
+   "gate": "streetTrees"
+  },
+  {
+   "id": "eastRoad",
+   "foot": [
+    960,
+    300
+   ],
+   "slot": 1,
+   "gate": "streetTrees"
+  },
+  {
+   "id": "eastPlanter",
+   "foot": [
+    964,
+    700
+   ],
+   "slot": 8,
+   "gate": "streetTrees"
+  },
+  {
+   "id": "shopFront",
+   "foot": [
+    1150,
+    748
+   ],
+   "slot": 11,
+   "gate": "streetTrees"
+  },
+  {
+   "id": "homeLot",
+   "foot": [
+    1444,
+    592
+   ],
+   "slot": 17,
+   "gate": "streetTrees"
+  },
+  {
+   "id": "homeEast",
+   "foot": [
+    1505,
+    748
+   ],
+   "slot": 18,
+   "gate": "streetTrees"
+  },
+  {
+   "id": "yard",
+   "foot": [
+    166,
+    690
+   ],
+   "slot": 0,
+   "gate": "schoolyard"
+  }
+ ],
+ "waterPlacements": {
+  "permeable": [
+   1024,
+   448,
+   512,
+   256
+  ],
+  "gardens": [
+   [
+    1248,
+    622,
+    256,
+    106
+   ],
+   [
+    1016,
+    454,
+    224,
+    94
+   ]
+  ],
+  "drains": [
+   [
+    714,
+    744,
+    44,
+    28
+   ],
+   [
+    1336,
+    744,
+    44,
+    28
+   ]
+  ],
+  "basin": [
+   40,
+   1024,
+   640,
+   320
+  ],
+  "basinBlock": [
+   70,
+   1050,
+   650,
+   1330
+  ],
+  "puddleShallow": [
+   [
+    1236,
+    360,
+    70,
+    420
+   ]
+  ],
+  "puddleDeep": [
+   [
+    1236,
+    0,
+    70,
+    780
+   ],
+   [
+    1170,
+    690,
+    260,
+    340
+   ]
+  ]
+ },
+ "cameraViews": {
+  "gate": {
+   "center": [
+    750,
+    270
+   ],
+   "scroll": [
+    270,
+    0
+   ]
+  },
+  "street": {
+   "center": [
+    1056,
+    636
+   ],
+   "scroll": [
+    576,
+    366
+   ]
+  },
+  "basin": {
+   "center": [
+    480,
+    1074
+   ],
+   "scroll": [
+    0,
+    804
+   ]
+  }
+ },
+ "cameraNote": "Same internal viewport and world coordinates as integration; gate/street framing reconstructed from supplied captures. Native camera; no zoom.",
+ "preservedInventory": [
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/century_clock_v1.png",
+   "sha256": "864f99b5e67695b776bc9b802a72ace63a9f502c3a61a2887e3c7d7df629575a",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/ground_crosswalk_v1.png",
+   "sha256": "2efe59a28af7ad34b722a319684d36c1c4efdf07b32497f4f6e4ee069f94fa17",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/ground_dirt_v1.png",
+   "sha256": "af82fed05df6ca461322512c65294127367d578625709c52effec63872f96c40",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/ground_dirt_v1_repeat.png",
+   "sha256": "c540882d592fd66b09c530d57ceb289ecaa38479acf85a7f5400a64b166fece2",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/ground_grass_dirt_edge_v1.png",
+   "sha256": "9b6898b4cfeb93203f58340f1c03cad6802d686e7f5d3a24712bb6e887d3b533",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/ground_grass_v1.png",
+   "sha256": "08435a996f5123726d6cef6d86ccfa92c050e50dc9b25c68f646818ba4326e55",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/ground_grass_v1_repeat.png",
+   "sha256": "8948533d5ceaf3e3345b0a322e391a7ccc626c76be78f70fe56baa99752298f6",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/ground_permeable_v1.png",
+   "sha256": "1c319b66c3de52c24201d3c37e20129dca1dc2efaaf98da8928021532dc7d4e4",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/ground_permeable_v1_repeat.png",
+   "sha256": "b0c47628df94ea9a99af7d7190a66da76009871d8a29b1622fe35a178f60df08",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/ground_rain_garden_edge_v1.png",
+   "sha256": "3e07520154c355c9bc57a71839e70a51ed8b38328b023314ad16e2ab10583c6d",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/ground_road_v1.png",
+   "sha256": "e3cb0d57f2643045b814ec4621b1c7c22e18a42fcbab5dd54ede61b01564576d",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/ground_road_v1_repeat.png",
+   "sha256": "f315ff45b9fc8b9eccdd5d240fd670327089c5cadaccbbe7f9e4f0270f6f858d",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/ground_shallow_puddle_v1.png",
+   "sha256": "e4129b5ead5f8de4572e48cd8b59d9ef000336c5e8a96c7c43b0d5ce4f6353bf",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/ground_sidewalk_v1.png",
+   "sha256": "c143f8ceab7782bd1c1b087a265d84a98061ff242a14d3fed55c5349c11c641d",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/ground_sidewalk_v1_repeat.png",
+   "sha256": "a9d0c8e38384fcbec3bc2f3cd3ee8ecbb5f1c29a8ce8d0e32c3608ac71249dec",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/house_2026_v1.png",
+   "sha256": "04bf7bf7f065ea3b82135662fa0eb29e96cb274eb171ff2584f47a527587ef1e",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/house_2026_v1_fg.png",
+   "sha256": "134c5a0da2a1d18011b52f96aea429e8d31efa4929d961dc2bade91a5e37fe7e",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/house_2026_v1_mg.png",
+   "sha256": "34695fbd97d8f14a22419ada3fb20e73c2a0fa3c12b212c437d84469d2cb25fc",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/house_2026_v1_shadow.png",
+   "sha256": "9261f0317b22041e6905a114b64bcc78d368abb529b4834e53e8f126a8c9d644",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/house_2126_v1.png",
+   "sha256": "373a5e45414e85924bc2c15d21c8eac2a8a6655fa1e33a11044a4402ec15bf48",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/house_2126_v1_fg.png",
+   "sha256": "4fbeb3ab7d06997d38aece6976add7ae6571567b6d80c2ce7298c48947a21efd",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/house_2126_v1_mg.png",
+   "sha256": "d1db53697ef7c2219e7b5c592b90aafe2ba8b2140b14a3a6ca0ca6825c9cd50a",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/house_2126_v1_shadow.png",
+   "sha256": "a8e7de4d225968170096b98f8207c67afe6b7f24b89d4f3640299edb2db8b48b",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/npc_grandmother_candidate_v1.png",
+   "sha256": "9f9e27a06278c6d58166aae58ca2420af4d0fce3f262618b70cef45a63ebf47b",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/npc_pharmacist_candidate_v1.png",
+   "sha256": "cfe42c4db63039becba42c5b16ffd74e5e5c5e829ec198284873b07c07239dca",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/planning_board_v1.png",
+   "sha256": "61d6931141d57c712df4434954bee3b070a2714e0c0621855c0dbf4d3550a2fa",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/player_sprite_candidate_v1.png",
+   "sha256": "dcc5b52cf24b7ea0f8a05d10cf8ab918ef90db10db9bfc3bc245bf62257a16c2",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/rain_garden_module_v1.png",
+   "sha256": "e71a0a8ae895c77af96c353010ee13fbce6d3b17c5fab0e328d5a9efca752db2",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/romi_sprite_candidate_v1.png",
+   "sha256": "afefbf08a48515f26d1abe0c3d1ea18eb5e8ffa12791c40a3d8e85ed034be758",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/school_facade_2026_v1.png",
+   "sha256": "f95c8ea124180198c5849a6ec57920863a9e92df346a54f24df8787b02ea7aad",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/school_facade_2026_v1_fg.png",
+   "sha256": "debb918213e0cb5bce49ca58cc1a998a7748fe77ae7bc4bc81982c8b5543304a",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/school_facade_2026_v1_mg.png",
+   "sha256": "27d1fd7e0e2300b37e62a003ea6eaa654eb51feb69d902d2f8e6bffd85a3b08b",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/school_facade_2026_v1_shadow.png",
+   "sha256": "43843294d4e94ced474d3030845a2405a23780ebbb13d99d54e95da4455231f4",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/school_facade_2126_v1.png",
+   "sha256": "292a799b5e436b0a8765c5bf2c77931047661a1e7766e3cb4c8a47e00514a07f",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/school_facade_2126_v1_fg.png",
+   "sha256": "b66fdc243f195b9cf6f59dd35b5dd5ff3f97adba5441cf4d75cabfc9f1798ab4",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/school_facade_2126_v1_mg.png",
+   "sha256": "f884f35c48c8c241140caf6fc60d44c3112b63a76994652755f23c80d4d81ed6",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/school_facade_2126_v1_shadow.png",
+   "sha256": "a8c234ff0c602317ae9473b9a9883f9aaa36d5b5f0c47649fe80e95c916b0623",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/school_gate_module_v1.png",
+   "sha256": "c6bab218e91727282542c6f23373afd39ebbdd226ea8fedbe97dcbc354ad7f8a",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/schoolfront_2026_bg_v1.png",
+   "sha256": "35a798a2d140483521b8db8da98db5d12421b22f1f669b3b57e2fac8b8dbecc6",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/schoolfront_2026_characters_v1.png",
+   "sha256": "508919f05f6b47a084586bd4bce8fd34ce190098f016a3588192d67a15b8fc85",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/schoolfront_2026_fg_v1.png",
+   "sha256": "5defabe6bdc415c65ac5c585935670e3e389b928411ceb2110b931179f608bfc",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/schoolfront_2026_ground_changes_v1.png",
+   "sha256": "0e6b3ea863e6c793c17ca0327e7bb7945855c1092d871cefbdccb45c2885f659",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/schoolfront_2026_interactive_v1.png",
+   "sha256": "5f1f7a7bd10019c384701fb1a3457bbd416a5d75afe7125ca9ce9cde09afda0f",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/schoolfront_2026_mg_v1.png",
+   "sha256": "27767c66d06dc2b83fcdcf4aaeb7eb2c6efdbfafcc1360c307136a6884553848",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/schoolfront_2026_shadow_v1.png",
+   "sha256": "bcb08eef9bc3efb3e30767ff8b25faa8db23bdf1c5788eeacbc856fee12151c3",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/schoolfront_2126_bg_v1.png",
+   "sha256": "35a798a2d140483521b8db8da98db5d12421b22f1f669b3b57e2fac8b8dbecc6",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/schoolfront_2126_characters_v1.png",
+   "sha256": "508919f05f6b47a084586bd4bce8fd34ce190098f016a3588192d67a15b8fc85",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/schoolfront_2126_fg_v1.png",
+   "sha256": "aae27942483c4848fcbe67fe770a468455b32e765f0288187a430f9aeb206c45",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/schoolfront_2126_ground_changes_v1.png",
+   "sha256": "71a7eb7ee14a652662aa8697fdb01b40fbe4bcf4112304512f5bff43844a9f34",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/schoolfront_2126_interactive_v1.png",
+   "sha256": "855452988ca555e26d3406c692e08af24a239d5a19e7e668d8b9a5b62fa4c7d2",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/schoolfront_2126_mg_v1.png",
+   "sha256": "a30e641ff94e8c3d29c28cb6f0cfd08d0f3cc77eba5ef7483a9cea8a8ec384a2",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/schoolfront_2126_shadow_v1.png",
+   "sha256": "94efb8ac201e44282cb87cca5b7a98fea69f322d506525ba1e2a8f4ad2cfb6b1",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/shade_pergola_v1.png",
+   "sha256": "41287b1b8abf9ca0a7c7c4c1c9cebc8010e6271fb8d854493192744de513e118",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/shade_pergola_v1_fg.png",
+   "sha256": "3a8ed4f1637e23e4551a7892fbe089441ba03f7cec6c9570e22a4611416695bf",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/shade_pergola_v1_mg.png",
+   "sha256": "87d42a68ef86cc540aa22f4d62e199038c51ca39eeb1570e2e7c7a32950df0c9",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/shop_2026_v1.png",
+   "sha256": "70dbb4073d0d1901fa53b0a5715b60ced4e8d2e043a88e88ce427fa61f407282",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/shop_2026_v1_fg.png",
+   "sha256": "7e74cfb4509ab43e71660b2a701b1a3a61da2fd8219a91643e2d7b9472f4290e",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/shop_2026_v1_mg.png",
+   "sha256": "88a7dadcbb4cd493118c85e43f0b2ee4bad976631c46de7f37ee5e9a88c23574",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/shop_2026_v1_shadow.png",
+   "sha256": "b993ae4061a5e24aedb301d02976b5c18bc64867dbe794693783787454530512",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/shop_2126_v1.png",
+   "sha256": "7369f992bb1fbeeeed7241cd7d69ef5a8f9e3518a701af880ea7b79dffe85ea6",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/shop_2126_v1_fg.png",
+   "sha256": "4a56b74cfbd7fdef4f748542676f623591497a9759c4e2e94711d5d6551a41a9",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/shop_2126_v1_mg.png",
+   "sha256": "07f60647907ed80581fe5d309f0260ff8ac8737514a2a8e895d67fcace58eeba",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/shop_2126_v1_shadow.png",
+   "sha256": "430c05dc214c0fceb369183a2d28745ecfe51e6ea2fefe62317d97730d2886bf",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/storm_drain_v1.png",
+   "sha256": "146fa845f1f09bbdfaba34f867432d582a6fc76251b7f226ba45ed572e4e22df",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/tree_forest_oak_v1.png",
+   "sha256": "560248c615aa1ecd22e086212490bcc93d76ee73112ea255e0e5db76884ed35f",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/tree_forest_oak_v1_fg.png",
+   "sha256": "9b5c94dfa391e62c1cc35c592e2c2ff75967e55dd08e41dfa4c8a94238a1c5e5",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/tree_forest_oak_v1_mg.png",
+   "sha256": "dee3759c656cc70bb745837b6c407367113eeb4a83c5b43bf6782aaee50c534d",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/tree_forest_oak_v1_shadow.png",
+   "sha256": "f81c8d961b7b94fca316100ba1b018355a955cf4502bbc151e9ab4daa91a2549",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/tree_replacement_staked_v1.png",
+   "sha256": "c42bcb75d9be000c165ef4d29c2a169206010e3cd4016f4d1c63ea73b7288253",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/tree_replacement_staked_v1_fg.png",
+   "sha256": "0c8a921b708294fe8aa302f15af3252cdc71bcd5e61f2024e65513f8d2b0db0d",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/tree_replacement_staked_v1_mg.png",
+   "sha256": "052158e3689e64ef92a15ab6d17d0663ed795f828fb3cb1001578f3ba4f3ff9f",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/tree_replacement_staked_v1_shadow.png",
+   "sha256": "cf6c826fe14e64a19ecc1dbf37b7be82a0376374e069dd1cfbafad67d00c5733",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/tree_zelkova_mature_v1.png",
+   "sha256": "cc8bedf0c8a12ad37984a46bcb9c376cd8661261352556a3c5b8cf499e157c8d",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/tree_zelkova_mature_v1_fg.png",
+   "sha256": "ede3539cd0db42181496936bc01cf4317f25555914b04e0519b2e78c0678349e",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/tree_zelkova_mature_v1_mg.png",
+   "sha256": "f6849ef1e6f70ac42b038b33d99b70691f96a8509e53bec1358faf4cb7049662",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/tree_zelkova_mature_v1_shadow.png",
+   "sha256": "f253dca08907bb9a86a86dffaef393e10b4f8ca875bd1e916b56e4681967392f",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/tree_zelkova_mid_v1.png",
+   "sha256": "fb17a991130da6ed07b6347b0e794177da2854a2fc04e84260909a6978d580ee",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/tree_zelkova_mid_v1_fg.png",
+   "sha256": "09e250ec56bb0bbf84bd067a8a29067514da4e7edf77dc00a47557fbc6bfd769",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/tree_zelkova_mid_v1_mg.png",
+   "sha256": "fb34767f30d3c90e6dfca53b0a0b7c14a0fba0a823e5b090bbead107efaf48ed",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/tree_zelkova_mid_v1_shadow.png",
+   "sha256": "5ac3747513a9d9c039764008d92c245ac4f478fc81bbc7638c8d9a35151112be",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/tree_zelkova_sapling_v1.png",
+   "sha256": "5b16c0cdbc6d06a85cf24e883f253b023f275bbb0bac3d173919fccdb9f3a59e",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/tree_zelkova_sapling_v1_fg.png",
+   "sha256": "606dc4a6f3aa53cfb24f5d789fbcd2e9a2265c7058429f3aa52e249227610c14",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/tree_zelkova_sapling_v1_mg.png",
+   "sha256": "73d018535e8d6d47def96a6299bd851d98271c4c915b670452ea1f389dc31b3c",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/tree_zelkova_sapling_v1_shadow.png",
+   "sha256": "6321ac229926b42bd7c3b1fefc8cf7272000b1421dad27972f0fc5b5585a5f8e",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/tree_zelkova_young_v1.png",
+   "sha256": "cfab8d1851c85933d0d6c2720b40e7fee0261ff61b992c1aa1b0338ee90bd75d",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/tree_zelkova_young_v1_fg.png",
+   "sha256": "4bb450ba478076784ae5ab9dae3c73e4282904b6ca44f1d000fa4f738bbe9bae",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/tree_zelkova_young_v1_mg.png",
+   "sha256": "e479f453c03677cfadf46aafc1faa39ab2667eec4dc5ee9d1efe2ff24b337088",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/schoolfront-pack-v1/tree_zelkova_young_v1_shadow.png",
+   "sha256": "31c7c297230afa29304df807d8fdd3a49c6ce68438ed4c7be6da74c577e5d158",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/choice-variants-animation-v1/basin_absent_parking_v1.png",
+   "sha256": "1264fbfda9c40cb11231c2ebe9b0abd1cd4b6b8948a9dcd94307f76e3eff3b60",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/choice-variants-animation-v1/basin_dry_v1.png",
+   "sha256": "3e1b98b29da3d553f8ef0604ecd64b64873b8a36a23cfdd74628256b4029a79b",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/choice-variants-animation-v1/basin_sediment_v1.png",
+   "sha256": "5936b74ed01497a5025ea936a391a5b609d6854b6cd8cbb4602282a1fc18e968",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/choice-variants-animation-v1/basin_wet_illustrative_v1.png",
+   "sha256": "3be854ae1acb24fe82fde7dc03079af5de76e6a5faad2169bf10e399cd4c498f",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/choice-variants-animation-v1/drain_clogged_v1.png",
+   "sha256": "be287f9a6c90f8119d017bd4362906a2a32f1d2ae37a1413aa9b2425557e7ae7",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/choice-variants-animation-v1/permeable_clogged_patch_v1.png",
+   "sha256": "b709ef869992dec0f7958f0d343d63fd7be97c957b7b6e1def49ba2a4be0207b",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/choice-variants-animation-v1/permeable_clogged_repeat_v1.png",
+   "sha256": "9d541d222e36bac03f3eab00f0eae8936ec312c4f4bfe94d407dad7fc9102f59",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/choice-variants-animation-v1/permeable_clogged_v1.png",
+   "sha256": "a50888d294c66c7c10ffe8f220ebdab7cdc9ce52a2676b3afb98aab1a85e06ad",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/choice-variants-animation-v1/planting_empty_v1.png",
+   "sha256": "f92649c475b30ca4dfa52fa65fca69c1a232ec0c0643a731ba54c3c562f0d4bb",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/choice-variants-animation-v1/player_ground_shadow_v1.png",
+   "sha256": "77ad6c64b159fa790c9abcc9694da87c0f10ecd3cdf350cc781bc6e47ab58b39",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/choice-variants-animation-v1/player_idle_sheet_v1.png",
+   "sha256": "23d5911381f951393a6d78ad074e544f87da0dae1174ed7474bd14f08d354128",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/choice-variants-animation-v1/player_walk_sheet_v1.png",
+   "sha256": "39ddc2f6f4630f05f5dc90d8053f80c5b53ea725dc8b7f9d49d7608296e0c09e",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/choice-variants-animation-v1/rain_garden_neglected_v1.png",
+   "sha256": "cd457961b406aec3e26388ada3bb1e95bd5053ea8bd303861457bbff43a58489",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/choice-variants-animation-v1/romi_ground_shadow_v1.png",
+   "sha256": "77ad6c64b159fa790c9abcc9694da87c0f10ecd3cdf350cc781bc6e47ab58b39",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/choice-variants-animation-v1/romi_idle_sheet_v1.png",
+   "sha256": "4e6a6c6ca0a2afbc4e02b0269106db037b1d0d17c500a4cdf085906e58b525f5",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/choice-variants-animation-v1/romi_move_sheet_v1.png",
+   "sha256": "23c9286e079e1c4f9536d762806b2e5300942ddd0dbae428969b29f04f3c1738",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/choice-variants-animation-v1/tree_dead_fg_v1.png",
+   "sha256": "bfa3ce48b881304a1987a9443144d46b02986aeef3f338f54426a3d9c754070b",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/choice-variants-animation-v1/tree_dead_mg_v1.png",
+   "sha256": "287def397e8b452f3d30132ee38abe748379ce0838ed0aa3e35419b871eb54e8",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/choice-variants-animation-v1/tree_dead_shadow_v1.png",
+   "sha256": "57ac1c3779b4d0b30454e66dd54b2c0ddc3549f5d16916999f42ffe40b1f58ae",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/choice-variants-animation-v1/tree_dead_v1.png",
+   "sha256": "169fc6321e672d3ab3c9c1664a404f02236bd06f3248974fe49bf8817d273aec",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/choice-variants-animation-v1/tree_stump_shadow_v1.png",
+   "sha256": "e943b08f7f4dbfadd7b62abc193a911ad68670ebf6a22128577a51df9ad0b32e",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/choice-variants-animation-v1/tree_stump_v1.png",
+   "sha256": "f39d6c03f07dd15f0eb68374e40135d382512a657406c11cbf282e7121b96e4a",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/choice-variants-animation-v1/watering_bag_shadow_v1.png",
+   "sha256": "380dc4960081ad3eb624da9082900da3db988a855492e1ad41ff5b0a465a5cd5",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  },
+  {
+   "path": "game/assets/codex/choice-variants-animation-v1/watering_bag_v1.png",
+   "sha256": "d359496e51c5835745d49524fd121fd8d7484c965f570cdb086dbd8694fce162",
+   "action": "preserve; reuse when referenced by existing loader or adapter"
+  }
+ ],
+ "adapter": "game/assets/codex/century-change-v1/century_preview_adapter.mjs",
+ "integrationGuide": "art_spec/generated/century-change-v1/ASSET_INTEGRATION_GUIDE.md",
+ "preservationCheck": {
+  "checkedExistingFiles": 162,
+  "changedExistingFiles": 0,
+  "scope": "baseline game files and science tool scripts; excludes newly added candidate package"
+ },
+ "validationFiles": [
+  "qa/validation.json",
+  "qa/asset_checks.json",
+  "qa/interaction_and_model_checks.json",
+  "qa/runtime_report.json"
+ ]
+}

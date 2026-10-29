@@ -1,0 +1,898 @@
+[
+ {
+  "id": "haneul_walk",
+  "file": "haneul_walk_sheet_v1.png",
+  "size": [
+   1536,
+   768
+  ],
+  "frameSize": [
+   128,
+   192
+  ],
+  "rows": [
+   "down",
+   "left",
+   "right",
+   "up"
+  ],
+  "columns": 12,
+  "origin": [
+   0.5,
+   0.9375
+  ],
+  "soleY": 180,
+  "displayHeight": 66,
+  "status": "technical_and_normal_phaser_playback_pass; artistic_candidate",
+  "clips": {
+   "haneul_walk_down": {
+    "start": 0,
+    "end": 11,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "haneul_walk_left": {
+    "start": 12,
+    "end": 23,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "haneul_walk_right": {
+    "start": 24,
+    "end": 35,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "haneul_walk_up": {
+    "start": 36,
+    "end": 47,
+    "frameRate": 15,
+    "repeat": -1
+   }
+  },
+  "method": "fixed directional original; 2D two-bone leg rig; no mirrored directions; subtle breathing holds",
+  "referenceSpeedPxSec": 28,
+  "limitations": "small torso counter-motion; no separately articulated arm swing or bespoke tool-use acting",
+  "integration": "velocity-directed, fixed foot origin; blend stop100ms; avoid duplicate bob tweens"
+ },
+ {
+  "id": "haneul_idle",
+  "file": "haneul_idle_sheet_v1.png",
+  "size": [
+   1536,
+   768
+  ],
+  "frameSize": [
+   128,
+   192
+  ],
+  "rows": [
+   "down",
+   "left",
+   "right",
+   "up"
+  ],
+  "columns": 12,
+  "origin": [
+   0.5,
+   0.9375
+  ],
+  "soleY": 180,
+  "displayHeight": 66,
+  "status": "technical_and_normal_phaser_playback_pass; artistic_candidate",
+  "clips": {
+   "haneul_idle_down": {
+    "start": 0,
+    "end": 11,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "haneul_idle_left": {
+    "start": 12,
+    "end": 23,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "haneul_idle_right": {
+    "start": 24,
+    "end": 35,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "haneul_idle_up": {
+    "start": 36,
+    "end": 47,
+    "frameRate": 8,
+    "repeat": -1
+   }
+  },
+  "method": "fixed directional original; 2D two-bone leg rig; no mirrored directions; subtle breathing holds",
+  "referenceSpeedPxSec": 28,
+  "limitations": "small torso counter-motion; no separately articulated arm swing or bespoke tool-use acting",
+  "integration": "velocity-directed, fixed foot origin; blend stop100ms; avoid duplicate bob tweens"
+ },
+ {
+  "id": "park_walk",
+  "file": "park_walk_sheet_v1.png",
+  "size": [
+   1536,
+   768
+  ],
+  "frameSize": [
+   128,
+   192
+  ],
+  "rows": [
+   "down",
+   "left",
+   "right",
+   "up"
+  ],
+  "columns": 12,
+  "origin": [
+   0.5,
+   0.9375
+  ],
+  "soleY": 180,
+  "displayHeight": 82,
+  "status": "technical_and_normal_phaser_playback_pass; artistic_candidate",
+  "clips": {
+   "park_walk_down": {
+    "start": 0,
+    "end": 11,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "park_walk_left": {
+    "start": 12,
+    "end": 23,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "park_walk_right": {
+    "start": 24,
+    "end": 35,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "park_walk_up": {
+    "start": 36,
+    "end": 47,
+    "frameRate": 15,
+    "repeat": -1
+   }
+  },
+  "method": "fixed directional original; 2D two-bone leg rig; no mirrored directions; subtle breathing holds",
+  "referenceSpeedPxSec": 35,
+  "limitations": "small torso counter-motion; no separately articulated arm swing or bespoke tool-use acting",
+  "integration": "velocity-directed, fixed foot origin; blend stop100ms; avoid duplicate bob tweens"
+ },
+ {
+  "id": "park_idle",
+  "file": "park_idle_sheet_v1.png",
+  "size": [
+   1536,
+   768
+  ],
+  "frameSize": [
+   128,
+   192
+  ],
+  "rows": [
+   "down",
+   "left",
+   "right",
+   "up"
+  ],
+  "columns": 12,
+  "origin": [
+   0.5,
+   0.9375
+  ],
+  "soleY": 180,
+  "displayHeight": 82,
+  "status": "technical_and_normal_phaser_playback_pass; artistic_candidate",
+  "clips": {
+   "park_idle_down": {
+    "start": 0,
+    "end": 11,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "park_idle_left": {
+    "start": 12,
+    "end": 23,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "park_idle_right": {
+    "start": 24,
+    "end": 35,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "park_idle_up": {
+    "start": 36,
+    "end": 47,
+    "frameRate": 8,
+    "repeat": -1
+   }
+  },
+  "method": "fixed directional original; 2D two-bone leg rig; no mirrored directions; subtle breathing holds",
+  "referenceSpeedPxSec": 35,
+  "limitations": "small torso counter-motion; no separately articulated arm swing or bespoke tool-use acting",
+  "integration": "velocity-directed, fixed foot origin; blend stop100ms; avoid duplicate bob tweens"
+ },
+ {
+  "id": "chorok_walk",
+  "file": "chorok_walk_sheet_v1.png",
+  "size": [
+   1536,
+   768
+  ],
+  "frameSize": [
+   128,
+   192
+  ],
+  "rows": [
+   "down",
+   "left",
+   "right",
+   "up"
+  ],
+  "columns": 12,
+  "origin": [
+   0.5,
+   0.9375
+  ],
+  "soleY": 180,
+  "displayHeight": 82,
+  "status": "technical_and_normal_phaser_playback_pass; artistic_candidate",
+  "clips": {
+   "chorok_walk_down": {
+    "start": 0,
+    "end": 11,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "chorok_walk_left": {
+    "start": 12,
+    "end": 23,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "chorok_walk_right": {
+    "start": 24,
+    "end": 35,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "chorok_walk_up": {
+    "start": 36,
+    "end": 47,
+    "frameRate": 15,
+    "repeat": -1
+   }
+  },
+  "method": "fixed directional original; 2D two-bone leg rig; no mirrored directions; subtle breathing holds",
+  "referenceSpeedPxSec": 35,
+  "limitations": "small torso counter-motion; no separately articulated arm swing or bespoke tool-use acting",
+  "integration": "velocity-directed, fixed foot origin; blend stop100ms; avoid duplicate bob tweens"
+ },
+ {
+  "id": "chorok_idle",
+  "file": "chorok_idle_sheet_v1.png",
+  "size": [
+   1536,
+   768
+  ],
+  "frameSize": [
+   128,
+   192
+  ],
+  "rows": [
+   "down",
+   "left",
+   "right",
+   "up"
+  ],
+  "columns": 12,
+  "origin": [
+   0.5,
+   0.9375
+  ],
+  "soleY": 180,
+  "displayHeight": 82,
+  "status": "technical_and_normal_phaser_playback_pass; artistic_candidate",
+  "clips": {
+   "chorok_idle_down": {
+    "start": 0,
+    "end": 11,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "chorok_idle_left": {
+    "start": 12,
+    "end": 23,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "chorok_idle_right": {
+    "start": 24,
+    "end": 35,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "chorok_idle_up": {
+    "start": 36,
+    "end": 47,
+    "frameRate": 8,
+    "repeat": -1
+   }
+  },
+  "method": "fixed directional original; 2D two-bone leg rig; no mirrored directions; subtle breathing holds",
+  "referenceSpeedPxSec": 35,
+  "limitations": "small torso counter-motion; no separately articulated arm swing or bespoke tool-use acting",
+  "integration": "velocity-directed, fixed foot origin; blend stop100ms; avoid duplicate bob tweens"
+ },
+ {
+  "id": "merchant_walk",
+  "file": "merchant_walk_sheet_v1.png",
+  "size": [
+   1536,
+   768
+  ],
+  "frameSize": [
+   128,
+   192
+  ],
+  "rows": [
+   "down",
+   "left",
+   "right",
+   "up"
+  ],
+  "columns": 12,
+  "origin": [
+   0.5,
+   0.9375
+  ],
+  "soleY": 180,
+  "displayHeight": 82,
+  "status": "technical_and_normal_phaser_playback_pass; artistic_candidate",
+  "clips": {
+   "merchant_walk_down": {
+    "start": 0,
+    "end": 11,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "merchant_walk_left": {
+    "start": 12,
+    "end": 23,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "merchant_walk_right": {
+    "start": 24,
+    "end": 35,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "merchant_walk_up": {
+    "start": 36,
+    "end": 47,
+    "frameRate": 15,
+    "repeat": -1
+   }
+  },
+  "method": "fixed directional original; 2D two-bone leg rig; no mirrored directions; subtle breathing holds",
+  "referenceSpeedPxSec": 35,
+  "limitations": "small torso counter-motion; no separately articulated arm swing or bespoke tool-use acting",
+  "integration": "velocity-directed, fixed foot origin; blend stop100ms; avoid duplicate bob tweens"
+ },
+ {
+  "id": "merchant_idle",
+  "file": "merchant_idle_sheet_v1.png",
+  "size": [
+   1536,
+   768
+  ],
+  "frameSize": [
+   128,
+   192
+  ],
+  "rows": [
+   "down",
+   "left",
+   "right",
+   "up"
+  ],
+  "columns": 12,
+  "origin": [
+   0.5,
+   0.9375
+  ],
+  "soleY": 180,
+  "displayHeight": 82,
+  "status": "technical_and_normal_phaser_playback_pass; artistic_candidate",
+  "clips": {
+   "merchant_idle_down": {
+    "start": 0,
+    "end": 11,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "merchant_idle_left": {
+    "start": 12,
+    "end": 23,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "merchant_idle_right": {
+    "start": 24,
+    "end": 35,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "merchant_idle_up": {
+    "start": 36,
+    "end": 47,
+    "frameRate": 8,
+    "repeat": -1
+   }
+  },
+  "method": "fixed directional original; 2D two-bone leg rig; no mirrored directions; subtle breathing holds",
+  "referenceSpeedPxSec": 35,
+  "limitations": "small torso counter-motion; no separately articulated arm swing or bespoke tool-use acting",
+  "integration": "velocity-directed, fixed foot origin; blend stop100ms; avoid duplicate bob tweens"
+ },
+ {
+  "id": "yunseo_walk",
+  "file": "yunseo_walk_sheet_v1.png",
+  "size": [
+   1536,
+   768
+  ],
+  "frameSize": [
+   128,
+   192
+  ],
+  "rows": [
+   "down",
+   "left",
+   "right",
+   "up"
+  ],
+  "columns": 12,
+  "origin": [
+   0.5,
+   0.9375
+  ],
+  "soleY": 180,
+  "displayHeight": 73,
+  "status": "technical_and_normal_phaser_playback_pass; artistic_candidate",
+  "clips": {
+   "yunseo_walk_down": {
+    "start": 0,
+    "end": 11,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "yunseo_walk_left": {
+    "start": 12,
+    "end": 23,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "yunseo_walk_right": {
+    "start": 24,
+    "end": 35,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "yunseo_walk_up": {
+    "start": 36,
+    "end": 47,
+    "frameRate": 15,
+    "repeat": -1
+   }
+  },
+  "method": "fixed directional original; 2D two-bone leg rig; no mirrored directions; subtle breathing holds",
+  "referenceSpeedPxSec": 35,
+  "limitations": "small torso counter-motion; no separately articulated arm swing or bespoke tool-use acting",
+  "integration": "velocity-directed, fixed foot origin; blend stop100ms; avoid duplicate bob tweens"
+ },
+ {
+  "id": "yunseo_idle",
+  "file": "yunseo_idle_sheet_v1.png",
+  "size": [
+   1536,
+   768
+  ],
+  "frameSize": [
+   128,
+   192
+  ],
+  "rows": [
+   "down",
+   "left",
+   "right",
+   "up"
+  ],
+  "columns": 12,
+  "origin": [
+   0.5,
+   0.9375
+  ],
+  "soleY": 180,
+  "displayHeight": 73,
+  "status": "technical_and_normal_phaser_playback_pass; artistic_candidate",
+  "clips": {
+   "yunseo_idle_down": {
+    "start": 0,
+    "end": 11,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "yunseo_idle_left": {
+    "start": 12,
+    "end": 23,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "yunseo_idle_right": {
+    "start": 24,
+    "end": 35,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "yunseo_idle_up": {
+    "start": 36,
+    "end": 47,
+    "frameRate": 8,
+    "repeat": -1
+   }
+  },
+  "method": "fixed directional original; 2D two-bone leg rig; no mirrored directions; subtle breathing holds",
+  "referenceSpeedPxSec": 35,
+  "limitations": "small torso counter-motion; no separately articulated arm swing or bespoke tool-use acting",
+  "integration": "velocity-directed, fixed foot origin; blend stop100ms; avoid duplicate bob tweens"
+ },
+ {
+  "id": "pharmacist2126_walk",
+  "file": "pharmacist2126_walk_sheet_v1.png",
+  "size": [
+   1536,
+   768
+  ],
+  "frameSize": [
+   128,
+   192
+  ],
+  "rows": [
+   "down",
+   "left",
+   "right",
+   "up"
+  ],
+  "columns": 12,
+  "origin": [
+   0.5,
+   0.9375
+  ],
+  "soleY": 180,
+  "displayHeight": 82,
+  "status": "technical_and_normal_phaser_playback_pass; artistic_candidate",
+  "clips": {
+   "pharmacist2126_walk_down": {
+    "start": 0,
+    "end": 11,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "pharmacist2126_walk_left": {
+    "start": 12,
+    "end": 23,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "pharmacist2126_walk_right": {
+    "start": 24,
+    "end": 35,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "pharmacist2126_walk_up": {
+    "start": 36,
+    "end": 47,
+    "frameRate": 15,
+    "repeat": -1
+   }
+  },
+  "method": "fixed directional original; 2D two-bone leg rig; no mirrored directions; subtle breathing holds",
+  "referenceSpeedPxSec": 35,
+  "limitations": "small torso counter-motion; no separately articulated arm swing or bespoke tool-use acting",
+  "integration": "velocity-directed, fixed foot origin; blend stop100ms; avoid duplicate bob tweens"
+ },
+ {
+  "id": "pharmacist2126_idle",
+  "file": "pharmacist2126_idle_sheet_v1.png",
+  "size": [
+   1536,
+   768
+  ],
+  "frameSize": [
+   128,
+   192
+  ],
+  "rows": [
+   "down",
+   "left",
+   "right",
+   "up"
+  ],
+  "columns": 12,
+  "origin": [
+   0.5,
+   0.9375
+  ],
+  "soleY": 180,
+  "displayHeight": 82,
+  "status": "technical_and_normal_phaser_playback_pass; artistic_candidate",
+  "clips": {
+   "pharmacist2126_idle_down": {
+    "start": 0,
+    "end": 11,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "pharmacist2126_idle_left": {
+    "start": 12,
+    "end": 23,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "pharmacist2126_idle_right": {
+    "start": 24,
+    "end": 35,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "pharmacist2126_idle_up": {
+    "start": 36,
+    "end": 47,
+    "frameRate": 8,
+    "repeat": -1
+   }
+  },
+  "method": "fixed directional original; 2D two-bone leg rig; no mirrored directions; subtle breathing holds",
+  "referenceSpeedPxSec": 35,
+  "limitations": "small torso counter-motion; no separately articulated arm swing or bespoke tool-use acting",
+  "integration": "velocity-directed, fixed foot origin; blend stop100ms; avoid duplicate bob tweens"
+ },
+ {
+  "id": "merchant2126_walk",
+  "file": "merchant2126_walk_sheet_v1.png",
+  "size": [
+   1536,
+   768
+  ],
+  "frameSize": [
+   128,
+   192
+  ],
+  "rows": [
+   "down",
+   "left",
+   "right",
+   "up"
+  ],
+  "columns": 12,
+  "origin": [
+   0.5,
+   0.9375
+  ],
+  "soleY": 180,
+  "displayHeight": 82,
+  "status": "technical_and_normal_phaser_playback_pass; artistic_candidate",
+  "clips": {
+   "merchant2126_walk_down": {
+    "start": 0,
+    "end": 11,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "merchant2126_walk_left": {
+    "start": 12,
+    "end": 23,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "merchant2126_walk_right": {
+    "start": 24,
+    "end": 35,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "merchant2126_walk_up": {
+    "start": 36,
+    "end": 47,
+    "frameRate": 15,
+    "repeat": -1
+   }
+  },
+  "method": "fixed directional original; 2D two-bone leg rig; no mirrored directions; subtle breathing holds",
+  "referenceSpeedPxSec": 35,
+  "limitations": "small torso counter-motion; no separately articulated arm swing or bespoke tool-use acting",
+  "integration": "velocity-directed, fixed foot origin; blend stop100ms; avoid duplicate bob tweens"
+ },
+ {
+  "id": "merchant2126_idle",
+  "file": "merchant2126_idle_sheet_v1.png",
+  "size": [
+   1536,
+   768
+  ],
+  "frameSize": [
+   128,
+   192
+  ],
+  "rows": [
+   "down",
+   "left",
+   "right",
+   "up"
+  ],
+  "columns": 12,
+  "origin": [
+   0.5,
+   0.9375
+  ],
+  "soleY": 180,
+  "displayHeight": 82,
+  "status": "technical_and_normal_phaser_playback_pass; artistic_candidate",
+  "clips": {
+   "merchant2126_idle_down": {
+    "start": 0,
+    "end": 11,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "merchant2126_idle_left": {
+    "start": 12,
+    "end": 23,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "merchant2126_idle_right": {
+    "start": 24,
+    "end": 35,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "merchant2126_idle_up": {
+    "start": 36,
+    "end": 47,
+    "frameRate": 8,
+    "repeat": -1
+   }
+  },
+  "method": "fixed directional original; 2D two-bone leg rig; no mirrored directions; subtle breathing holds",
+  "referenceSpeedPxSec": 35,
+  "limitations": "small torso counter-motion; no separately articulated arm swing or bespoke tool-use acting",
+  "integration": "velocity-directed, fixed foot origin; blend stop100ms; avoid duplicate bob tweens"
+ },
+ {
+  "id": "caretaker2026_walk",
+  "file": "caretaker2026_walk_sheet_v1.png",
+  "size": [
+   1536,
+   768
+  ],
+  "frameSize": [
+   128,
+   192
+  ],
+  "rows": [
+   "down",
+   "left",
+   "right",
+   "up"
+  ],
+  "columns": 12,
+  "origin": [
+   0.5,
+   0.9375
+  ],
+  "soleY": 180,
+  "displayHeight": 82,
+  "status": "technical_and_normal_phaser_playback_pass; artistic_candidate",
+  "clips": {
+   "caretaker2026_walk_down": {
+    "start": 0,
+    "end": 11,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "caretaker2026_walk_left": {
+    "start": 12,
+    "end": 23,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "caretaker2026_walk_right": {
+    "start": 24,
+    "end": 35,
+    "frameRate": 15,
+    "repeat": -1
+   },
+   "caretaker2026_walk_up": {
+    "start": 36,
+    "end": 47,
+    "frameRate": 15,
+    "repeat": -1
+   }
+  },
+  "method": "fixed directional original; 2D two-bone leg rig; no mirrored directions; subtle breathing holds",
+  "referenceSpeedPxSec": 35,
+  "limitations": "small torso counter-motion; no separately articulated arm swing or bespoke tool-use acting",
+  "integration": "velocity-directed, fixed foot origin; blend stop100ms; avoid duplicate bob tweens"
+ },
+ {
+  "id": "caretaker2026_idle",
+  "file": "caretaker2026_idle_sheet_v1.png",
+  "size": [
+   1536,
+   768
+  ],
+  "frameSize": [
+   128,
+   192
+  ],
+  "rows": [
+   "down",
+   "left",
+   "right",
+   "up"
+  ],
+  "columns": 12,
+  "origin": [
+   0.5,
+   0.9375
+  ],
+  "soleY": 180,
+  "displayHeight": 82,
+  "status": "technical_and_normal_phaser_playback_pass; artistic_candidate",
+  "clips": {
+   "caretaker2026_idle_down": {
+    "start": 0,
+    "end": 11,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "caretaker2026_idle_left": {
+    "start": 12,
+    "end": 23,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "caretaker2026_idle_right": {
+    "start": 24,
+    "end": 35,
+    "frameRate": 8,
+    "repeat": -1
+   },
+   "caretaker2026_idle_up": {
+    "start": 36,
+    "end": 47,
+    "frameRate": 8,
+    "repeat": -1
+   }
+  },
+  "method": "fixed directional original; 2D two-bone leg rig; no mirrored directions; subtle breathing holds",
+  "referenceSpeedPxSec": 35,
+  "limitations": "small torso counter-motion; no separately articulated arm swing or bespoke tool-use acting",
+  "integration": "velocity-directed, fixed foot origin; blend stop100ms; avoid duplicate bob tweens"
+ }
+]
